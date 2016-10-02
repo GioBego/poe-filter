@@ -3,7 +3,7 @@ PoE Bego's loot filter changelog:
 
 
 =================================
-v???
+v???_next_version
 =================================
 changed:
 highlight only daggers and wands as small weapons (removed swords and maces)
