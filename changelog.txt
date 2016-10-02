@@ -1,2 +1,32 @@
 PoE Bego's loot filter changelog:
 =================================
+
+
+=================================
+v???
+=================================
+changed:
+highlight only daggers and wands as small weapons (removed swords and maces)
+
+=================================
+v2.4.0h
+=================================
+new:
+
+highlight valuable divination cards
+highlight valuable gloves
+highlight small weapons for chaos recipe
+highlight quality flasks
+highlight map fragments
+
+changed:
+enlarged font for several items
+changed 5+link border color
+"Orb of Fusing" and "Orb of Alchemy" both moved to higher currency tier
+
+=================================
+v2.4.0g
+=================================
+changed:
+
+larger fonts for easy pickup
