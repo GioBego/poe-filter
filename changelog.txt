@@ -8,6 +8,7 @@ v???_next_version
 changed:
 highlight only daggers and wands as small weapons (removed swords and maces)
 little bit smaller font for wands and daggers
+smaller font for interesting crafting bases
 
 =================================
 v2.4.0h
