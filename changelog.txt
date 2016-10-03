@@ -15,6 +15,7 @@ changed:
 + smaller font for gavels (chisel recipe)
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + hide normal and magic quality jewels - still highlighted with button
++ hide normal and magic quality crafting bases (interesting or ilvl 84+) - still highlighted with button
 + rare drops fonts resized
 + bigger font for hidden flasks
 
