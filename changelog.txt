@@ -16,7 +16,7 @@ changed:
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + hide normal and magic quality jewels - still highlighted with button
 + hide normal and magic quality crafting bases (interesting or ilvl 84+) - still highlighted with button
-+ rare drops fonts resized (depending on item size - smaller item = bigger font)
++ all unspecified drops fonts resized (big item = smaller font)
 + bigger font for hidden flasks
 
 =================================
