@@ -6,29 +6,34 @@ PoE Bego's loot filter changelog:
 v???_next_version
 =================================
 changed:
-highlight only daggers and wands as small weapons (removed swords and maces)
-little bit smaller font for wands and daggers
-smaller font for interesting crafting bases
++ highlight only daggers and wands as small weapons (removed swords and maces)
++ smaller font for wands and daggers
++ smaller font for interesting crafting bases
++ hide interesting bases - still highlighted with button
++ smaller font for midsize RGB links (chromatic recipe)
++ hide large RGB links (chromatic recipe) - still highlighted with button
++ smaller font for gavels (chisel recipe)
++ added sound for emergency - items forgotten by filter (my foult or laziness)
++ hide normal and magic quality jewels - still highlighted with button
++ rare drops fonts resized
 
 =================================
 v2.4.0h
 =================================
 new:
-
-highlight valuable divination cards
-highlight valuable gloves
-highlight small weapons for chaos recipe
-highlight quality flasks
-highlight map fragments
++ highlight valuable divination cards
++ highlight valuable gloves
++ highlight small weapons for chaos recipe
++ highlight quality flasks
++ highlight map fragments
 
 changed:
-enlarged font for several items
-changed 5+link border color
-"Orb of Fusing" and "Orb of Alchemy" both moved to higher currency tier
++ enlarged font for several items
++ changed 5+link border color
++ "Orb of Fusing" and "Orb of Alchemy" both moved to higher currency tier
 
 =================================
 v2.4.0g
 =================================
 changed:
-
-larger fonts for easy pickup
++ larger fonts for easy pickup
