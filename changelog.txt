@@ -16,6 +16,7 @@ changed:
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + hide normal and magic quality jewels - still highlighted with button
 + rare drops fonts resized
++ bigger font for hidden flasks
 
 =================================
 v2.4.0h
