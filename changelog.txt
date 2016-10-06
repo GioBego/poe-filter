@@ -13,9 +13,7 @@ changed:
 + only top interesting crafting bases
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + changed maps and map fragments background
-+ ilvl84+ interesting crafting bases background
-+ added 6-socket background
-+ added small RGB background
++ good to pickup items background
 
 =================================
 v2.4.0h
