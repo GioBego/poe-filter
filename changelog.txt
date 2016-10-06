@@ -8,7 +8,7 @@ v???_next_version
 changed:
 + highlight only daggers and wands as small weapons (removed swords and maces)
 + smaller font for wands and daggers
-+ only high level bases left in interesting crafting bases
++ only top interesting crafting bases
 + smaller font for interesting crafting bases
 + smaller font for midsize RGB links (chromatic recipe)
 + hide large RGB links (chromatic recipe) - still highlighted with button
@@ -18,6 +18,10 @@ changed:
 + hide normal and magic quality crafting bases (interesting or ilvl 84+) - still highlighted with button
 + all unspecified drops fonts resized (big item = smaller font)
 + bigger font for hidden flasks
++ changed maps and map fragments background
++ ilvl84+ interesting crafting bases background
++ added 6-socket background
++ added small RGB (chromatic) background
 
 =================================
 v2.4.0h
