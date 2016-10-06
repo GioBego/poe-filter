@@ -14,8 +14,8 @@ changed:
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + changed maps and map fragments background
 + ilvl84+ interesting crafting bases background
-+ added 6-socket (jeweller) background
-+ added small RGB (chromatic) background
++ added 6-socket background
++ added small RGB background
 
 =================================
 v2.4.0h
