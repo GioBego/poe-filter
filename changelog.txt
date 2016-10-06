@@ -6,18 +6,11 @@ PoE Bego's loot filter changelog:
 v???_next_version
 =================================
 changed:
-+ highlight only daggers and wands as small weapons (removed swords and maces)
-+ smaller font for wands and daggers
++ many font size changes
++ highlighting really good items better
++ less common items highlighted
 + only top interesting crafting bases
-+ smaller font for interesting crafting bases
-+ smaller font for midsize RGB links (chromatic recipe)
-+ hide large RGB links (chromatic recipe) - still highlighted with button
-+ smaller font for gavels (chisel recipe)
 + added sound for emergency - items forgotten by filter (my foult or laziness)
-+ hide normal and magic quality jewels - still highlighted with button
-+ hide normal and magic quality crafting bases (interesting or ilvl 84+) - still highlighted with button
-+ all unspecified drops fonts resized (big item = smaller font)
-+ bigger font for hidden flasks
 + changed maps and map fragments background
 + ilvl84+ interesting crafting bases background
 + added 6-socket background
