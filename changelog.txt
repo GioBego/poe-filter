@@ -8,8 +8,8 @@ v???_next_version
 changed:
 + highlight only daggers and wands as small weapons (removed swords and maces)
 + smaller font for wands and daggers
++ only high level bases left in interesting crafting bases
 + smaller font for interesting crafting bases
-+ hide interesting bases - still highlighted with button
 + smaller font for midsize RGB links (chromatic recipe)
 + hide large RGB links (chromatic recipe) - still highlighted with button
 + smaller font for gavels (chisel recipe)
