@@ -9,7 +9,7 @@ changed:
 + changed some currency background, text and border colors
 + many font size changes
 + highlighting really good items better
-+ less common items highlighted
++ less items highlighted
 + only top interesting crafting bases
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + changed maps and map fragments background
