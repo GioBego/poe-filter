@@ -15,6 +15,8 @@ changed:
 + changed maps and map fragments background
 + good to pickup items background
 
++ Filtration master theme
+
 =================================
 v2.4.0h
 =================================
