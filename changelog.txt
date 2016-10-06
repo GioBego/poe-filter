@@ -6,6 +6,7 @@ PoE Bego's loot filter changelog:
 v???_next_version
 =================================
 changed:
++ valuable currency background
 + many font size changes
 + highlighting really good items better
 + less common items highlighted
