@@ -14,7 +14,7 @@ changed:
 + added sound for emergency - items forgotten by filter (my foult or laziness)
 + changed maps and map fragments background
 + good to pickup items background
-+ hide bad base rares avter ilvl 70
++ hide bad base rares after ilvl 70
 
 + Filtration master theme
 
