@@ -3,7 +3,7 @@ PoE Bego's loot filter changelog:
 
 
 =================================
-v???_next_version
+v2.4.0h2
 =================================
 changed:
 + changed some currency background, text and border colors
