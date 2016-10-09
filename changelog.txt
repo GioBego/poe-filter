@@ -6,7 +6,7 @@ PoE Bego's loot filter changelog:
 =================================
 v2.4.0h3
 =================================
-fixwd bug:
+fixed bug:
 + filter did emergency alert for all normal and magic low level equipment
 
 =================================
