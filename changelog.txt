@@ -4,6 +4,14 @@ PoE Bego's loot filter changelog:
 
 
 =================================
+v2.4.0h4
+=================================
+changed:
++ reworked rare filtering (no visible change)
++ minor coloring changes
++ Fitration Master theme updated
+
+=================================
 v2.4.0h3
 =================================
 fixed bug:
