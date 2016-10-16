@@ -2,6 +2,11 @@ PoE Bego's loot filter changelog:
 =================================
 
 
+=================================
+v2.4.1 - next release
+=================================
+new:
++ rares with top interesting bases highlighted
 
 =================================
 v2.4.0h4
