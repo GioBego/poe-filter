@@ -1,9 +1,16 @@
-PoE Bego's loot filter changelog:
+PoE Bego's loot filter
+=================================
+       C H A N G E L O G
 =================================
 
+=================================
+v2.4.1 - next release
+=================================
+new:
++ top valuable chance bases
 
 =================================
-v2.4.0h5 - next release
+v2.4.0h5
 =================================
 new:
 + rares with top interesting bases highlighted
