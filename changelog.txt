@@ -7,7 +7,7 @@ PoE Bego's loot filter
 v2.4.1
 =================================
 new:
-+ Sorcerers Boots for chancing
++ Sorcerer Boots for chancing
 
 =================================
 v2.4.0h5
