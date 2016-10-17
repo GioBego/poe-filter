@@ -4,10 +4,10 @@ PoE Bego's loot filter
 =================================
 
 =================================
-v2.4.1 - next release
+v2.4.1
 =================================
 new:
-+ top valuable chance bases
++ Sorcerers Boots for chancing
 
 =================================
 v2.4.0h5
