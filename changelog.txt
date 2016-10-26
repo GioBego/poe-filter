@@ -9,6 +9,8 @@ next version
 =================================
 new:
 + highlight Perandus Coin
+changed:
++ hide background now red(ish)
 
 =================================
 v2.4.1b
