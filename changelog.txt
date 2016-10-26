@@ -7,6 +7,12 @@ PoE Bego's loot filter
 =================================
 v2.4.1b
 =================================
+new:
++ highlight Perandus Coin
+
+=================================
+v2.4.1b
+=================================
 changed:
 + minor font size changes
 
