@@ -10,7 +10,8 @@ next version
 new:
 + highlight Perandus Coin
 changed:
-+ hide background now red(ish)
++ background of hidden items now red(ish)
++hide lower base rare items ilv70+
 
 =================================
 v2.4.1b
