@@ -11,7 +11,8 @@ new:
 + highlight Perandus Coin
 changed:
 + background of hidden items now red(ish)
-+hide lower base rare items ilv70+
++ hide lower base rare items ilv70+
++ sound for fishing rod :-)
 
 =================================
 v2.4.1b
