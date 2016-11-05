@@ -5,6 +5,12 @@ PoE Bego's loot filter
 
 
 =================================
+next version
+=================================
+changed:
++ ilvl84+ craft bases background and size
+
+=================================
 v2.4.1b2
 =================================
 new:
