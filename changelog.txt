@@ -10,6 +10,8 @@ next version
 changed:
 + ilvl84+ craft bases defailt background and reduced size
 + 5-link size reduced
++ 6-link sound changed
++ T2 divination cards sound changed
 
 =================================
 v2.4.1b2
