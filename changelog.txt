@@ -12,7 +12,6 @@ changed:
 + 5-link size reduced
 + 6-link sound changed
 + T2 divination cards sound changed
-+ ilvl 84+ craft bases text size reduced
 + all alerts volume reduced from 300 to 100 (can be tuned in game options)
 
 =================================
