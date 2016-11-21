@@ -8,8 +8,9 @@ PoE Bego's loot filter
 next version
 =================================
 changed:
-+ ilvl84+ craft bases default background and reduced size
-+ 5-link size reduced
++ ilvl84+ craft bases default background and reduced font size
++ Orb of Chance (Sorcerer Boots) font size reduced
++ 5-link font size reduced
 + 6-link sound changed
 + T2 divination cards sound changed
 + all alerts volume reduced from 300 to 100 (can be tuned in game options)
