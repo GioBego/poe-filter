@@ -14,6 +14,7 @@ changed:
 + 6-link sound changed
 + T2 divination cards sound changed
 + all alerts volume reduced from 300 to 100 (can be tuned in game options)
++ highlight quality gems from 5% (was 10%)
 
 =================================
 v2.4.1b2
