@@ -16,6 +16,7 @@ changed:
 + all alerts volume reduced from 300 to 100 (can be tuned in game options)
 + highlight quality gems from 5% (was 10%)
 + more items added to Orb of Chance recipe list
++ low currencies color little brighter (scrolls excluded - left with default color)
 
 =================================
 v2.4.1b2
