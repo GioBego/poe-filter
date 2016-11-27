@@ -8,6 +8,7 @@ PoE Bego's loot filter
 next version
 =================================
 changed:
++ background color for items worth pickup changed to green
 + ilvl84+ craft bases default background and reduced font size
 + Orb of Chance recipe font size reduced
 + more items added to Orb of Chance recipe list (top 8 by LiftingNerd)
