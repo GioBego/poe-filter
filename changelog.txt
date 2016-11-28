@@ -8,8 +8,9 @@ PoE Bego's loot filter
 next version
 =================================
 changed:
-+ hide lower base rares and highlight top base rares from ilvl67 - for Dried Lake farming
++ SHOW lower base rares with red background - just for chaos recipe
 + background color for items worth pickup changed to green
++ highlight top base rares from ilvl67 - for Dried Lake farming
 + ilvl84+ craft bases default background and reduced font size
 + Orb of Chance recipe font size reduced
 + more items added to Orb of Chance recipe list (top 8 by LiftingNerd)
