@@ -18,6 +18,8 @@ changed:
 + 5-link font size reduced
 + 6-link sound changed
 + T2 divination cards sound changed
++ all flasks have same border
++ ilvl67+ flask shown only with quality 10+ and reduced text size
 + all alerts volume reduced from 300 to 100 (can be tuned in game options)
 + highlight quality gems from 5% (was 10%)
 + all currencies have same text color - a little brighter than default (scrolls excluded - left with default color)
