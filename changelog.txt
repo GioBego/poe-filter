@@ -9,6 +9,7 @@ next version
 =================================
 changed:
 + SHOW lower base rares with red background - just for chaos recipe
++ hidden normal and magic weapons and equipment items have blank background
 + background color for items worth pickup changed to green
 + highlight top base rares from ilvl67 - for Dried Lake farming
 + ilvl84+ craft bases default background and reduced font size
