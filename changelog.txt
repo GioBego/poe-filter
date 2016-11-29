@@ -10,7 +10,8 @@ next version
 changed:
 + show lower base rares with small font size and red background - just for chaos recipe
 + hidden normal and magic weapons and equipment items have blank background
-+ background color for items worth pickup changed to green
++ background color for items worth pickup changed to green(ish)
++ background color for unique items changed to blue(ish)
 + highlight top base rares from ilvl67 - for Dried Lake farming
 + ilvl84+ craft bases default background and reduced font size
 + Orb of Chance recipe font size reduced
