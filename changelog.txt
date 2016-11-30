@@ -7,9 +7,13 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
+
+=================================
+v2.5.0
+=================================
 changed:
++ added filters for The Breach Challenge League
 + Essences moved to valuable currencies group
-+ added Splinters for The Breach Challenge League
 + Sextants sound changet to match map related drops
 + show lower base rares with small font size and red background - just for chaos recipe
 + hidden normal and magic weapons and equipment items have blank background
