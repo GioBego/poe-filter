@@ -7,6 +7,7 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
++ huge overhaul - to make filter faster and simpler
 
 =================================
 v2.5.0
