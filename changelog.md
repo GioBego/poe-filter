@@ -7,7 +7,7 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
-+ huge overhaul - to make filter faster and simpler
++ show all jewels
 
 =================================
 v2.5.0
