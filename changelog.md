@@ -8,6 +8,7 @@ PoE Bego's loot filter
 next version
 =================================
 + show all jewels
++ show all utility flasks
 
 =================================
 v2.5.0
