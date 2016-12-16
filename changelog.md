@@ -3,10 +3,15 @@ PoE Bego's loot filter
        C H A N G E L O G
 =================================
 
+
 =================================
 next version
 =================================
-todo:
+
+=================================
+v2.5.0d
+=================================
+changed:
 + shrink chance recipe items except Sorcerer Boots
 + hide bad base rares again
 + hide normal rarity jewels
