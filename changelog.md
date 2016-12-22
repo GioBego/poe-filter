@@ -8,6 +8,15 @@ PoE Bego's loot filter
 next version
 =================================
 
+
+=================================
+v2.5.1
+=================================
+changed:
++ small color adjustments
+new:
++ new valuable divination cards
+
 =================================
 v2.5.0d
 =================================
