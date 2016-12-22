@@ -14,6 +14,7 @@ v2.5.1
 =================================
 changed:
 + small color adjustments
+
 new:
 + new valuable divination cards
 
