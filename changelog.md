@@ -7,8 +7,10 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
-+many coloring changes and improvements
-+Tabula Rasa has its own highlight design
+changes:
+
++ many coloring changes and improvements
++ Tabula Rasa has its own highlight design
 
 =================================
 v2.5.1
