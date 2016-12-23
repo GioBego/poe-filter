@@ -9,7 +9,7 @@ next version
 =================================
 changes:
 
-+ many coloring changes and improvements
++ many color or text size changes (theme still the same = no need to re-learn anything)
 + Tabula Rasa has its own highlight design
 
 =================================
