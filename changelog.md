@@ -7,6 +7,10 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
+
+=================================
+v2.5.1b
+=================================
 changes:
 
 + many color or text size changes (theme still the same = no need to re-learn anything)
