@@ -8,6 +8,11 @@ PoE Bego's loot filter
 next version
 =================================
 
+changed:
+
++ scroll size little larger
+
+
 =================================
 v2.5.1b3
 =================================
