@@ -15,6 +15,7 @@ changed:
 + hide big RGB items
 + hide chance recipe items - except Sorcerer Boots
 + hide not-top rare bases
++ Orb of Regret moved to chaos group currencies
 
 
 =================================
