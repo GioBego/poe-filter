@@ -11,6 +11,10 @@ next version
 changed:
 
 + scroll size little larger
++ hide scrolls
++ ilvl84+ good bases - show normal, not magic
++ hide big RGB items
++ hide chance recipe items - except Sorcerer Boots
 
 
 =================================
