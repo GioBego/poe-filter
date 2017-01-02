@@ -14,8 +14,10 @@ changed:
 + ilvl84+ good bases - show normal, not magic
 + hide big RGB items
 + hide chance recipe items - except Sorcerer Boots
-+ hide not-top rare bases
++ not-top rare bases text size reduced
 + Orb of Regret moved to chaos group currencies
++ chisel recipe gavls little larger
++ magic jewels little larger
 
 
 =================================
