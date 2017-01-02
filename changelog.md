@@ -10,11 +10,11 @@ next version
 
 changed:
 
-+ scroll size little larger
-+ hide scrolls
++ scroll size and low currencies are little larger
 + ilvl84+ good bases - show normal, not magic
 + hide big RGB items
 + hide chance recipe items - except Sorcerer Boots
++ hide not-top rare bases
 
 
 =================================
