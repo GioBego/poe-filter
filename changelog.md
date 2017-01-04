@@ -21,7 +21,7 @@ changed:
 + hide chance recipe items - except Sorcerer Boots
 + not-top rare bases text size reduced
 + Orb of Regret moved to chaos group currencies
-+ chisel recipe gavls little larger
++ chisel recipe gavels little larger
 + magic jewels little larger
 
 
