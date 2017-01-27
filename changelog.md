@@ -9,7 +9,12 @@ PoE Bego's loot filter
 next version
 =================================
 
-+ filter ,uch more strict
+
+=================================
+v2.5.2d
+=================================
+
++ filter much more strict
 + hide more non-top rare bases
 + hide scrolls, utility flasks, gems
 + hide 5-links, some ilvl84 craft bases
