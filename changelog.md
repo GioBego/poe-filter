@@ -8,7 +8,9 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
+bug to repair:
 
++ all gems need to be visible on low levels
 
 =================================
 v2.5.2d
