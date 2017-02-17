@@ -10,7 +10,7 @@ next version
 =================================
 bug to repair:
 
-+ all gems need to be visible on low levels (maybe not just gems - will look at it)
++ all gems, scrolls etc need to be visible on low levels
 
 =================================
 v2.5.2d
