@@ -11,6 +11,7 @@ next version
 bug to repair:
 
 + all gems, scrolls etc need to be visible on low levels
++ talismans
 
 =================================
 v2.5.2d
