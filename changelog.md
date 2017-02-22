@@ -12,6 +12,7 @@ bug to repair:
 
 + all gems, scrolls etc need to be visible on low levels
 + talismans
++ more highlight for good jewelery bases (steel ring, crystal belt etc.)
 
 =================================
 v2.5.2d
