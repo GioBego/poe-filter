@@ -8,7 +8,6 @@ PoE Bego's loot filter
 =================================
 next version
 =================================
-bug to repair:
 
 + all gems, scrolls etc visible on low levels
 + talismans
@@ -29,8 +28,6 @@ v2.5.2d
 v2.5.1b4
 =================================
 
-changed:
-
 + scroll size and low currencies are little larger
 + ilvl84+ good bases - show normal, not magic
 + hide big RGB items
@@ -44,21 +41,18 @@ changed:
 =================================
 v2.5.1b3
 =================================
-changes:
 
 + updated 3+ chaos Divination Cards lists
 
 =================================
 v2.5.1b2
 =================================
-changes:
 
 + scroll text size a bit larger
 
 =================================
 v2.5.1b
 =================================
-changes:
 
 + many color or text size changes (theme still the same = no need to re-learn anything)
 + Tabula Rasa has its own highlight design
@@ -66,16 +60,15 @@ changes:
 =================================
 v2.5.1
 =================================
-changed:
+
 + small color adjustments
 
-new:
 + new valuable divination cards
 
 =================================
 v2.5.0d
 =================================
-changed:
+
 + shrink chance recipe items except Sorcerer Boots
 + hide bad base rares again
 + hide normal rarity jewels
@@ -83,16 +76,17 @@ changed:
 =================================
 v2.5.0c
 =================================
+
 + show all jewels
 + show all utility flasks
 
 =================================
 v2.5.0
 =================================
-new:
+
 + added filters for The Breach Challenge League
 + more items added to Orb of Chance recipe list (top 8 by LiftingNerd)
-changed:
+
 + Essences moved to valuable currencies group
 + Sextants sound changet to match map related drops
 + show lower base rares with small font size and red background - just for chaos recipe
@@ -115,9 +109,9 @@ changed:
 =================================
 v2.4.1b2
 =================================
-new:
+
 + highlight Perandus Coin
-changed:
+
 + background of hidden items now red(ish)
 + hide lower base rare items ilv70+
 + sound for fishing rod :-)
@@ -125,25 +119,25 @@ changed:
 =================================
 v2.4.1b
 =================================
-changed:
+
 + minor font size changes
 
 =================================
 v2.4.1
 =================================
-new:
+
 + Sorcerer Boots for chancing
 
 =================================
 v2.4.0h5
 =================================
-new:
+
 + rares with top interesting bases highlighted
 
 =================================
 v2.4.0h4
 =================================
-changed:
+
 + reworked rare filtering (no visible change)
 + minor coloring changes
 + Fitration Master theme updated
@@ -151,13 +145,13 @@ changed:
 =================================
 v2.4.0h3
 =================================
-fixed bug:
+
 + filter did emergency alert for all normal and magic low level equipment
 
 =================================
 v2.4.0h2
 =================================
-changed:
+
 + changed some currency background, text and border colors
 + many font size changes
 + highlighting really good items better
@@ -173,14 +167,13 @@ changed:
 =================================
 v2.4.0h
 =================================
-new:
+
 + highlight valuable divination cards
 + highlight valuable gloves
 + highlight small weapons for chaos recipe
 + highlight quality flasks
 + highlight map fragments
 
-changed:
 + enlarged font for several items
 + changed 5+link border color
 + "Orb of Fusing" and "Orb of Alchemy" both moved to higher currency tier
@@ -188,5 +181,5 @@ changed:
 =================================
 v2.4.0g
 =================================
-changed:
+
 + larger fonts for easy pickup
