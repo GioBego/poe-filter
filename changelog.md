@@ -10,9 +10,10 @@ next version
 =================================
 bug to repair:
 
-+ all gems, scrolls etc need to be visible on low levels
++ all gems, scrolls etc visible on low levels
 + talismans
 + more highlight for good jewelery bases (steel ring, crystal belt etc.)
++ hide low level flasks
 
 =================================
 v2.5.2d
