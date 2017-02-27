@@ -14,6 +14,7 @@ next version
 + more highlight for good jewelery bases (steel ring, crystal belt etc.)
 + hide low level flasks
 + chance recipe list back to top 8 bases
++ 5-link visible up to T5 maps
 
 =================================
 v2.5.2d
