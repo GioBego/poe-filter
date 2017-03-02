@@ -9,6 +9,10 @@ PoE Bego's loot filter
 next version
 =================================
 
+=================================
+v2.6.0
+=================================
+
 + all gems, scrolls etc visible on low levels
 + talismans
 + more highlight for good jewelery bases (steel ring, crystal belt etc.)
