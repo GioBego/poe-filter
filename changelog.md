@@ -15,6 +15,8 @@ next version
 + hide low level flasks
 + chance recipe list back to top 8 bases
 + 5-link visible up to ilvl 72 (T5 maps)
++ Splinters and Blessings moved to currencies
++ Vaal Breach moved to rare gems
 
 =================================
 v2.5.2d
