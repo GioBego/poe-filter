@@ -17,6 +17,8 @@ next version
 + 5-link visible up to ilvl 72 (T5 maps)
 + Splinters and Blessings moved to currencies
 + Vaal Breach moved to rare gems
++ added Ancient Reliquary Key
++ added Leaguestones
 
 =================================
 v2.5.2d
