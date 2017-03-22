@@ -6,8 +6,13 @@ PoE Bego's loot filter
 
 
 =================================
-next version
+next version v3.0.0
 =================================
+
++ total overhaul - new filter made from scratch
++ extremely strict
++ for endgame
++ for advanced players
 
 =================================
 v2.6.0e
