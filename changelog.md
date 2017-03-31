@@ -11,7 +11,7 @@ next version v3.0.0
 
 + total overhaul - new filter made from scratch
 + extremely strict
-+ for endgame
++ for endgame (usable for leveling, but only rares and flasks overriding end game setup)
 + for advanced players
 
 =================================
