@@ -11,8 +11,7 @@ next version v3.0.0
 
 + total overhaul - new filter made from scratch
 + extremely strict
-+ for endgame, lveling & racing
-+ for advanced players
++ ready for endgame & leveling
 
 =================================
 v2.6.0e
