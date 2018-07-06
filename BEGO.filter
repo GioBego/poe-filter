@@ -583,14 +583,14 @@ Hide # Jewels - Magic, Normal
 # Section: FLASKS
 #-------------------------------------------------------------------------------
 
-Show # Flasks - Utility - Showuntil ilvl 73
+Show # Flasks - Utility - Show until ilvl 73
 	Class "Utility Flasks" "Critical Utility Flasks"
 	ItemLevel <= 73
 	SetBackgroundColor 64 64 64 255 # Grey
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32
 
-Hide # Flasks - Quality - Hide below 10 quality in higher maps
+Hide # Flasks - Quality - Quality < 10 in higher maps
 	Quality < 10
 	Class "Flasks"
 	BaseType "Life Flask" "Mana Flask" "Hybrid Flask"
@@ -600,7 +600,7 @@ Hide # Flasks - Quality - Hide below 10 quality in higher maps
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 24
 
-Show # Flasks - Quality
+Show # Flasks - Quality - Quality 10+
 	Quality >= 10
 	Class "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
