@@ -50,7 +50,7 @@ Show # Currency - Low value
 # Section: LEAGUE
 #-------------------------------------------------------------------------------
 
-Show
+Show # League - Incursion
 	Identified True
 	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
 	SetBackgroundColor 0 32 96 255 # League
@@ -58,20 +58,20 @@ Show
 	SetFontSize 36
 	PlayAlertSound 10 100
 
-Show
+Show # League - Incursion
 	Class "Incursion Item"
 	BaseType "Stone of Passage" "Flashpowder Keg"
 	SetBackgroundColor 0 32 96 255 # League
 	SetBorderColor 7 255 255 255 # League
-	SetFontSize 40
+	SetFontSize 44
 	PlayAlertSound 11 97
 
-Show
+Show # League - Incursion
 	Class "Stackable Currency"
 	BaseType "Vial of"
 	SetTextColor 231 180 120 255 # Currency - high
 	SetBackgroundColor 0 32 96 255 # League
-	SetBorderColor 231 180 120 255 # Currency - high
+	SetBorderColor 7 255 255 255 # League
 	SetFontSize 40
 	PlayAlertSound 2 100
 
@@ -352,7 +352,7 @@ Show # Vendor - Jeweller's Orb
 	SetFontSize 44
 	PlayAlertSound 2 79
 
-Show
+Show # Craft - 5-linked items - below ilvl73 | Disable
 	LinkedSockets = 5
 	ItemLevel < 73
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -376,7 +376,7 @@ Show
 	SetFontSize 36
 
 # Chromatic recipe item - small weapons
-Show # Vendor - Chromatic Orb
+Show # Vendor - Chromatic Orb - Small items
 	SocketGroup "RGB"
 	Height = 3
 	Width = 1
@@ -385,7 +385,7 @@ Show # Vendor - Chromatic Orb
 	SetFontSize 42
 
 # Chromatic recipe item - other small weapons and armours
-Show # Vendor - Chromatic Orb
+Show # Vendor - Chromatic Orb - Small items
 	SocketGroup "RGB"
 	Height = 2
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -393,7 +393,7 @@ Show # Vendor - Chromatic Orb
 	SetFontSize 42
 
 # Chance Orb bases - unique craft
-#Show # Craft - Orb of Chance | Disable
+#Show # Craft - Chance Unique Bases | Disable
 #	BaseType "Ebony Tower Shield" "Glorious Plate" "Gold Amulet" "Rawhide Tower Shield" "Sorcerer Boots" "Full Wyrmscale" "Leather Belt"
 #	Rarity = Normal
 #	SetBackgroundColor 64 64 64 255 # Grey
@@ -401,7 +401,7 @@ Show # Vendor - Chromatic Orb
 #	SetFontSize 32
 
 # Chisel recipe
-#Show # Vendor - Cartographer's Chisel
+#Show # Vendor - Cartographer's Chisel | Disable
 #	Quality >= 15
 #	Class "One Hand Maces"
 #	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
@@ -410,7 +410,7 @@ Show # Vendor - Chromatic Orb
 #	SetFontSize 32
 
 # Chisel recipe
-#Show # Vendor - Cartographer's Chisel
+#Show # Vendor - Cartographer's Chisel | Disable
 #	Quality >= 18
 #	Class "One Hand Maces"
 #	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
@@ -419,7 +419,7 @@ Show # Vendor - Chromatic Orb
 #	SetFontSize 32
 
 # Chisel recipe
-#Show # Vendor - Cartographer's Chisel
+#Show # Vendor - Cartographer's Chisel | Disable
 #	Quality >= 20
 #	Class "One Hand Maces"
 #	BaseType "Gavel" "Rock Breaker" "Stone Hammer"
@@ -428,7 +428,7 @@ Show # Vendor - Chromatic Orb
 #	SetFontSize 32
 
 # Valuable craft bases
-Show # Craft
+Show
 	BaseType "Steel Ring" "Opal Ring" "Crystal Belt" "Ruby Amulet"
 	Rarity <= Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -436,14 +436,14 @@ Show # Craft
 	SetFontSize 44
 	PlayAlertSound 1 79
 
-Show
+Show # Rare items - Rings, Amulets, Belts
 	Class "Rings" "Amulets" "Belts"
 	Rarity = Rare
 	SetTextColor 255 224 0 255 # Map - yellow
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 44
 
-Show
+Show # Jewels - Rare
 	Class "Jewel"
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -451,49 +451,49 @@ Show
 	SetFontSize 44
 	PlayAlertSound 2 79
 
-Show
+Show # Rare items - Top bases
 	Class "Helmets"
 	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet"
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 40
 
-Show
+Show # Rare items - Top bases
 	Class "Gloves"
 	BaseType "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets"
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 40
 
-Show
+Show # Rare items - Top bases
 	Class "Boots"
 	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots"
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 40
 
-Show
+Show # Rare items - Top bases
 	Class "Body Armours"
 	BaseType "Glorious Plate" "Vaal Regalia" "Assassin's Garb" "Zodiac Leather" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 26
 
-#Show
+#Show # Rare items - Good weapon bases | Disable
 #	DropLevel >= 56
 #	Class "Wands" "Daggers" "Claws" "One Hand" "Sceptres" "Shields"
 #	Rarity = Rare
 #	SetBackgroundColor 0 0 0 224 # Black - transparent
 #	SetFontSize 30
 
-#Show
+#Show # Rare items - Good weapon bases | Disable
 #	DropLevel >= 56
 #	Class "Two Hand" "Staves" "Bows"
 #	Rarity = Rare
 #	SetBackgroundColor 0 0 0 224 # Black - transparent
 #	SetFontSize 26
 
-#Show
+#Show # Rare items - Good quiver bases | Disable
 #	DropLevel >= 28
 #	Class "Quivers"
 #	Rarity = Rare
@@ -504,14 +504,14 @@ Show
 # Section: JUNK
 #-------------------------------------------------------------------------------
 
-Hide
-	LinkedSockets = 5
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 255 255 119 255 # Craft
-	SetFontSize 32
+#Show # Craft - 5-linked items - All | Disable
+#	LinkedSockets = 5
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 255 255 119 255 # Craft
+#	SetFontSize 32
 
 # Accessories ilvl84 bases
-Hide
+Hide # Craft - Rings, Amulets, Belts ilvl84+ bases
 	Class "Rings" "Amulets" "Belts"
 	Rarity = Normal
 	ItemLevel >= 84
@@ -520,7 +520,7 @@ Hide
 	SetFontSize 28
 
 # Chromatic recipe item - too big
-Hide
+Hide # Vendor - Chromatic Orb - Large items ilvl 70+
 	SocketGroup "RGB"
 	ItemLevel >= 70
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -558,21 +558,21 @@ Hide
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 24
 
-Hide
+Hide # Rare items - Bad bases
 	Sockets > 0
 	Rarity = Rare
 	ItemLevel >= 73
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 26
 
-Hide
+Hide # Rare items - Bad bases
 	Class "Quivers"
 	Rarity = Rare
 	ItemLevel >= 73
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 26
 
-Hide
+Hide # Jewels - Magic, Normal
 	Class "Jewel"
 	Rarity <= Magic
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -583,21 +583,14 @@ Hide
 # Section: FLASKS
 #-------------------------------------------------------------------------------
 
-Show
+Show # Flasks - Utility - Showuntil ilvl 73
 	Class "Utility Flasks" "Critical Utility Flasks"
 	ItemLevel <= 73
 	SetBackgroundColor 64 64 64 255 # Grey
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32
 
-#Show
-#	Class "Life Flasks"
-#	BaseType "Divine Life Flask"
-#	Rarity = Magic
-#	SetBackgroundColor 0 0 0 224 # Black - transparent
-#	SetBorderColor 176 32 24 255 # Flask
-
-Hide
+Hide # Flasks - Quality - Hide below 10 quality in higher maps
 	Quality < 10
 	Class "Flasks"
 	BaseType "Life Flask" "Mana Flask" "Hybrid Flask"
@@ -607,7 +600,7 @@ Hide
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 24
 
-Show
+Show # Flasks - Quality
 	Quality >= 10
 	Class "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -673,7 +666,7 @@ Show
 	SetBorderColor 96 240 96 255 # Map - shaped
 	SetFontSize 44
 	PlayAlertSound 7 100
-
+	DisableDropSound
 Show
 	ShapedMap True
 	DropLevel < 78
@@ -683,7 +676,7 @@ Show
 	SetBorderColor 96 240 96 255 # Map - shaped
 	SetFontSize 44
 	PlayAlertSound 9 100
-
+	DisableDropSound
 # Tier 11-15
 Show
 	ShapedMap True
@@ -692,7 +685,7 @@ Show
 	SetBorderColor 96 240 96 255 # Map - shaped
 	SetFontSize 44
 	PlayAlertSound 14 300
-
+	DisableDropSound
 Show
 	ElderMap True
 	SetTextColor 0 0 0 255 # Black
@@ -700,7 +693,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	PlayAlertSound 8 100
-
+	DisableDropSound
 # Tier 1-5
 Show
 	DropLevel < 73
@@ -711,16 +704,16 @@ Show
 	SetBorderColor 232 232 232 255 # White
 	SetFontSize 40
 	PlayAlertSound 7 79
-
+	DisableDropSound
 # Tier 1-5
-Show
+Show # Maps - T1-5 in higher maps
 	DropLevel < 73
 	Class "Maps"
 	SetTextColor 232 232 232 255 # White
 	SetBackgroundColor 64 64 64 255 # Grey
 	SetBorderColor 232 232 232 255 # White
 	SetFontSize 36
-
+	DisableDropSound
 # Tier 6-10
 Show
 	DropLevel < 78
@@ -731,7 +724,7 @@ Show
 	SetBorderColor 255 224 0 255 # Map - yellow
 	SetFontSize 40
 	PlayAlertSound 7 79
-
+	DisableDropSound
 # Tier 6-10
 Show
 	DropLevel < 78
@@ -741,7 +734,7 @@ Show
 	SetBackgroundColor 64 64 64 255 # Grey
 	SetBorderColor 255 224 0 255 # Map - yellow
 	SetFontSize 36
-
+	DisableDropSound
 # Tier 11-15
 Show
 	DropLevel < 83
@@ -751,7 +744,7 @@ Show
 	SetBorderColor 255 32 0 255 # Map - red
 	SetFontSize 44
 	PlayAlertSound 9 79
-
+	DisableDropSound
 # Tier 16+
 Show
 	DropLevel >= 83
@@ -761,7 +754,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	PlayAlertSound 8 100
-
+	DisableDropSound
 Show
 	Class "Map Fragments" "Labyrinth"
 	SetTextColor 231 180 120 255 # Currency - high
@@ -769,7 +762,7 @@ Show
 	SetBorderColor 208 32 144 255 # Chaos
 	SetFontSize 44
 	PlayAlertSound 9 79
-
+	DisableDropSound
 #-------------------------------------------------------------------------------
 # Section: CARDS
 #-------------------------------------------------------------------------------
@@ -978,7 +971,7 @@ Show
 # Section: LEVELING
 #-------------------------------------------------------------------------------
 
-Show
+Show # Vendor - Chromatic Orb - Large items
 	SocketGroup "RGB"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 50 230 100 255 # RGB
