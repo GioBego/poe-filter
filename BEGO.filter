@@ -18,21 +18,21 @@
 # Section: CURRENCY - T3
 #-------------------------------------------------------------------------------
 
-Show # Currency
+Show # Currency - Low value
 	Class "Currency"
 	BaseType "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency - low
 	SetBackgroundColor 72 0 0 204 # Red - transparent
 	SetFontSize 32
 
-Show # Currency
+Show # Currency - Low value
 	Class "Currency"
 	BaseType "Portal Scroll"
 	SetTextColor 170 158 130 255 # Currency - low
 	SetBackgroundColor 0 0 72 204 # Blue - transparent
 	SetFontSize 34
 
-Hide # Currency
+Hide # Currency - Low value
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
 	SetTextColor 170 158 130 255 # Currency - low
@@ -50,7 +50,7 @@ Show # Currency - Low value
 # Section: LEAGUE
 #-------------------------------------------------------------------------------
 
-Show # League - Incursion
+Show
 	Identified True
 	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
 	SetBackgroundColor 0 32 96 255 # League
@@ -58,7 +58,7 @@ Show # League - Incursion
 	SetFontSize 36
 	PlayAlertSound 10 100
 
-Show # League - Incursion
+Show
 	Class "Incursion Item"
 	BaseType "Stone of Passage" "Flashpowder Keg"
 	SetBackgroundColor 0 32 96 255 # League
@@ -75,7 +75,7 @@ Show
 	SetFontSize 40
 	PlayAlertSound 2 100
 
-#Show # League - Bestiary | Disable
+#Show # League - Bestiary
 #	Class "Currency"
 #	BaseType "Bestiary Orb" "Imprinted Bestiary Orb" "Thaumaturgical Net" "Necromancy Net"
 #	SetTextColor 231 180 120 255 # Currency - high
@@ -84,7 +84,7 @@ Show
 #	SetFontSize 40
 #	PlayAlertSound 2 100
 
-#Show # League - Bestiary | Disable
+#Show # League - Bestiary
 #	Class "Currency"
 #	BaseType "Strong Steel Net"
 #	SetTextColor 231 180 120 255 # Currency - high
@@ -93,13 +93,21 @@ Show
 #	SetFontSize 36
 #	PlayAlertSound 10 50
 
-#Show # League - Bestiary | Disable
+#Show # League - Bestiary
 #	Class "Currency"
 #	BaseType "Rope Net" "Iron Net" "Steel Net"
 #	SetTextColor 231 180 120 255 # Currency - high
 #	SetBackgroundColor 0 0 0 224 # Black - transparent
 #	SetBorderColor 7 255 255 255 # League
 #	SetFontSize 36
+
+#Show # League - Legacy | Disable
+#	Class "Leaguestone"
+#	SetTextColor 231 180 120 255 # Currency - high
+#	SetBackgroundColor 0 32 96 255 # League
+#	SetBorderColor 7 255 255 255 # League
+#	SetFontSize 42
+#	PlayAlertSound 2 79
 
 Show # League - Abyss
 	Class "Belts"
@@ -132,14 +140,6 @@ Show # League - Abyss
 	SetBackgroundColor 0 32 96 255 # League
 	SetBorderColor 7 255 255 255 # League
 	SetFontSize 32
-
-#Show # League - Legacy | Disable
-#	Class "Leaguestone"
-#	SetTextColor 231 180 120 255 # Currency - high
-#	SetBackgroundColor 0 32 96 255 # League
-#	SetBorderColor 7 255 255 255 # League
-#	SetFontSize 42
-#	PlayAlertSound 2 79
 
 #Show # League - Harbinger | Disable
 #	Class "Piece"
@@ -216,7 +216,7 @@ Show
 	BaseType "Bismuth Flask" "Topaz Flask"
 	Rarity = Unique
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 240 112 0 255 # Unique
+	SetBackgroundColor 208 96 37 255 # Unique
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 42
 	PlayAlertSound 5 79
@@ -225,7 +225,7 @@ Show
 	BaseType "Granite Flask" "Stibnite Flask"
 	Rarity = Unique
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 240 112 0 255 # Unique
+	SetBackgroundColor 208 96 37 255 # Unique
 	SetFontSize 44
 	PlayAlertSound 6 100
 
@@ -259,7 +259,7 @@ Show
 	Class "Jewel"
 	Rarity = Unique
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 240 112 0 255 # Unique
+	SetBackgroundColor 208 96 37 255 # Unique
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 42
 	PlayAlertSound 5 79
@@ -285,7 +285,7 @@ Show
 	BaseType "Abyssal Axe" "Cardinal Round Shield" "Citadel Bow" "Destiny Leather" "Necromancer Silks" "Nubuck Boots" "Royal Burgonet" "Savant's Robe" "Titan Greaves" "Ursine Pelt" "Vaal Mask" "Wyrmscale Doublet" "Zealot Gloves" "Maelstr"
 	Rarity = Unique
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 240 112 0 255 # Unique
+	SetBackgroundColor 208 96 37 255 # Unique
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 42
 	PlayAlertSound 5 79
@@ -298,7 +298,7 @@ Show
 	BaseType "Carved Wand" "Ebony Tower Shield" "Exquisite Leather" "Goathide Boots" "Gold Amulet" "Gold Ring" "Imperial Bow" "Imperial Staff" "Nightmare Bascinet" "Onyx Amulet" "Sorcerer Boots" "Unset Ring"
 	Rarity = Unique
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 240 112 0 255 # Unique
+	SetBackgroundColor 208 96 37 255 # Unique
 	SetFontSize 44
 	PlayAlertSound 6 100
 
@@ -774,7 +774,7 @@ Show
 # Section: CARDS
 #-------------------------------------------------------------------------------
 
-Hide # Divination Card - Lowest value
+Hide # Divination Cards - Worthless Cards
 	Class "Divination Card"
 	BaseType "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies"
 	SetTextColor 0 168 242 255 # Card
@@ -810,7 +810,7 @@ Show
 	PlayAlertSound 5 79
 
 # Somewhat valuable cards
-Show
+Show # Divination Cards - Approx 1C+ value
 	Class "Divination Card"
 	BaseType "The Vast" "Heterochromia" "The Breach" "The Thaumaturgist" "The Obscured" "Emperor of Purity" "The Throne" "Bowyer's Dream" "The Cartographer" "The Risk" "The Void" "Rebirth" "Blessing of God" "Earth Drinker" "Lucky Deck" "The Chains that Bind" "The Dark Mage" "The Lion" "The Soul" "The Trial" "Time-Lost Relic" "The Standoff" "Scholar of the Seas" "The Valley of Steel Boxes" "Vinia's Token" "The Surveyor" "Lost Worlds" "No Traces" "Atziri's Arsenal" "Dialla's Subjugation" "Glimmer of Hope" "Hope" "Humility"
 	SetTextColor 0 168 242 255 # Card
@@ -819,7 +819,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 2 79
 
-Show
+Show # Divination Cards - All unfiltered cards
 	Class "Divination Card"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -890,7 +890,7 @@ Show # Gems - Level
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 30
 
-Show
+Show # Gems - All unfiltered gems
 	Class "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 0 0 0 224 # Black - transparent
