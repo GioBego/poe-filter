@@ -18,6 +18,7 @@
 # Section: CURRENCY - T3
 #-------------------------------------------------------------------------------
 
+# Scroll of Wisdom
 Show # Currency - Low value
 	Class "Currency"
 	BaseType "Scroll of Wisdom"
@@ -25,6 +26,7 @@ Show # Currency - Low value
 	SetBackgroundColor 72 0 0 204 # Red - transparent
 	SetFontSize 32
 
+# Portal Scroll
 Show # Currency - Low value
 	Class "Currency"
 	BaseType "Portal Scroll"
@@ -32,6 +34,7 @@ Show # Currency - Low value
 	SetBackgroundColor 0 0 72 204 # Blue - transparent
 	SetFontSize 34
 
+# Blacksmith's Whetstone, Armourer's Scrap
 Hide # Currency - Low value
 	Class "Currency"
 	BaseType "Blacksmith's Whetstone" "Armourer's Scrap"
@@ -39,6 +42,7 @@ Hide # Currency - Low value
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
 
+# Orb of Transmutation, Alteration Shard, Alchemy Shard, Orb of Augmentation, Transmutation Shard
 Show # Currency - Low value
 	Class "Currency"
 	BaseType "Orb of Transmutation" "Alteration Shard" "Alchemy Shard" "Orb of Augmentation" "Transmutation Shard"
@@ -50,6 +54,7 @@ Show # Currency - Low value
 # Section: LEAGUE
 #-------------------------------------------------------------------------------
 
+# Incursion explicit mods
 Show # League - Incursion
 	Identified True
 	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
@@ -58,6 +63,7 @@ Show # League - Incursion
 	SetFontSize 36
 	PlayAlertSound 10 100
 
+# Incursion items
 Show # League - Incursion
 	Class "Incursion Item"
 	BaseType "Stone of Passage" "Flashpowder Keg"
@@ -66,6 +72,7 @@ Show # League - Incursion
 	SetFontSize 44
 	PlayAlertSound 11 97
 
+# Vials
 Show # League - Incursion
 	Class "Stackable Currency"
 	BaseType "Vial of"
@@ -101,6 +108,7 @@ Show # League - Incursion
 #	SetBorderColor 7 255 255 255 # League
 #	SetFontSize 36
 
+# Leaguestones
 #Show # League - Legacy | Disable
 #	Class "Leaguestone"
 #	SetTextColor 231 180 120 255 # Currency - high
@@ -109,6 +117,7 @@ Show # League - Incursion
 #	SetFontSize 42
 #	PlayAlertSound 2 79
 
+# Rare Stygian Vise
 Show # League - Abyss
 	Class "Belts"
 	BaseType "Stygian Vise"
@@ -118,6 +127,7 @@ Show # League - Abyss
 	SetFontSize 36
 	PlayAlertSound 10 100
 
+# Other Stygian Vise
 Show # League - Abyss
 	Class "Belts"
 	BaseType "Stygian Vise"
@@ -126,6 +136,7 @@ Show # League - Abyss
 	SetBorderColor 7 255 255 255 # League
 	SetFontSize 32
 
+# Rare Abyss Jewel
 Show # League - Abyss
 	Class "Abyss Jewel"
 	Rarity >= Rare
@@ -134,6 +145,7 @@ Show # League - Abyss
 	SetFontSize 36
 	PlayAlertSound 11 100
 
+# Other Abyss Jewel
 Show # League - Abyss
 	Class "Abyss Jewel"
 	Rarity <= Magic
@@ -141,14 +153,16 @@ Show # League - Abyss
 	SetBorderColor 7 255 255 255 # League
 	SetFontSize 32
 
-#Show # League - Harbinger | Disable
-#	Class "Piece"
-#	SetTextColor 208 96 37 255 # Unique
-#	SetBackgroundColor 0 32 96 255 # League
-#	SetBorderColor 7 255 255 255 # League
-#	SetFontSize 40
-#	PlayAlertSound 5 79
+# Piece
+Show # League - Harbinger | Disable
+	Class "Piece"
+	SetTextColor 208 96 37 255 # Unique
+	SetBackgroundColor 0 32 96 255 # League
+	SetBorderColor 7 255 255 255 # League
+	SetFontSize 40
+	PlayAlertSound 5 79
 
+# Talismans
 Show # League - Talisman
 	Class "Amulets"
 	BaseType "Talisman"
@@ -157,6 +171,7 @@ Show # League - Talisman
 	SetFontSize 42
 	PlayAlertSound 2 79
 
+# Ancient Reliquary Key
 #Show # League - Legacy | Disable
 #	Class "Misc Map Items"
 #	BaseType "Ancient Reliquary Key"
@@ -345,6 +360,7 @@ Show
 # Section: MAIN SECTION
 #-------------------------------------------------------------------------------
 
+# 6 socket items
 Show # Vendor - Jeweller's Orb
 	Sockets = 6
 	SetBackgroundColor 64 64 64 255 # Grey
@@ -400,7 +416,7 @@ Show # Vendor - Chromatic Orb - Small items
 #	SetBorderColor 208 96 37 255 # Unique
 #	SetFontSize 32
 
-# Chisel recipe
+# rare with quality
 #Show # Vendor - Cartographer's Chisel | Disable
 #	Quality >= 15
 #	Class "One Hand Maces"
@@ -409,7 +425,7 @@ Show # Vendor - Chromatic Orb - Small items
 #	SetBackgroundColor 64 64 64 255 # Grey
 #	SetFontSize 32
 
-# Chisel recipe
+# magic with quality
 #Show # Vendor - Cartographer's Chisel | Disable
 #	Quality >= 18
 #	Class "One Hand Maces"
@@ -418,7 +434,7 @@ Show # Vendor - Chromatic Orb - Small items
 #	SetBackgroundColor 64 64 64 255 # Grey
 #	SetFontSize 32
 
-# Chisel recipe
+# normal with quality
 #Show # Vendor - Cartographer's Chisel | Disable
 #	Quality >= 20
 #	Class "One Hand Maces"
@@ -451,6 +467,7 @@ Show # Jewels - Rare
 	SetFontSize 44
 	PlayAlertSound 2 79
 
+# Helmets
 Show # Rare items - Top bases
 	Class "Helmets"
 	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Nightmare Bascinet"
@@ -458,6 +475,7 @@ Show # Rare items - Top bases
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 40
 
+# Gloves
 Show # Rare items - Top bases
 	Class "Gloves"
 	BaseType "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Dragonscale Gauntlets"
@@ -465,6 +483,7 @@ Show # Rare items - Top bases
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 40
 
+# Boots
 Show # Rare items - Top bases
 	Class "Boots"
 	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots"
@@ -472,6 +491,7 @@ Show # Rare items - Top bases
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 40
 
+# Body Armours
 Show # Rare items - Top bases
 	Class "Body Armours"
 	BaseType "Glorious Plate" "Vaal Regalia" "Assassin's Garb" "Zodiac Leather" "Full Dragonscale" "General's Brigandine" "Triumphant Lamellar"
@@ -479,6 +499,7 @@ Show # Rare items - Top bases
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 26
 
+# One Hand Weapons and Shields
 #Show # Rare items - Good weapon bases | Disable
 #	DropLevel >= 56
 #	Class "Wands" "Daggers" "Claws" "One Hand" "Sceptres" "Shields"
@@ -486,6 +507,7 @@ Show # Rare items - Top bases
 #	SetBackgroundColor 0 0 0 224 # Black - transparent
 #	SetFontSize 30
 
+# Two Hand Weapons
 #Show # Rare items - Good weapon bases | Disable
 #	DropLevel >= 56
 #	Class "Two Hand" "Staves" "Bows"
@@ -493,6 +515,7 @@ Show # Rare items - Top bases
 #	SetBackgroundColor 0 0 0 224 # Black - transparent
 #	SetFontSize 26
 
+# Quivers
 #Show # Rare items - Good quiver bases | Disable
 #	DropLevel >= 28
 #	Class "Quivers"
@@ -504,6 +527,7 @@ Show # Rare items - Top bases
 # Section: JUNK
 #-------------------------------------------------------------------------------
 
+# 5 link items
 #Show # Craft - 5-linked items - All | Disable
 #	LinkedSockets = 5
 #	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -519,7 +543,7 @@ Hide # Craft - Rings, Amulets, Belts ilvl84+ bases
 	SetBorderColor 255 255 119 255 # Craft
 	SetFontSize 28
 
-# Chromatic recipe item - too big
+# too big
 Hide # Vendor - Chromatic Orb - Large items ilvl 70+
 	SocketGroup "RGB"
 	ItemLevel >= 70
@@ -558,6 +582,7 @@ Hide
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 24
 
+# bad bases with sockets
 Hide # Rare items - Bad bases
 	Sockets > 0
 	Rarity = Rare
@@ -565,6 +590,7 @@ Hide # Rare items - Bad bases
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 26
 
+# bad bases without sockets (quivers)
 Hide # Rare items - Bad bases
 	Class "Quivers"
 	Rarity = Rare
@@ -611,6 +637,7 @@ Show # Flasks - Quality - Quality 10+
 # Section: CURRENCY - T2
 #-------------------------------------------------------------------------------
 
+# Orb of Alteration, Chromatic Orb, Jeweller's Orb, Orb of Chance, Glassmlower's Bauble, Perandus Coin, Annulment Shard, Binding Shard, Horizon Shard, Harbinger's Shard, Engineer's Shard, Ancient Shard, Chaos Shard, Regal Shard
 Show # Currency - Mid-low value
 	Class "Currency"
 	BaseType "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Orb of Chance" "Glassblower's Bauble" "Perandus Coin" "Annulment Shard" "Binding Shard" "Horizon Shard" "Harbinger's Shard" "Engineer's Shard" "Ancient Shard" "Chaos Shard" "Regal Shard"
@@ -705,7 +732,7 @@ Show
 	SetFontSize 40
 	PlayAlertSound 7 79
 	DisableDropSound
-# Tier 1-5
+# Tier 1-5 Maps in 73+ areas
 Show # Maps - T1-5 in higher maps
 	DropLevel < 73
 	Class "Maps"
@@ -822,6 +849,7 @@ Show # Divination Cards - All unfiltered cards
 # Section: GEMS
 #-------------------------------------------------------------------------------
 
+# Empower, Enhance, Enlighten, ...
 Show # Gems - Drop only
 	Class "Gems"
 	BaseType "Empower Support" "Enhance Support" "Enlighten Support" "Vaal Breach"
@@ -841,6 +869,7 @@ Show # Gems - Vaal
 	SetFontSize 40
 	PlayAlertSound 3 79
 
+# Portal, Detonate Mines, Added Chaos Damage
 Show # Gems - Drop only
 	Class "Gems"
 	BaseType "Portal" "Detonate Mines" "Added Chaos Damage"
@@ -850,6 +879,7 @@ Show # Gems - Drop only
 	SetFontSize 40
 	PlayAlertSound 3 79
 
+# Top quality - 20+
 Show # Gems - Quality
 	Quality >= 20
 	Class "Gems"
@@ -859,6 +889,7 @@ Show # Gems - Quality
 	SetFontSize 40
 	PlayAlertSound 2 79
 
+# Good quality - 14+
 Show # Gems - Quality
 	Quality >= 14
 	Class "Gems"
@@ -868,6 +899,7 @@ Show # Gems - Quality
 	SetFontSize 36
 	PlayAlertSound 3 79
 
+# Any quality
 Show # Gems - Quality
 	Quality >= 1
 	Class "Gems"
@@ -876,6 +908,7 @@ Show # Gems - Quality
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 30
 
+# Gems with level > 1
 Show # Gems - Level
 	Class "Gems"
 	GemLevel > 1
@@ -971,7 +1004,8 @@ Show
 # Section: LEVELING
 #-------------------------------------------------------------------------------
 
-Show # Vendor - Chromatic Orb - Large items
+# big during leveling
+Show # Vendor - Chromatic Orb - Large items during leveling
 	SocketGroup "RGB"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 50 230 100 255 # RGB
