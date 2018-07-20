@@ -694,6 +694,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 7 100
 	DisableDropSound
+
 Show
 	ShapedMap True
 	DropLevel < 78
@@ -704,6 +705,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 9 100
 	DisableDropSound
+
 # Tier 11-15
 Show
 	ShapedMap True
@@ -713,6 +715,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 14 300
 	DisableDropSound
+
 Show
 	ElderMap True
 	SetTextColor 0 0 0 255 # Black
@@ -721,6 +724,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 8 100
 	DisableDropSound
+
 # Tier 1-5
 Show
 	DropLevel < 73
@@ -732,6 +736,7 @@ Show
 	SetFontSize 40
 	PlayAlertSound 7 79 # Map Tier 1-5
 	DisableDropSound
+
 # Tier 1-5 Maps in 73+ areas
 Show # Maps - T1-5 in higher maps
 	DropLevel < 73
@@ -741,6 +746,7 @@ Show # Maps - T1-5 in higher maps
 	SetBorderColor 232 232 232 255 # White
 	SetFontSize 36
 	DisableDropSound
+
 # Tier 6-10
 Show
 	DropLevel < 78
@@ -752,6 +758,7 @@ Show
 	SetFontSize 40
 	PlayAlertSound 7 79 # Map Tier 6-10
 	DisableDropSound
+
 # Tier 6-10
 Show
 	DropLevel < 78
@@ -762,6 +769,7 @@ Show
 	SetBorderColor 255 224 0 255 # Map - yellow
 	SetFontSize 36
 	DisableDropSound
+
 # Tier 11-15
 Show
 	DropLevel < 83
@@ -772,6 +780,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 9 79 # Map Tier 11-15
 	DisableDropSound
+
 # Tier 16+
 Show
 	DropLevel >= 83
@@ -782,6 +791,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 8 100 # Map Tier 16+
 	DisableDropSound
+
 Show
 	Class "Map Fragments" "Labyrinth"
 	SetTextColor 231 180 120 255 # Currency - high
@@ -790,6 +800,7 @@ Show
 	SetFontSize 44
 	PlayAlertSound 9 79
 	DisableDropSound
+
 #-------------------------------------------------------------------------------
 # Section: CARDS
 #-------------------------------------------------------------------------------
@@ -899,7 +910,7 @@ Show # Gems - Quality
 	SetFontSize 36
 	PlayAlertSound 3 79
 
-# Any quality
+# Gems with
 Show # Gems - Quality
 	Quality >= 1
 	Class "Gems"
@@ -907,14 +918,16 @@ Show # Gems - Quality
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 30
+	#CustomizableValues "quality"
 
-# Gems with level > 1
+# Gems with
 Show # Gems - Level
 	Class "Gems"
-	GemLevel > 1
+	GemLevel >= 1
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 30
+	#CustomizableValues "gemlevel"
 
 Show # Gems - All unfiltered gems
 	Class "Gems"
