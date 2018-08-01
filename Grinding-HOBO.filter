@@ -14,6 +14,7 @@
 # Strictness 3:  Casual
 # Strictness 5:  Normal
 # Strictness 7:  Strict
+# Strictness 9:  Drastic
 # Default strictness:  5
 #-------------------------------------------------------------------------------
 
@@ -30,6 +31,7 @@ Show # Currency
 	SetBackgroundColor 72 0 0 204 # Scroll of Wisdom
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 7 Hide
 
 Show # Currency
 	Class "Currency"
@@ -38,6 +40,7 @@ Show # Currency
 	SetBackgroundColor 0 0 72 204 # Portal Scroll
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 7 Hide
 
 Show # Currency
 	Class "Currency"
@@ -99,7 +102,7 @@ Show # Flasks | Disable
 	#SetFontSizeTag 32 # 32 - Default
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 -1
+	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 67
 
 # top life flasks until
 Show # Flasks | Disable
@@ -113,7 +116,7 @@ Show # Flasks | Disable
 	#SetFontSizeTag 32 # 32 - Default
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 -1
+	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 67
 
 # quality flasks with
 Show # Flasks | Disable
@@ -334,7 +337,7 @@ Show # Craft | Disable
 	DisableDropSound
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 -1
+	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 67
 
 # weapons and shields with white socket - good for leveling gems in swap slots
 Show # Leveling | Disable
@@ -342,10 +345,13 @@ Show # Leveling | Disable
 	SocketGroup "W"
 	Class "One Hand" "Daggers" "Wands" "Claws" "Sceptres" "Shields"
 	Rarity <= Rare
+	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 255 255 # White
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 10 Hide
+	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 -1 -1 67
 
 Show
 	Corrupted True
@@ -366,7 +372,7 @@ Show # Vendor - Chromatic recipe | Disable
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 -1
+	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 67
 
 # small items (2x2)
 Show # Vendor - Chromatic recipe | Disable
@@ -380,7 +386,7 @@ Show # Vendor - Chromatic recipe | Disable
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 -1
+	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 67
 
 # Chancing bases
 Show # Craft | Disable
@@ -501,6 +507,7 @@ Show # Rare Items - Top Bases
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Rare Items - Top Bases
 	Class "Gloves"
@@ -509,6 +516,7 @@ Show # Rare Items - Top Bases
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Rare Items - Top Bases
 	Class "Boots"
@@ -517,6 +525,7 @@ Show # Rare Items - Top Bases
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Rare Items - Top Bases
 	Class "Body Armours"
@@ -533,6 +542,7 @@ Show # Rare Items - Top Bases
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Rare Items - Top Bases
 	BaseType "Siege Axe" "Opal Sceptre" "Void Sceptre"
@@ -751,6 +761,7 @@ Show # Currency
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Currency
 	Class "Currency"
@@ -760,6 +771,7 @@ Show # Currency
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Currency
 	Class "Currency"
@@ -769,6 +781,7 @@ Show # Currency
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Currency
 	Class "Currency"
@@ -778,6 +791,7 @@ Show # Currency
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 Show # Currency
 	Class "Currency"
@@ -787,6 +801,7 @@ Show # Currency
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
 # Section: Unique - Flasks
@@ -1142,6 +1157,7 @@ Show # ~Maps
 	DisableDropSound
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
+	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 77 -1 74
 
 Hide
 	DropLevel <= 72
@@ -1182,6 +1198,7 @@ Show # ~Maps
 	DisableDropSound
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
+	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 82 -1 79
 
 Hide
 	DropLevel <= 77
@@ -1269,6 +1286,7 @@ Show # Cards
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 9 Hide
 
 Show
 	Class "Divination Card"
@@ -1310,6 +1328,7 @@ Show # Cards
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
 # Section: Gems
@@ -1350,7 +1369,7 @@ Show # Gems | Disable
 	DisableDropSound
 	#CustomizableValues "quality"
 	#BlockStrictness 10 Hide
-	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 -1
+	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 18
 
 # drop-only gems
 Show # Gems | Disable
@@ -1362,6 +1381,7 @@ Show # Gems | Disable
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
 	PlayAlertSound 3 80 # Alch
+	#BlockStrictness 9 Disable
 
 # gems with
 Show # Gems
@@ -1386,6 +1406,8 @@ Show # Gems
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
 	#CustomizableValues "gemlevel"
+	#BlockStrictness 10 Hide
+	#VariableStrictness gemlevel -1 -1 -1 -1 16 -1 18 -1 -1
 
 # Vaal gems
 Show # Gems
@@ -1404,6 +1426,7 @@ Show # Gems
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28
 	#SetFontSizeTag 28 # 28
+	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
 # Section: Currency - 0
@@ -1509,11 +1532,15 @@ Show # Currency
 Show # Currency
 	Class "Currency"
 	BaseType "Perandus Coin"
+	StackSize >= 1
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#CustomizableValues "stacksize"
+	#BlockStrictness 10 Hide
+	#VariableStrictness stacksize -1 -1 -1 -1 -1 -1 -1 -1 2
 
 #-------------------------------------------------------------------------------
 # Section: Quest
