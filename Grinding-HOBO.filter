@@ -10,6 +10,7 @@
 #
 # Created with Filter Master at https://grinding.zone
 #
+# Strictness 1:  Collector
 # Strictness 3:  Casual
 # Strictness 5:  Normal
 # Strictness 7:  Strict
@@ -125,7 +126,7 @@ Show # Flasks | Disable
 	#SetFontSizeTag 32 # 32 - Default
 	#CustomizableValues "quality"
 	#BlockStrictness 10 Hide
-	#VariableStrictness quality -1 -1 5 -1 10 -1 20 -1 -1
+	#VariableStrictness quality 1 -1 5 -1 10 -1 20 -1 -1
 
 Show # Leveling - Flasks | Disable
 	Class "Flasks"
@@ -403,6 +404,7 @@ Show # Vendor - Chisel recipe | Disable
 	#SetFontSizeTag 32 # 32 - Default
 	#CustomizableValues "quality"
 	#BlockStrictness 5 Disable
+	#VariableStrictness quality 0 -1 -1 -1 -1 -1 -1 -1 -1
 
 # magic maces
 Show # Vendor - Chisel recipe | Disable
@@ -415,6 +417,7 @@ Show # Vendor - Chisel recipe | Disable
 	#SetFontSizeTag 32 # 32 - Default
 	#CustomizableValues "quality"
 	#BlockStrictness 5 Disable
+	#VariableStrictness quality 12 -1 -1 -1 -1 -1 -1 -1 -1
 
 # rare maces
 Show # Vendor - Chisel recipe | Disable
@@ -426,6 +429,7 @@ Show # Vendor - Chisel recipe | Disable
 	SetFontSize 32
 	#CustomizableValues "quality"
 	#BlockStrictness 5 Disable
+	#VariableStrictness quality 16 -1 -1 -1 -1 -1 -1 -1 -1
 
 Show
 	BaseType "Steel Ring" "Opal Ring"
@@ -577,7 +581,7 @@ Show # Vendor - Chromatic recipe | Disable
 	#SetFontSizeTag 28 # 28
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 7 Disable
-	#VariableStrictness itemlevel -1 -1 72 -1 60 -1 -1 -1 -1
+	#VariableStrictness itemlevel 77 -1 72 -1 60 -1 -1 -1 -1
 
 # 4-link items until
 Show # Leveling - Linked Sockets | Disable
@@ -1346,7 +1350,7 @@ Show # Gems | Disable
 	DisableDropSound
 	#CustomizableValues "quality"
 	#BlockStrictness 10 Hide
-	#VariableStrictness quality -1 -1 10 -1 15 -1 -1 -1 -1
+	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 -1
 
 # drop-only gems
 Show # Gems | Disable
@@ -1370,7 +1374,7 @@ Show # Gems
 	#SetFontSizeTag 36 # 36
 	#CustomizableValues "quality"
 	#BlockStrictness 10 Hide
-	#VariableStrictness quality -1 -1 1 -1 5 -1 10 -1 -1
+	#VariableStrictness quality -1 -1 -1 -1 5 -1 10 -1 -1
 
 # gems with
 Show # Gems
