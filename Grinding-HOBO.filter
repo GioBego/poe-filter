@@ -1157,7 +1157,7 @@ Show # ~Maps
 	DisableDropSound
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 77 -1 74
+	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 77 -1 -1
 
 Hide
 	DropLevel <= 72
@@ -1198,7 +1198,7 @@ Show # ~Maps
 	DisableDropSound
 	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 82 -1 79
+	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 82 -1 -1
 
 Hide
 	DropLevel <= 77
