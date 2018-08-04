@@ -355,7 +355,7 @@ Show # Leveling | Disable
 
 Show
 	Corrupted True
-	Rarity <= Rare
+	Rarity = Rare
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
