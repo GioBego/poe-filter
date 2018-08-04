@@ -1356,6 +1356,16 @@ Show
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 
+# Vaal gems
+Show # Gems
+	Corrupted True
+	Class "Gems"
+	SetTextColor 27 162 155 255 # Gem
+	SetBackgroundColor 96 0 0 255 # Corrupted
+	SetBorderColor 27 162 155 255 # Gem
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
+
 # gems sound alert if
 Show # Gems | Disable
 	Quality >= 10
@@ -1408,16 +1418,6 @@ Show # Gems
 	#CustomizableValues "gemlevel"
 	#BlockStrictness 10 Hide
 	#VariableStrictness gemlevel -1 -1 -1 -1 16 -1 18 -1 -1
-
-# Vaal gems
-Show # Gems
-	Corrupted True
-	Class "Gems"
-	SetTextColor 27 162 155 255 # Gem
-	SetBackgroundColor 96 0 0 255 # Corrupted
-	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
 
 # all ubfiltered gems
 Show # Gems
