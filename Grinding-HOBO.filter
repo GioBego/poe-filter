@@ -12,7 +12,7 @@
 #
 # Strictness 1:  Collector
 # Strictness 3:  Explorer
-# Strictness 5:  Exile
+# Strictness 5:  Normal
 # Strictness 7:  Strict
 # Strictness 9:  Drastic
 # Default strictness:  5
@@ -26,7 +26,6 @@
 
 # what extra items you want to see
 #Show # ~EXCEPTIONS | Disable
-#	BaseType
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
 #	SetFontSize 40
