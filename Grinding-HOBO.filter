@@ -26,7 +26,7 @@
 
 # what extra items you want to see
 #Show # ~EXCEPTIONS | Disable
-#	BaseType "Filter Exception"
+#	BaseType "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
 #	SetFontSize 40
