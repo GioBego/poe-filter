@@ -11,14 +11,28 @@
 # Created with Filter Master at https://grinding.zone
 #
 # Strictness 1:  Collector
-# Strictness 3:  Casual
-# Strictness 5:  Normal
+# Strictness 3:  Explorer
+# Strictness 5:  Exile
 # Strictness 7:  Strict
 # Strictness 9:  Drastic
 # Default strictness:  5
 #-------------------------------------------------------------------------------
 
 
+
+#-------------------------------------------------------------------------------
+# Section: EXCEPTIONS
+#-------------------------------------------------------------------------------
+
+# what extra items you want to see
+#Show # ~EXCEPTIONS | Disable
+#	BaseType
+#	SetBackgroundColor 0 48 32 224 # Base
+#	SetBorderColor 255 255 128 255 # Craft
+#	SetFontSize 40
+#	#SetFontSizeTag 40 # 40
+#	PlayAlertSound 16 100 # Exception
+#	#CustomizableValues "basetype"
 
 #-------------------------------------------------------------------------------
 # Section: Currency - 3
