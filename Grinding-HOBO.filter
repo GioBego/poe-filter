@@ -823,7 +823,7 @@ Show # Currency
 
 Show
 	Class "Flasks"
-	BaseType "Grand Mana Flask" "Sapphire Flask" "Sanctified Life Flask" "Sanctified Mana Flask"
+	BaseType "Sapphire Flask" "Sanctified Life Flask" "Sanctified Mana Flask"
 	Rarity = Unique
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
