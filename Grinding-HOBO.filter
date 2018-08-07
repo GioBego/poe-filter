@@ -1536,12 +1536,24 @@ Show
 
 Show # Currency
 	Class "Currency"
-	BaseType "Alchemy Shard" "Alteration Shard" "Binding Shard" "Chaos Shard" "Engineer's Shard" "Horizon Shard" "Regal Shard" "Transmutation Shard"
+	BaseType "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
+	StackSize >= 1
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
 	#BlockStrictness 5 Hide
+
+Show # Currency
+	Class "Currency"
+	BaseType "Binding Shard" "Engineer's Shard" "Horizon Shard"
+	StackSize >= 1
+	SetTextColor 170 158 130 255 # Currency - Low
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetFontSize 32
+	#SetFontSizeTag 32 # 32 - Default
+	#CustomizableValues "stacksize"
+	#BlockStrictness 7 Hide
 
 Show # Currency
 	Class "Currency"
@@ -1554,7 +1566,16 @@ Show # Currency
 	#SetFontSizeTag 36 # 36
 	#CustomizableValues "stacksize"
 	#BlockStrictness 10 Hide
-	#VariableStrictness stacksize -1 -1 -1 -1 -1 -1 -1 -1 2
+	#VariableStrictness stacksize -1 -1 -1 -1 -1 -1 2 -1 2
+
+Hide
+	Class "Currency"
+	BaseType "Perandus Coin" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
+	SetTextColor 170 158 130 255 # Currency - Low
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 170 158 130 255 # Currency - Low
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
 
 #-------------------------------------------------------------------------------
 # Section: Quest
