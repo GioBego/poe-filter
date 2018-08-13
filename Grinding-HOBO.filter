@@ -1353,6 +1353,7 @@ Show # Cards
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
+	#CustomizableValues "basetype"
 	#BlockStrictness 9 Hide
 
 # all other (unfiltered) cards
