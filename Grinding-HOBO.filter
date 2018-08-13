@@ -504,6 +504,16 @@ Show
 	PlayAlertSound 10 80 # League items
 	DisableDropSound
 
+# Abyss Jewel bases ilvl83+
+Show # Craft
+	Class "Abyss Jewel"
+	ItemLevel >= 83
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 255 255 128 255 # Craft
+	SetFontSize 32
+	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 9 Hide
+
 Show
 	Class "Jewel"
 	Rarity = Rare
@@ -1334,6 +1344,16 @@ Show
 	#SetFontSizeTag 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+
+# common cards that could be worth picking up
+Show # Cards
+	Class "Divination Card"
+	BaseType "Emperor's Luck"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetFontSize 32
+	#SetFontSizeTag 32 # 32 - Default
+	#BlockStrictness 9 Hide
 
 # all other (unfiltered) cards
 Show # Cards
