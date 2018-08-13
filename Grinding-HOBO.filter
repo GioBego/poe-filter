@@ -1292,7 +1292,7 @@ Show
 #-------------------------------------------------------------------------------
 
 # worthless cards
-Show # Cards
+Show # Divination Cards
 	Class "Divination Card"
 	BaseType "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
 	SetTextColor 0 168 242 255 # Card
@@ -1303,7 +1303,7 @@ Show # Cards
 	#BlockStrictness 5 Hide
 
 # The Wolf's Shadow - exception - prevent collision with valuable card - The Wolf
-Show # Cards
+Show # Divination Cards
 	Class "Divination Card"
 	BaseType "The Wolf's Shadow"
 	SetTextColor 0 168 242 255 # Card
@@ -1346,7 +1346,7 @@ Show
 	DisableDropSound
 
 # common cards that could be worth picking up
-Show # Cards
+Show # Divination Cards
 	Class "Divination Card"
 	BaseType "Emperor's Luck"
 	SetTextColor 0 168 242 255 # Card
@@ -1357,7 +1357,7 @@ Show # Cards
 	#BlockStrictness 9 Hide
 
 # all other (unfiltered) cards
-Show # Cards
+Show # Divination Cards
 	Class "Divination Card"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
