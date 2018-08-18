@@ -481,6 +481,15 @@ Show
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
 
+Show
+	DropLevel > 1
+	Class "Belts"
+	Rarity = Rare
+	SetTextColor 255 196 0 255 # Accessories
+	SetBackgroundColor 0 48 32 224 # Base
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
+
 # low bases Rings, Amulets & Belts
 Show # Rare Items
 	Class "Rings" "Amulets" "Belts"
