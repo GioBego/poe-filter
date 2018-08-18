@@ -474,7 +474,7 @@ Show
 
 Show
 	DropLevel > 1
-	Class "Rings" "Amulets" "Belts"
+	Class "Rings" "Amulets"
 	Rarity = Rare
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
