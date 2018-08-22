@@ -1,4 +1,4 @@
-﻿#===============================================================================
+#===============================================================================
 # GRINDING-HOBO
 #===============================================================================
 #
@@ -1067,7 +1067,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Gemcutter's Prism" "Orb of Regret" "Regal Orb" "Vaal Orb" "Chaos Orb" "Exalted Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Shard" "Harbinger's Shard"
+	BaseType "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Regal Orb" "Vaal Orb" "Exalted Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Shard" "Harbinger's Shard"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
