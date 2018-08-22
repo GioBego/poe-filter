@@ -165,6 +165,7 @@ Show # Leveling - Flasks | Disable
 	SetFontSize 28
 	#SetFontSizeTag 28 # 28
 	DisableDropSound
+	#CustomizableValues "itemlevel"
 
 Show # Leveling - Flasks | Disable
 	Class "Flasks"
@@ -176,6 +177,7 @@ Show # Leveling - Flasks | Disable
 	SetFontSize 28
 	#SetFontSizeTag 28 # 28
 	DisableDropSound
+	#CustomizableValues "itemlevel"
 
 Show # Leveling - Flasks | Disable
 	Class "Flasks"
@@ -187,6 +189,7 @@ Show # Leveling - Flasks | Disable
 	SetFontSize 28
 	#SetFontSizeTag 28 # 28
 	DisableDropSound
+	#CustomizableValues "itemlevel"
 
 Show
 	Class "Flasks"
