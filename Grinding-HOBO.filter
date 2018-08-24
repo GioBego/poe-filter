@@ -207,9 +207,9 @@ Show
 #Show # ~League - Delve | Disable
 #	Class "Currency"
 #	BaseType "Fossil"
-#	SetTextColor 50 230 100 255 # Essence
+#	SetTextColor 231 180 120 255 # Currency - High
 #	SetBackgroundColor 0 24 76 255 # League
-#	SetBorderColor 231 180 120 255 # Currency - High
+#	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 36
 #	#SetFontSizeTag 36 # 36
 #	PlayAlertSound 10 80 # League items
@@ -218,9 +218,9 @@ Show
 #Show # ~League - Delve | Disable
 #	Class "Currency"
 #	BaseType "Resonator"
-#	SetTextColor 50 230 100 255 # Essence
+#	SetTextColor 231 180 120 255 # Currency - High
 #	SetBackgroundColor 0 24 76 255 # League
-#	SetBorderColor 231 180 120 255 # Currency - High
+#	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 44
 #	#SetFontSizeTag 44 # 44 - Top
 #	PlayAlertSound 11 80 # League specials
@@ -231,8 +231,8 @@ Show
 #-------------------------------------------------------------------------------
 
 Show # ~League - Incursion | Disable
-	Class "Currency"
-	BaseType "Vial of"
+	Class "Incursion Item"
+	BaseType "Stone of Passage" "Flashpowder Keg"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -242,8 +242,8 @@ Show # ~League - Incursion | Disable
 	DisableDropSound
 
 Show # ~League - Incursion | Disable
-	Class "Incursion Item"
-	BaseType "Stone of Passage" "Flashpowder Keg"
+	Class "Currency"
+	BaseType "Vial of"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
