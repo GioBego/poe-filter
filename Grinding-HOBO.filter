@@ -226,6 +226,18 @@ Show
 #	PlayAlertSound 11 80 # League specials
 #	DisableDropSound
 
+# Ancient Reliquary Key
+#Show # ~League - Legacy | Disable
+#	Class "Misc Map Items"
+#	BaseType "Timeworn Reliquary Key"
+#	SetTextColor 64 32 12 255 # Unique - top
+#	SetBackgroundColor 255 255 255 255 # White
+#	SetBorderColor 64 32 12 255 # Unique - top
+#	SetFontSize 44
+#	#SetFontSizeTag 44 # 44 - Top
+#	PlayAlertSound 1 80 # Exalt
+#	DisableDropSound
+
 #-------------------------------------------------------------------------------
 # Section: LEAGUE - Incursion
 #-------------------------------------------------------------------------------
