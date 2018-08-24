@@ -1,4 +1,4 @@
-#===============================================================================
+﻿#===============================================================================
 # GRINDING-HOBO
 #===============================================================================
 #
@@ -201,10 +201,36 @@ Show
 	#BlockStrictness 3 Hide
 
 #-------------------------------------------------------------------------------
-# Section: LEAGUES --- Incursion
+# Section: LEAGUE - Delve
 #-------------------------------------------------------------------------------
 
-Show
+#Show # ~League - Delve | Disable
+#	Class "Currency"
+#	BaseType "Fossil"
+#	SetTextColor 50 230 100 255 # Essence
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 231 180 120 255 # Currency - High
+#	SetFontSize 36
+#	#SetFontSizeTag 36 # 36
+#	PlayAlertSound 10 80 # League items
+#	DisableDropSound
+
+#Show # ~League - Delve | Disable
+#	Class "Currency"
+#	BaseType "Resonator"
+#	SetTextColor 50 230 100 255 # Essence
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 231 180 120 255 # Currency - High
+#	SetFontSize 44
+#	#SetFontSizeTag 44 # 44 - Top
+#	PlayAlertSound 11 80 # League specials
+#	DisableDropSound
+
+#-------------------------------------------------------------------------------
+# Section: LEAGUE - Incursion
+#-------------------------------------------------------------------------------
+
+Show # ~League - Incursion | Disable
 	Class "Currency"
 	BaseType "Vial of"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -215,7 +241,7 @@ Show
 	PlayAlertSound 11 80 # League specials
 	DisableDropSound
 
-Show
+Show # ~League - Incursion | Disable
 	Class "Incursion Item"
 	BaseType "Stone of Passage" "Flashpowder Keg"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -226,7 +252,7 @@ Show
 	PlayAlertSound 11 80 # League specials
 	DisableDropSound
 
-Show
+Show # ~League - Incursion | Disable
 	Identified True
 	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
 	SetBackgroundColor 0 24 76 255 # League
@@ -235,7 +261,7 @@ Show
 	#SetFontSizeTag 36 # 36
 
 #-------------------------------------------------------------------------------
-# Section: LEAGUES --- Legacy
+# Section: LEAGUE - Legacy
 #-------------------------------------------------------------------------------
 
 # Leaguestones
@@ -854,7 +880,7 @@ Show # Currency
 	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Flasks
+# Section: UNIQUE - Flasks
 #-------------------------------------------------------------------------------
 
 Show
@@ -893,7 +919,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Jewels
+# Section: UNIQUE - Jewels
 #-------------------------------------------------------------------------------
 
 Show
@@ -920,7 +946,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Maps
+# Section: UNIQUE - Maps
 #-------------------------------------------------------------------------------
 
 Show
@@ -959,7 +985,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Weapons
+# Section: UNIQUE - Weapons
 #-------------------------------------------------------------------------------
 
 Show
@@ -985,7 +1011,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Armours
+# Section: UNIQUE - Armours
 #-------------------------------------------------------------------------------
 
 Show
@@ -1011,7 +1037,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Accessories
+# Section: UNIQUE - Accessories
 #-------------------------------------------------------------------------------
 
 Show
@@ -1037,7 +1063,7 @@ Show
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
-# Section: UNIQUE --- Other
+# Section: UNIQUE - Other
 #-------------------------------------------------------------------------------
 
 Show
