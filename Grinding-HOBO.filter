@@ -226,8 +226,7 @@ Show
 #	PlayAlertSound 11 80 # League specials
 #	DisableDropSound
 
-# Ancient Reliquary Key
-#Show # ~League - Legacy | Disable
+#Show # ~League - Delve | Disable
 #	Class "Misc Map Items"
 #	BaseType "Timeworn Reliquary Key"
 #	SetTextColor 64 32 12 255 # Unique - top
