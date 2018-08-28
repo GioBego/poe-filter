@@ -263,6 +263,7 @@ Show # ~League - Incursion | Disable
 	PlayAlertSound 11 80 # League specials
 	DisableDropSound
 
+# items with Incursion explicit mods
 Show # ~League - Incursion | Disable
 	Identified True
 	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
