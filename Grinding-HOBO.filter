@@ -941,8 +941,8 @@ Show
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 
