@@ -1479,6 +1479,7 @@ Show
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Blue Diamond
+	PlayEffect Blue
 
 Show
 	Class "Divination Card"
