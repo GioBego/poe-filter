@@ -1457,7 +1457,7 @@ Show # Divination Cards
 
 Show
 	Class "Divination Card"
-	BaseType "The King's Heart" "Heterochromia" "The Wolf" "The Dragon's Heart" "Wealth and Power" "Pride Before the Fall" "The Queen" "The Master" "The Iron Bard" "The Celestial Stone" "Abandoned Wealth" "The Samurai's Eye" "Mawr Blaidd" "The Mayor" "Immortal Resolve" "The Wolven King's Bite" "Hunter's Reward" "The Immortal" "The Spark and the Flame" "The Fiend" "The Doctor" "House of Mirrors"
+	BaseType "The King's Heart" "Heterochromia" "The Wolf" "The Dragon's Heart" "Wealth and Power" "Pride Before the Fall" "The Queen" "The Master" "The Iron Bard" "The Celestial Stone" "Abandoned Wealth" "The Samurai's Eye" "Mawr Blaidd" "The Mayor" "Immortal Resolve" "The Wolven King's Bite" "Hunter's Reward" "The Immortal" "The Spark and the Flame" "The Fiend" "The Doctor" "House of Mirrors" "Beauty Through Death"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1470,7 +1470,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Cartographer" "Left to Fate" "The Risk" "The Dreamer" "The Hunger" "The Thaumaturgist" "The Undisputed" "The Hoarder" "The Void" "The Valley of Steel Boxes" "Chaotic Disposition" "The Celestial Justicar" "The Enlightened" "The World Eater" "The Artist" "Perfection" "The Sephirot" "The Wind" "The Valkyrie" "The Saint's Treasure" "The Last One Standing" "The Vast" "Last Hope" "The Professor" "The Undaunted"
+	BaseType "The Cartographer" "Left to Fate" "The Risk" "The Dreamer" "The Hunger" "The Thaumaturgist" "The Undisputed" "The Hoarder" "The Void" "The Valley of Steel Boxes" "Chaotic Disposition" "The Celestial Justicar" "The Enlightened" "The World Eater" "The Artist" "Perfection" "The Sephirot" "The Wind" "The Valkyrie" "The Saint's Treasure" "The Last One Standing" "The Vast" "Last Hope" "The Professor" "The Undaunted" "The Endless Darkness" "Boon of the First Ones" "The Wilted Rose" "The Twilight Moon"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1482,7 +1482,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Jack in the Box" "Vinia's Token" "Treasure Hunter" "The Wretched" "The Wrath" "The Tyrant" "The Trial" "The Traitor" "The Throne" "The Sword King's Salute" "The Standoff" "The Soul" "The Road to Power" "The Penitent" "The Jester" "The Insatiable" "The Encroaching Darkness" "The Dreamland" "The Demoness" "The Cursed King" "The Chains that Bind" "The Body" "The Blazing Fire" "The Beast" "The Admirer" "No Traces" "Merciless Armament" "Lucky Connections" "Lost Worlds" "Harmony of Souls" "Glimmer of Hope" "Gemcutter's Promise" "Blessing of God" "Atziri's Arsenal" "The Warlord" "The Fletcher" "Emperor of Purity" "Lingering Remnants" "The Offering" "The Obscured" "The Lion" "The Inventor" "The Formless Sea" "The Dark Mage" "Scholar of the Seas" "The Porcupine" "Rebirth" "The Jeweller's Boon" "The Dapper Prodigy" "The Brittle Emperor" "Lucky Deck" "Bowyer's Dream" "The Breach" "Time-Lost Relic" "The Polymath" "The Hale Heart" "The Ethereal"
+	BaseType "Humility" "Jack in the Box" "Vinia's Token" "Treasure Hunter" "The Wretched" "The Wrath" "The Tyrant" "The Trial" "The Traitor" "The Throne" "The Sword King's Salute" "The Standoff" "The Soul" "The Road to Power" "The Penitent" "The Jester" "The Insatiable" "The Encroaching Darkness" "The Dreamland" "The Demoness" "The Cursed King" "The Chains that Bind" "The Body" "The Blazing Fire" "The Beast" "The Admirer" "No Traces" "Merciless Armament" "Lucky Connections" "Lost Worlds" "Harmony of Souls" "Glimmer of Hope" "Gemcutter's Promise" "Blessing of God" "Atziri's Arsenal" "The Warlord" "The Fletcher" "Emperor of Purity" "Lingering Remnants" "The Offering" "The Obscured" "The Lion" "The Inventor" "The Formless Sea" "The Dark Mage" "Scholar of the Seas" "The Porcupine" "Rebirth" "The Jeweller's Boon" "The Dapper Prodigy" "The Brittle Emperor" "Lucky Deck" "Bowyer's Dream" "The Breach" "Time-Lost Relic" "The Polymath" "The Hale Heart" "The Ethereal" "The Cacophony" "The Innocent" "The Price of Protection"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
