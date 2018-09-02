@@ -210,7 +210,7 @@ Show
 
 Show # ~League - Delve | Disable
 	Class "Currency"
-	BaseType "Gilded Fossil"
+	BaseType "Fractured Fossil"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
@@ -220,6 +220,19 @@ Show # ~League - Delve | Disable
 	DisableDropSound
 	MinimapIcon 0 White Circle
 	PlayEffect White
+
+Show # ~League - Delve | Disable
+	Class "Currency"
+	BaseType "Gilded Fossil"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	DisableDropSound
+	MinimapIcon 0 Yellow Circle
+	PlayEffect Yellow
 
 Show # ~League - Delve | Disable
 	Class "Currency"
