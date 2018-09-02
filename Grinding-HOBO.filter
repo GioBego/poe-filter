@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.4.0
+# VERSION:       3.4.0d
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # WEB PAGE:      https://grinding.zone/
@@ -210,13 +210,26 @@ Show
 
 Show # ~League - Delve | Disable
 	Class "Currency"
+	BaseType "Fossil" "Gilded Fossil"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 1 80 # Exalt
+	DisableDropSound
+	MinimapIcon 0 White Circle
+	PlayEffect White
+
+Show # ~League - Delve | Disable
+	Class "Currency"
 	BaseType "Fossil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
-	PlayAlertSound 10 80 # League items
+	PlayAlertSound 11 80 # League items
 	DisableDropSound
 	MinimapIcon 1 Blue Circle
 
@@ -228,7 +241,7 @@ Show # ~League - Delve | Disable
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 11 80 # League specials
+	PlayAlertSound 10 80 # League++
 	DisableDropSound
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue
@@ -258,7 +271,7 @@ Show # ~League - Delve | Disable
 #	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 44
 #	#SetFontSizeTag 44 # 44 - Top
-#	PlayAlertSound 11 80 # League specials
+#	PlayAlertSound 11 80 # League items
 #	DisableDropSound
 #	MinimapIcon 1 Blue Triangle
 #	PlayEffect Blue
@@ -271,7 +284,7 @@ Show # ~League - Delve | Disable
 #	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 44
 #	#SetFontSizeTag 44 # 44 - Top
-#	PlayAlertSound 11 80 # League specials
+#	PlayAlertSound 10 80 # League++
 #	DisableDropSound
 #	MinimapIcon 0 Blue Circle
 #	PlayEffect Blue
@@ -297,7 +310,7 @@ Show # ~League - Delve | Disable
 #	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 36
 #	#SetFontSizeTag 36 # 36
-#	PlayAlertSound 11 80 # League specials
+#	PlayAlertSound 11 80 # League items
 #	DisableDropSound
 #	MinimapIcon 1 Blue Triangle
 #	PlayEffect Blue
@@ -555,7 +568,7 @@ Show
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League items
+	PlayAlertSound 11 80 # League items
 	DisableDropSound
 	MinimapIcon 2 Yellow Square
 
@@ -597,7 +610,7 @@ Show
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League items
+	PlayAlertSound 11 80 # League items
 	DisableDropSound
 	MinimapIcon 2 Yellow Diamond
 
@@ -931,7 +944,7 @@ Show # Currency
 
 Show
 	Class "Flasks"
-	BaseType "Sapphire Flask" "Sanctified Life Flask" "Sanctified Mana Flask"
+	BaseType "Sapphire Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Grand Mana Flask"
 	Rarity = Unique
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
