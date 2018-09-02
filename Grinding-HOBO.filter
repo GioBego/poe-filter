@@ -210,10 +210,10 @@ Show
 
 Show # ~League - Delve | Disable
 	Class "Currency"
-	BaseType "Fossil" "Gilded Fossil"
-	SetTextColor 231 180 120 255 # Currency - High
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
+	BaseType "Gilded Fossil"
+	SetTextColor 0 0 0 255 # Black
+	SetBackgroundColor 255 255 255 255 # White
+	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
