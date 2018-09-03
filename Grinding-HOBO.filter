@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.4.0d
+# VERSION:       3.4.0d2
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # WEB PAGE:      https://grinding.zone/
@@ -271,6 +271,14 @@ Show # ~League - Delve | Disable
 	DisableDropSound
 	MinimapIcon 0 White Hexagon
 	PlayEffect White
+
+Show
+	Identified True
+	HasExplicitMod "of Crafting" "of Spellcraft" "of Weaponcraft" "of the Underground" "Subterranean"
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
 
 #-------------------------------------------------------------------------------
 # Section: LEAGUE - Incursion
