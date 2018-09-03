@@ -523,6 +523,7 @@ Show # Vendor - Chromatic recipe | Disable
 
 # Chancing bases
 Show # Craft | Disable
+	Corrupted False
 	BaseType "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
 	Rarity = Normal
 	SetBackgroundColor 0 0 0 224 # Black - transparent
