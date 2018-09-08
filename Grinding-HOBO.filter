@@ -36,6 +36,44 @@
 #	PlayEffect Yellow
 #	#CustomizableValues "basetype"
 
+# extra RARE items you want to see
+#Show # ~EXCEPTIONS | Disable
+#	BaseType "Item Quantity Support"
+#	Rarity = Rare
+#	SetBackgroundColor 0 48 32 224 # Base
+#	SetBorderColor 255 255 128 255 # Craft
+#	SetFontSize 40
+#	#SetFontSizeTag 40 # 40
+#	PlayAlertSound 16 100 # Exception
+#	MinimapIcon 1 Yellow Triangle
+#	PlayEffect Yellow
+#	#CustomizableValues "basetype"
+
+# extra MAGIC items you want to see
+#Show # ~EXCEPTIONS | Disable
+#	BaseType "Item Quantity Support"
+#	Rarity = Magic
+#	SetBackgroundColor 0 48 32 224 # Base
+#	SetBorderColor 255 255 128 255 # Craft
+#	SetFontSize 40
+#	#SetFontSizeTag 40 # 40
+#	PlayAlertSound 16 100 # Exception
+#	MinimapIcon 1 Yellow Triangle
+#	PlayEffect Yellow
+#	#CustomizableValues "basetype"
+
+# extra NORMAL rarity items you want to see
+#Show # ~EXCEPTIONS | Disable
+#	BaseType "Item Quantity Support"
+#	SetBackgroundColor 0 48 32 224 # Base
+#	SetBorderColor 255 255 128 255 # Craft
+#	SetFontSize 40
+#	#SetFontSizeTag 40 # 40
+#	PlayAlertSound 16 100 # Exception
+#	MinimapIcon 1 Yellow Triangle
+#	PlayEffect Yellow
+#	#CustomizableValues "basetype"
+
 # items with extra linked sockets colors you want to see
 #Show # ~EXCEPTIONS | Disable
 #	SocketGroup "BBBBBB"
@@ -51,6 +89,15 @@
 #-------------------------------------------------------------------------------
 # Section: CURRENCY - 3
 #-------------------------------------------------------------------------------
+
+Show
+	Class "Currency"
+	BaseType "Scroll of Wisdom"
+	StackSize > 1
+	SetTextColor 170 158 130 255 # Currency - Low
+	SetBackgroundColor 72 0 0 204 # Scroll of Wisdom
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
 
 Show # Currency
 	Class "Currency"
@@ -77,7 +124,7 @@ Show # Currency
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28
 	#SetFontSizeTag 28 # 28
-	#BlockStrictness 5 Hide
+	#BlockStrictness 7 Hide
 
 Show # Currency
 	Class "Currency"
@@ -86,7 +133,7 @@ Show # Currency
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28
 	#SetFontSizeTag 28 # 28
-	#BlockStrictness 5 Hide
+	#BlockStrictness 7 Hide
 
 Show # Currency
 	Class "Currency"
