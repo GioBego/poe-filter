@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.4.1
+# VERSION:       3.4.2
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # WEB PAGE:      https://grinding.zone/
@@ -371,13 +371,26 @@ Show
 #	PlayEffect Blue
 
 # items with Incursion explicit mods
-#Show # ~League - Incursion | Disable
-#	Identified True
-#	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
-#	SetBackgroundColor 0 24 76 255 # League
-#	SetBorderColor 0 255 255 255 # League
-#	SetFontSize 36
-#	#SetFontSizeTag 36 # 36
+Show # ~League - Incursion | Disable
+	Identified True
+	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
+
+#-------------------------------------------------------------------------------
+# Section: LEAGUE - Bestiary
+#-------------------------------------------------------------------------------
+
+# items with Incursion explicit mods
+Show # ~League - Bestiary | Disable
+	Identified True
+	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
 
 #-------------------------------------------------------------------------------
 # Section: LEAGUE - Legacy
