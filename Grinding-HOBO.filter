@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.4.2
+# VERSION:       3.4.3b
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # WEB PAGE:      https://grinding.zone/
@@ -709,10 +709,9 @@ Show
 	DisableDropSound
 	MinimapIcon 2 Yellow Diamond
 
-# Abyss Jewel bases ilvl83+
+# Abyss Jewel bases
 Show # Craft
 	Class "Abyss Jewel"
-	ItemLevel >= 83
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 32
