@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.4.3b
+# VERSION:       3.4.3b2
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # WEB PAGE:      https://grinding.zone/
@@ -290,22 +290,21 @@ Show # ~League - Delve | Disable
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
-	PlayAlertSound 11 80 # League
 	DisableDropSound
 	MinimapIcon 1 Blue Circle
 
 Show # ~League - Delve | Disable
 	Class "Currency"
 	BaseType "Prime Chaotic Resonator" "Prime Alchemical Resonator"
-	SetTextColor 231 180 120 255 # Currency - High
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
+	SetTextColor 0 0 0 255 # Black
+	SetBackgroundColor 255 255 255 255 # White
+	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
 	PlayAlertSound 10 80 # League++
 	DisableDropSound
-	MinimapIcon 0 Blue Circle
-	PlayEffect Blue
+	MinimapIcon 0 White Circle
+	PlayEffect White
 
 Show # ~League - Delve | Disable
 	Class "Currency"
@@ -315,9 +314,8 @@ Show # ~League - Delve | Disable
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
-	PlayAlertSound 11 80 # League
 	DisableDropSound
-	MinimapIcon 0 Blue Circle
+	MinimapIcon 1 Blue Circle
 
 Show # ~League - Delve | Disable
 	Class "Misc Map Items"
