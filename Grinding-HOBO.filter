@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.0 beta
+# VERSION:       3.5.0 RC1
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -260,7 +260,7 @@ Show
 # Subsection: Betrayal
 #-------------------------------------------------------------------------------
 
-# Leaguestones
+# Scarabs
 Show # ~League - Betrayal | Disable
 	Class "Map Fragment"
 	BaseType "Scarab"
@@ -274,10 +274,10 @@ Show # ~League - Betrayal | Disable
 	MinimapIcon 1 Blue Triangle
 	PlayEffect Blue 
 
-# Leaguestones
+# Veiled items
 Show # ~League - Betrayal | Disable
 	Identified True
-	HasExplicitMod "Veil"
+	HasExplicitMod "Veiled" "of the Veil" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
