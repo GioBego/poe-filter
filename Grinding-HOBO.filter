@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.0 RC1
+# VERSION:       3.5.0 RC2
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -260,19 +260,43 @@ Show
 # Subsection: Betrayal
 #-------------------------------------------------------------------------------
 
-# Scarabs
+# Gilded Scarabs
+Show # ~League - Betrayal | Disable
+	Class "Map Fragment"
+	BaseType "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 10 80 # League++
+	DisableDropSound
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue 
+
+# Polished Scarabs
+Show # ~League - Betrayal | Disable
+	Class "Map Fragment"
+	BaseType "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Sulphite Scarab" "Polished Torment Scarab"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
+	PlayAlertSound 11 80 # League
+	DisableDropSound
+	MinimapIcon 1 Blue Triangle
+
+# Rusted Scarabs
 Show # ~League - Betrayal | Disable
 	Class "Map Fragment"
 	BaseType "Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
-	PlayAlertSound 11 80 # League
+	SetFontSize 32
+	#SetFontSizeTag 32 # 32 - Default
 	DisableDropSound
-	MinimapIcon 1 Blue Triangle
-	PlayEffect Blue 
 
 # Veiled items
 Show # ~League - Betrayal | Disable
