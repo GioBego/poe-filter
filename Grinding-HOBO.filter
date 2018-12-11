@@ -438,7 +438,7 @@ Show # ~League - Incursion | Disable
 # Subsection: Bestiary
 #-------------------------------------------------------------------------------
 
-# items with Bwstiary explicit mods
+# items with Bestiary explicit mods
 Show # ~League - Bestiary | Disable
 	Identified True
 	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
