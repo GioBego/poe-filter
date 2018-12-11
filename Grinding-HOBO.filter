@@ -3,12 +3,12 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.0 RC2
+# VERSION:       3.5.0 RC3
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
 #
-# Created with Grinding.Zone Filter Editor at https://grinding.zone
+# Created with Filter Master editor at https://grinding.zone
 #
 # Strictness 1:  Collector
 # Strictness 3:  Explorer
@@ -438,7 +438,7 @@ Show # ~League - Incursion | Disable
 # Subsection: Bestiary
 #-------------------------------------------------------------------------------
 
-# items with Incursion explicit mods
+# items with Bwstiary explicit mods
 Show # ~League - Bestiary | Disable
 	Identified True
 	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
