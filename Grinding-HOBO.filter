@@ -650,16 +650,16 @@ Show # Vendor - Chromatic recipe | Disable
 	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 67
 
 # Chancing bases
-#Show # Craft | Disable
-#	Corrupted False
-#	Rarity = Normal
-#	BaseType "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
-#	SetBackgroundColor 0 0 0 224 # Black - transparent
-#	SetBorderColor 175 96 37 255 # Unique
-#	SetFontSize 32
-#	#SetFontSizeTag 32 # 32 - Default
-#	#CustomizableValues "basetype"
-#	#BlockStrictness 5 Disable
+Show # Craft | Disable
+	Corrupted False
+	Rarity = Normal
+	BaseType "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 175 96 37 255 # Unique
+	SetFontSize 32
+	#SetFontSizeTag 32 # 32 - Default
+	#CustomizableValues "basetype"
+	#BlockStrictness 5 Disable
 
 # normal maces with
 Show # Vendor - Chisel recipe | Disable
