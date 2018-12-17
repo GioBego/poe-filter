@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.0 RC4
+# VERSION:       3.5.0c
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -263,7 +263,7 @@ Show
 # Gilded Scarabs
 Show # ~League - Betrayal | Disable
 	Class "Map Fragment"
-	BaseType "Gilded Ambush Scarab" "Gilded Bestiary Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Elder Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Gilded Shaper Scarab" "Gilded Sulphite Scarab" "Gilded Torment Scarab"
+	BaseType "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Polished Cartography Scarab" "Polished Sulphite Scarab" "Gilded Ambush Scarab" "Rusted Sulphite Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -277,7 +277,7 @@ Show # ~League - Betrayal | Disable
 # Polished Scarabs
 Show # ~League - Betrayal | Disable
 	Class "Map Fragment"
-	BaseType "Polished Ambush Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Divination Scarab" "Polished Elder Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Polished Shaper Scarab" "Polished Sulphite Scarab" "Polished Torment Scarab"
+	BaseType "Polished Divination Scarab" "Gilded Breach Scarab" "Polished Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Bestiary Scarab" "Rusted Cartography Scarab" "Polished Harbinger Scarab" "Gilded Elder Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Rusted Ambush Scarab" "Rusted Divination Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Rusted Harbinger Scarab" "Rusted Bestiary Scarab" "Gilded Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Rusted Breach Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -1098,7 +1098,7 @@ Show # Currency
 Show
 	Rarity = Unique
 	Class "Flasks"
-	BaseType "Sapphire Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Grand Mana Flask"
+	BaseType "Sapphire Flask"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 176 32 24 255 # Flask
@@ -1112,7 +1112,7 @@ Show
 Show
 	Rarity = Unique
 	Class "Flasks"
-	BaseType "Ruby Flask" "Stibnite Flask" "Topaz Flask" "Bismuth Flask"
+	BaseType "Quartz Flask" "Ruby Flask" "Stibnite Flask" "Grand Mana Flask" "Bismuth Flask" "Topaz Flask" "Sanctified Mana Flask" "Silver Flask"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 176 32 24 255 # Flask
@@ -1171,7 +1171,7 @@ Show
 Show
 	Rarity = Unique
 	Class "Maps"
-	BaseType "Chateau Map" "Harbinger Map" "Museum Map"
+	BaseType "Chateau Map" "Harbinger Map" "Museum Map" "Maze Map"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
@@ -1185,7 +1185,7 @@ Show
 Show
 	Rarity = Unique
 	Class "Maps"
-	BaseType "Moon Temple Map" "Temple Map" "Courtyard Map" "Shore Map" "Vaal Pyramid Map" "Promenade Map"
+	BaseType "Moon Temple Map" "Temple Map" "Courtyard Map" "Shore Map" "Vaal Pyramid Map" "Cemetery Map"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
@@ -1659,7 +1659,7 @@ Show # Divination Cards
 
 Show
 	Class "Divination Card"
-	BaseType "The King's Heart" "Heterochromia" "The Wolf" "The Dragon's Heart" "Wealth and Power" "Pride Before the Fall" "The Queen" "The Master" "The Iron Bard" "The Celestial Stone" "Abandoned Wealth" "The Samurai's Eye" "Mawr Blaidd" "The Mayor" "Immortal Resolve" "The Wolven King's Bite" "Hunter's Reward" "The Immortal" "The Spark and the Flame" "The Fiend" "The Doctor" "House of Mirrors" "Beauty Through Death" "The Nurse"
+	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1672,7 +1672,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Cartographer" "Left to Fate" "The Risk" "The Dreamer" "The Hunger" "The Thaumaturgist" "The Undisputed" "The Hoarder" "The Void" "The Valley of Steel Boxes" "Chaotic Disposition" "The Celestial Justicar" "The Enlightened" "The World Eater" "The Artist" "Perfection" "The Sephirot" "The Wind" "The Valkyrie" "The Saint's Treasure" "The Last One Standing" "The Vast" "Last Hope" "The Professor" "The Undaunted" "The Endless Darkness" "Boon of the First Ones" "The Wilted Rose" "The Twilight Moon" "The Life Thief" "A Dab of Ink"
+	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1685,7 +1685,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Jack in the Box" "Vinia's Token" "Treasure Hunter" "The Wretched" "The Wrath" "The Tyrant" "The Trial" "The Traitor" "The Throne" "The Sword King's Salute" "The Standoff" "The Soul" "The Road to Power" "The Penitent" "The Jester" "The Insatiable" "The Encroaching Darkness" "The Dreamland" "The Demoness" "The Cursed King" "The Chains that Bind" "The Body" "The Blazing Fire" "The Beast" "The Admirer" "No Traces" "Merciless Armament" "Lucky Connections" "Lost Worlds" "Harmony of Souls" "Glimmer of Hope" "Gemcutter's Promise" "Blessing of God" "Atziri's Arsenal" "The Warlord" "The Fletcher" "Emperor of Purity" "Lingering Remnants" "The Offering" "The Obscured" "The Lion" "The Inventor" "The Formless Sea" "The Dark Mage" "Scholar of the Seas" "The Porcupine" "Rebirth" "The Jeweller's Boon" "The Dapper Prodigy" "The Brittle Emperor" "Lucky Deck" "Bowyer's Dream" "The Breach" "Time-Lost Relic" "The Polymath" "The Hale Heart" "The Ethereal" "The Cacophony" "The Innocent" "The Price of Protection" "The Sacrifice"
+	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1698,7 +1698,7 @@ Show
 # common cards that could be worth picking up
 Show # Divination Cards
 	Class "Divination Card"
-	BaseType "Emperor's Luck"
+	BaseType "Emperor's Luck" "Humility"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
@@ -1824,7 +1824,7 @@ Show # Gems
 Show
 	Prophecy "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections"
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 192 0 255 224 # Prophecy
+	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
@@ -1835,7 +1835,7 @@ Show
 Show
 	Prophecy "The King's Path" "A Vision of Ice and Fire"
 	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 192 0 255 224 # Prophecy
+	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 40
 	#SetFontSizeTag 40 # 40
@@ -1844,16 +1844,16 @@ Show
 
 Show
 	Prophecy " "
-	SetTextColor 192 0 255 255 # Prophecy
+	SetTextColor 224 0 204 255 # Prophecy
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 192 0 255 255 # Prophecy
+	SetBorderColor 224 0 204 255 # Prophecy
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
 
 Show
 	Class "Currency"
 	BaseType "Prophecy"
-	SetTextColor 192 0 255 255 # Prophecy
+	SetTextColor 224 0 204 255 # Prophecy
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
 	#SetFontSizeTag 32 # 32 - Default
