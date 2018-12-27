@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.0c
+# VERSION:       3.5.1
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -549,6 +549,33 @@ Show
 # Section: ELDER & SHAPER
 #-------------------------------------------------------------------------------
 
+#-------------------------------------------------------------------------------
+# Subsection: Elder
+#-------------------------------------------------------------------------------
+
+# Top Bases
+Show
+	ElderItem True
+	BaseType "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
+	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBorderColor 255 255 128 255 # Craft
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 1 80 # Exalt
+	DisableDropSound
+	MinimapIcon 0 Blue Square
+
+Show
+	ElderItem True
+	Class "Rings" "Amulets"
+	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBorderColor 255 255 128 255 # Craft
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 12 80 # Elder and Shaper
+	DisableDropSound
+	MinimapIcon 1 Blue Square
+
 Show
 	ElderItem True
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
@@ -558,6 +585,33 @@ Show
 	PlayAlertSound 12 80 # Elder and Shaper
 	DisableDropSound
 	MinimapIcon 2 Blue Square
+
+#-------------------------------------------------------------------------------
+# Subsection: Shaper
+#-------------------------------------------------------------------------------
+
+# Top Bases
+Show
+	ShaperItem True
+	BaseType "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
+	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBorderColor 255 255 128 255 # Craft
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 1 80 # Exalt
+	DisableDropSound
+	MinimapIcon 0 Blue Square
+
+Show
+	ShaperItem True
+	Class "Rings" "Amulets"
+	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBorderColor 255 255 128 255 # Craft
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 12 80 # Elder and Shaper
+	DisableDropSound
+	MinimapIcon 1 Blue Square
 
 Show
 	ShaperItem True
@@ -722,7 +776,7 @@ Show
 	DisableDropSound
 	MinimapIcon 2 Yellow Square
 
-Show
+Show # Rare Items
 	Rarity = Rare
 	DropLevel > 1
 	Class "Rings" "Amulets"
@@ -730,8 +784,9 @@ Show
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
+	#BlockStrictness 9 Hide
 
-Show
+Show # Rare Items
 	Rarity = Rare
 	DropLevel > 1
 	Class "Belts"
@@ -739,6 +794,7 @@ Show
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
+	#BlockStrictness 9 Hide
 
 # low bases Rings, Amulets & Belts until
 Show # Rare Items
