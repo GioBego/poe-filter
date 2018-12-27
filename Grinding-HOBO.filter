@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1
+# VERSION:       3.5.1-v2
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -776,6 +776,7 @@ Show
 	DisableDropSound
 	MinimapIcon 2 Yellow Square
 
+# Rings & Amulets
 Show # Rare Items
 	Rarity = Rare
 	DropLevel > 1
@@ -786,6 +787,7 @@ Show # Rare Items
 	#SetFontSizeTag 44 # 44 - Top
 	#BlockStrictness 9 Hide
 
+# Belts
 Show # Rare Items
 	Rarity = Rare
 	DropLevel > 1
