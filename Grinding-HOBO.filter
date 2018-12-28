@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v2
+# VERSION:       3.5.1-v3
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1302,7 +1302,7 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Callous Mask" "Rawhide Boots" "Glorious Plate" "Crusader Boots" "Callous Mask Piece" "Sharkskin Tunic" "Ezomyte Tower Shield" "Harlequin Mask" "Ambush Mitts" "Legion Gloves" "Rawhide Tower Shield" "Occultist's Vestment"
+	BaseType "Callous Mask" "Rawhide Boots" "Glorious Plate" "Crusader Boots" "Callous Mask Piece" "Ezomyte Tower Shield" "Harlequin Mask" "Ambush Mitts" "Legion Gloves" "Rawhide Tower Shield" "Occultist's Vestment"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
