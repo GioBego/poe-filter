@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v3
+# VERSION:       3.5.1-v4
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1827,10 +1827,22 @@ Show # Gems | Disable
 	#BlockStrictness 10 Disable
 	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 18
 
-# drop-only gems
+# drop-only gems - Empower, Enlighten
 Show # Gems | Disable
 	Class "Gems"
-	BaseType "Empower Support" "Enhance Support" "Enlighten Support" "Vaal Breach" "Portal" "Detonate Mines" "Added Chaos Damage Support"
+	BaseType "Empower Support" "Enlighten Support"
+	SetTextColor 0 0 0 255 # Black
+	SetBackgroundColor 27 162 155 255 # Gem
+	SetBorderColor 0 0 0 255 # Black
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 2 80 # Chaos
+	MinimapIcon 1 Green Diamond
+
+# drop-only gems - other
+Show # Gems | Disable
+	Class "Gems"
+	BaseType "Enhance Support" "Vaal Breach" "Portal" "Detonate Mines" "Added Chaos Damage Support"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
