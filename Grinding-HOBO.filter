@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v4
+# VERSION:       3.5.1-v5
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1522,7 +1522,7 @@ Show
 #-------------------------------------------------------------------------------
 
 # maps Tier 1-5 with AlertSound until
-Show # ~Maps
+Show # ~Maps | Disable
 	MapTier <= 5
 	ItemLevel <= 100
 	Class "Maps"
@@ -1535,7 +1535,7 @@ Show # ~Maps
 	DisableDropSound
 	MinimapIcon 2 White Hexagon
 	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Hide
+	#BlockStrictness 10 Disable
 	#VariableStrictness itemlevel -1 -1 77 -1 74 -1 -1 -1 -1
 
 # maps Tier 1-5 in higher areas until
@@ -1568,7 +1568,7 @@ Hide
 #-------------------------------------------------------------------------------
 
 # maps Tier 6-10 with AlertSound until
-Show # ~Maps
+Show # ~Maps | Disable
 	MapTier <= 10
 	ItemLevel <= 100
 	Class "Maps"
@@ -1581,7 +1581,7 @@ Show # ~Maps
 	DisableDropSound
 	MinimapIcon 2 Yellow Hexagon
 	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Hide
+	#BlockStrictness 10 Disable
 	#VariableStrictness itemlevel -1 -1 82 -1 79 -1 -1 -1 -1
 
 # maps Tier 6-10 in higher areas until
