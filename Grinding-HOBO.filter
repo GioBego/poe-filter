@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v5
+# VERSION:       3.5.1-v6
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -442,6 +442,19 @@ Show # ~League - Incursion | Disable
 Show # ~League - Bestiary | Disable
 	Identified True
 	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
+
+#-------------------------------------------------------------------------------
+# Subsection: Warband
+#-------------------------------------------------------------------------------
+
+# items with Bestiary explicit mods
+Show # ~League - Bestiary | Disable
+	Identified True
+	HasExplicitMod "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36
