@@ -1262,7 +1262,7 @@ Show
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 80 # Map - top
+	PlayAlertSound 14 160 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Brown Hexagon
 	PlayEffect Brown 
@@ -1525,7 +1525,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 80 # Map - top
+	PlayAlertSound 14 160 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
@@ -1639,6 +1639,10 @@ Show
 	MinimapIcon 1 Red Hexagon
 	PlayEffect Red 
 
+#-------------------------------------------------------------------------------
+# Subsection: Tier 16+
+#-------------------------------------------------------------------------------
+
 Show
 	MapTier >= 16
 	Class "Maps"
@@ -1647,7 +1651,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 80 # Map - top
+	PlayAlertSound 14 160 # Map - top
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
 
@@ -1663,7 +1667,7 @@ Show
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 80 # Map - top
+	PlayAlertSound 14 160 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
