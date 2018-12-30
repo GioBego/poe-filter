@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v6
+# VERSION:       3.5.1-v7
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1828,6 +1828,23 @@ Show # Gems
 	SetFontSize 36
 	#SetFontSizeTag 36 # 36
 
+# corrupted gems with AlertSound if
+Show # Gems | Disable
+	Corrupted True
+	Quality >= 10
+	Class "Gems"
+	SetTextColor 27 162 155 255 # Gem
+	SetBackgroundColor 96 0 0 255 # Corrupted
+	SetBorderColor 27 162 155 255 # Gem
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 3 80 # Alch
+	DisableDropSound
+	MinimapIcon 2 Green Diamond
+	#CustomizableValues "quality"
+	#BlockStrictness 10 Disable
+	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 18
+
 # gems with AlertSound if
 Show # Gems | Disable
 	Quality >= 10
@@ -1869,6 +1886,20 @@ Show # Gems | Disable
 	MinimapIcon 2 Green Diamond
 	#BlockStrictness 9 Disable
 
+# corrupted gems with
+Show # Gems
+	Corrupted True
+	Quality >= 1
+	Class "Gems"
+	SetTextColor 27 162 155 255 # Gem
+	SetBackgroundColor 96 0 0 255 # Corrupted
+	SetBorderColor 27 162 155 255 # Gem
+	SetFontSize 36
+	#SetFontSizeTag 36 # 36
+	#CustomizableValues "quality"
+	#BlockStrictness 10 Hide
+	#VariableStrictness quality -1 -1 -1 -1 5 -1 10 -1 -1
+
 # gems with
 Show # Gems
 	Quality >= 1
@@ -1909,7 +1940,7 @@ Show # Gems
 #-------------------------------------------------------------------------------
 
 Show
-	Prophecy "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections"
+	Prophecy "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Monstrous Treasure" "The King's Path"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
@@ -1920,7 +1951,7 @@ Show
 	PlayEffect Red 
 
 Show
-	Prophecy "The King's Path" "A Vision of Ice and Fire"
+	Prophecy "The Unbreathing Queen V" "A Vision of Ice and Fire" "Wind and Thunder" "The Jeweller's Touch" "Darktongue's Shriek" "Lost in the Pages" "The Feral Lord V" "The Plaguemaw V" "Cleanser of Sins" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Flesh of the Beast" "The Lost Undying" "The Servant's Heart"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
