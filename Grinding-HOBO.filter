@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v7
+# VERSION:       3.5.1-v8 (2019-01-05)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1262,7 +1262,7 @@ Show
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 160 # Map - top
+	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Brown Hexagon
 	PlayEffect Brown 
@@ -1525,7 +1525,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 160 # Map - top
+	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
@@ -1651,7 +1651,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 160 # Map - top
+	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
 
@@ -1667,7 +1667,7 @@ Show
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 14 160 # Map - top
+	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
@@ -1683,6 +1683,7 @@ Show
 	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
 	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
 
 Show
 	Class "Map Fragments" "Labyrinth" "Misc Map Items"
