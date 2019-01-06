@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v8 (2019-01-05)
+# VERSION:       3.5.1-v9 (2019-01-06)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1299,7 +1299,7 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Cutlass" "Vaal Axe" "Tornado Wand" "Legion Sword" "Infernal Sword" "Carved Wand" "Vaal Blade" "Midnight Blade" "Gemstone Sword" "Imperial Bow" "Vaal Sceptre" "Ritual Sceptre"
+	BaseType "Cutlass" "Vaal Axe" "Tornado Wand" "Legion Sword" "Infernal Sword" "Carved Wand" "Vaal Blade" "Midnight Blade" "Gemstone Sword" "Imperial Bow" "Vaal Sceptre" "Ritual Sceptre" "Fiend Dagger"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
