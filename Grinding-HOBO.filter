@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v9 (2019-01-06)
+# VERSION:       3.5.1-v10 (2019-01-06)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -36,9 +36,10 @@
 #	PlayEffect Yellow 
 #	#CustomizableValues "basetype"
 
-# extra RARE items you want to see
+# extra items you want to see
 #Show # ~EXCEPTIONS | Disable
 #	Rarity = Rare
+#	ItemLevel >= 1
 #	BaseType "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -47,11 +48,12 @@
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "basetype"
+#	#CustomizableValues "rarity" "itemlevel" "basetype"
 
-# extra MAGIC items you want to see
+# extra items you want to see
 #Show # ~EXCEPTIONS | Disable
 #	Rarity = Magic
+#	ItemLevel >= 1
 #	BaseType "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -60,11 +62,12 @@
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "basetype"
+#	#CustomizableValues "itemlevel" "basetype"
 
-# extra NORMAL rarity items you want to see
+# extra rarity items you want to see
 #Show # ~EXCEPTIONS | Disable
 #	Rarity = Normal
+#	ItemLevel >= 1
 #	BaseType "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -73,7 +76,7 @@
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "basetype"
+#	#CustomizableValues "itemlevel" "basetype"
 
 # items with extra linked sockets colors you want to see
 #Show # ~EXCEPTIONS | Disable
