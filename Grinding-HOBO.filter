@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v10 (2019-01-06)
+# VERSION:       3.5.1-v11 (2019-01-06)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -1445,6 +1445,7 @@ Show
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Green Circle
+	PlayEffect Green 
 
 Show
 	Class "Currency"
