@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.5.1-v11 (2019-01-06)
+# VERSION:       3.6.0-beta (2019-03-06)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -258,6 +258,29 @@ Show
 #-------------------------------------------------------------------------------
 # Section: LEAGUE
 #-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Subsection: Synthesis
+#-------------------------------------------------------------------------------
+
+Show # ~League - Synthesis | Disable
+	SynthesisedItem True
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 10 80 # League++
+	MinimapIcon 0 Blue Square
+	PlayEffect Blue 
+
+Show # ~League - Synthesis | Disable
+	FracturedItem True
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue Square
 
 #-------------------------------------------------------------------------------
 # Subsection: Betrayal
@@ -560,6 +583,20 @@ Show
 	DisableDropSound
 	MinimapIcon 0 White Square
 	PlayEffect White 
+
+#-------------------------------------------------------------------------------
+# Section: ENCHANTMENTS
+#-------------------------------------------------------------------------------
+
+Show
+	AnyEnchantment True
+	SetBackgroundColor 0 48 32 224 # Base
+	SetBorderColor 255 255 128 255 # Craft
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 Yellow Square
+	PlayEffect Yellow 
 
 #-------------------------------------------------------------------------------
 # Section: ELDER & SHAPER
@@ -1739,7 +1776,7 @@ Show # Divination Cards
 
 Show
 	Class "Divination Card"
-	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure"
+	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1752,7 +1789,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition"
+	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1765,7 +1802,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose"
+	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1881,7 +1918,7 @@ Show # Gems | Disable
 # drop-only gems - other
 Show # Gems | Disable
 	Class "Gems"
-	BaseType "Enhance Support" "Vaal Breach" "Portal" "Detonate Mines" "Added Chaos Damage Support"
+	BaseType "Enhance Support" "Vaal Breach" "Portal"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black

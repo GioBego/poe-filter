@@ -1,1 +1,0 @@
-- divination cards "The Master" "The Master Artisan" are in conflict
