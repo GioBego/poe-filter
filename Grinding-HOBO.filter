@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.6.0-beta2 (2019-03-06)
+# VERSION:       3.6.0-beta3 (2019-03-06)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone/
@@ -263,7 +263,7 @@ Show
 # Subsection: Synthesis
 #-------------------------------------------------------------------------------
 
-# Sinthesised items
+# Synthesised items
 Show # ~League - Synthesis | Disable
 	SynthesisedItem True
 	SetBackgroundColor 0 24 76 255 # League
