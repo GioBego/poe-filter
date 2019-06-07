@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.7.0 (2019-06-07)
+# VERSION:       3.7.0b (2019-06-07)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -265,7 +265,7 @@ Show
 
 # Incubators
 Show # ~League - Legion | Disable
-	Class "Currency"
+	Class "Incubator"
 	BaseType "Incubator"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
@@ -291,7 +291,7 @@ Show # ~League - Legion | Disable
 
 # Legion Emblems
 Show # ~League - Legion | Disable
-	Class "Stackable Currency"
+	Class "Map Fragments"
 	BaseType "Emblem"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 24 76 255 # League
