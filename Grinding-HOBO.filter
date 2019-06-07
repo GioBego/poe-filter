@@ -307,25 +307,25 @@ Show # ~League - Legion | Disable
 #-------------------------------------------------------------------------------
 
 # Synthesised items
-Show # ~League - Synthesis | Disable
-	SynthesisedItem True
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League++
-	MinimapIcon 0 Blue Square
-	PlayEffect Blue 
+#Show # ~League - Synthesis | Disable
+#	SynthesisedItem True
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 44
+#	#SetFontSizeTag 44 # 44 - Top
+#	PlayAlertSound 10 80 # League++
+#	MinimapIcon 0 Blue Square
+#	PlayEffect Blue 
 
 # Fractured items
-Show # ~League - Synthesis | Disable
-	FracturedItem True
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
-	PlayAlertSound 11 80 # League
-	MinimapIcon 1 Blue Square
+#Show # ~League - Synthesis | Disable
+#	FracturedItem True
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 40
+#	#SetFontSizeTag 40 # 40
+#	PlayAlertSound 11 80 # League
+#	MinimapIcon 1 Blue Square
 
 #-------------------------------------------------------------------------------
 # Subsection: Betrayal
