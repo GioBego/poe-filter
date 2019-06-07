@@ -3,10 +3,10 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.6.0 (2019-03-08)
+# VERSION:       3.7.0 (2019-06-07)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
-# LINK:          https://grinding.zone/
+# LINK:          https://grinding.zone
 #
 # Created with Filter Master editor at https://grinding.zone
 #
@@ -258,6 +258,49 @@ Show
 #-------------------------------------------------------------------------------
 # Section: LEAGUE
 #-------------------------------------------------------------------------------
+
+#-------------------------------------------------------------------------------
+# Subsection: Legion
+#-------------------------------------------------------------------------------
+
+# Incubators
+Show # ~League - Legion | Disable
+	Class "Currency"
+	BaseType "Incubator"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue 
+
+# Legion Splinters
+Show # ~League - Legion | Disable
+	Class "Stackable Currency"
+	BaseType "Splinter"
+	SetTextColor 208 32 144 255 # Splinter
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 2 80 # Chaos
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue 
+
+# Legion Emblems
+Show # ~League - Legion | Disable
+	Class "Stackable Currency"
+	BaseType "Emblem"
+	SetTextColor 208 32 144 255 # Splinter
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 10 80 # League++
+	MinimapIcon 0 Blue Circle
+	PlayEffect Blue 
 
 #-------------------------------------------------------------------------------
 # Subsection: Synthesis
@@ -1778,7 +1821,7 @@ Show # Divination Cards
 
 Show
 	Class "Divination Card"
-	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck"
+	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1791,7 +1834,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness"
+	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1804,7 +1847,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger"
+	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1817,7 +1860,7 @@ Show
 # common cards that could be worth picking up
 Show # Divination Cards
 	Class "Divination Card"
-	BaseType "Emperor's Luck" "Humility"
+	BaseType "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
