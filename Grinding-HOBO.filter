@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.7.0b (2019-06-07)
+# VERSION:       3.7.0c (2019-06-10)
 # AUTHOR:        Bego & Honzar
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -279,7 +279,7 @@ Show # ~League - Legion | Disable
 # Legion Splinters
 Show # ~League - Legion | Disable
 	Class "Stackable Currency"
-	BaseType "Splinter"
+	BaseType "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
