@@ -3,8 +3,8 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.7.0c (2019-06-10)
-# AUTHOR:        Bego & Honzar
+# VERSION:       3.8 beta
+# AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
 #
@@ -260,11 +260,37 @@ Show
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
+# Subsection: Blight
+#-------------------------------------------------------------------------------
+
+Show
+	Class "Stackable Currency"
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue 
+
+Show
+	BlightedMap True
+	SetTextColor 96 240 96 255 # Map - shaped
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 10 80 # League++
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+#-------------------------------------------------------------------------------
 # Subsection: Legion
 #-------------------------------------------------------------------------------
 
-# Incubators
-Show # ~League - Legion | Disable
+Show
 	Class "Incubator"
 	BaseType "Incubator"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -276,8 +302,7 @@ Show # ~League - Legion | Disable
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
-# Legion Splinters
-Show # ~League - Legion | Disable
+Show
 	Class "Stackable Currency"
 	BaseType "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 	SetTextColor 208 32 144 255 # Splinter
@@ -289,8 +314,7 @@ Show # ~League - Legion | Disable
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
-# Legion Emblems
-Show # ~League - Legion | Disable
+Show
 	Class "Map Fragments"
 	BaseType "Emblem"
 	SetTextColor 208 32 144 255 # Splinter
@@ -299,7 +323,7 @@ Show # ~League - Legion | Disable
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
 	PlayAlertSound 10 80 # League++
-	MinimapIcon 0 Blue Circle
+	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
 #-------------------------------------------------------------------------------
@@ -331,8 +355,7 @@ Show # ~League - Legion | Disable
 # Subsection: Betrayal
 #-------------------------------------------------------------------------------
 
-# Gilded Scarabs
-Show # ~League - Betrayal | Disable
+Show
 	Class "Map Fragment"
 	BaseType "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Polished Cartography Scarab" "Polished Sulphite Scarab" "Gilded Ambush Scarab" "Rusted Sulphite Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -345,8 +368,7 @@ Show # ~League - Betrayal | Disable
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue 
 
-# Polished Scarabs
-Show # ~League - Betrayal | Disable
+Show
 	Class "Map Fragment"
 	BaseType "Polished Divination Scarab" "Gilded Breach Scarab" "Polished Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Bestiary Scarab" "Rusted Cartography Scarab" "Polished Harbinger Scarab" "Gilded Elder Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Rusted Ambush Scarab" "Rusted Divination Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Rusted Harbinger Scarab" "Rusted Bestiary Scarab" "Gilded Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Rusted Breach Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -358,8 +380,7 @@ Show # ~League - Betrayal | Disable
 	DisableDropSound
 	MinimapIcon 1 Blue Triangle
 
-# Rusted Scarabs
-Show # ~League - Betrayal | Disable
+Show
 	Class "Map Fragment"
 	BaseType "Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -369,8 +390,7 @@ Show # ~League - Betrayal | Disable
 	#SetFontSizeTag 32 # 32 - Default
 	DisableDropSound
 
-# Veiled items
-Show # ~League - Betrayal | Disable
+Show
 	Identified True
 	HasExplicitMod "Veiled" "of the Veil" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -1808,7 +1828,7 @@ Show # Divination Cards
 # exception - prevent collision with valuable card
 Show # Divination Cards
 	Class "Divination Card"
-	BaseType "The Wolf's Shadow" "The Master Artisan"
+	BaseType "The Wolf's Shadow" "The Master Artisan" "The Demoness"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
@@ -1821,7 +1841,7 @@ Show # Divination Cards
 
 Show
 	Class "Divination Card"
-	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones"
+	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1834,7 +1854,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams"
+	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1847,7 +1867,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity"
+	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1860,7 +1880,7 @@ Show
 # common cards that could be worth picking up
 Show # Divination Cards
 	Class "Divination Card"
-	BaseType "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity"
+	BaseType "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
