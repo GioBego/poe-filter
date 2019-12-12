@@ -260,6 +260,33 @@ Show
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
+# Subsection: Metamorph
+#-------------------------------------------------------------------------------
+
+Show
+	Class "Metamorph Sample"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue 
+
+Show
+	Class "Stackable Currency"
+	BaseType "Catalyst"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue 
+
+#-------------------------------------------------------------------------------
 # Subsection: Blight
 #-------------------------------------------------------------------------------
 
@@ -1767,6 +1794,32 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
+	Class "Atlas Region Upgrade Item"
+	BaseType "Ivory Watchstone"
+	SetTextColor 232 232 232 255 # Map - T1
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 14 240 # Map - top
+	DisableDropSound
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class "Map Fragments" "Labyrinth" "Misc Map Items"
+	BaseType "Fragment of Enslavement" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	SetTextColor 255 32 0 255 # Map - T11
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 14 240 # Map - top
+	DisableDropSound
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+Show
 	Class "Map Fragments" "Labyrinth" "Misc Map Items"
 	BaseType "Mortal Ignorance" "Mortal Hope" "Fragment of the Chimera"
 	SetTextColor 231 180 120 255 # Currency - High
@@ -1842,7 +1895,7 @@ Show # Divination Cards
 
 Show
 	Class "Divination Card"
-	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon"
+	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon" "Squandered Prosperity" "Succor of the Sinless"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1855,7 +1908,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance"
+	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1868,7 +1921,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy"
+	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1881,7 +1934,7 @@ Show
 # common cards that could be worth picking up
 Show # Divination Cards
 	Class "Divination Card"
-	BaseType "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest"
+	BaseType "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32
@@ -1901,6 +1954,18 @@ Show # Divination Cards
 #-------------------------------------------------------------------------------
 # Section: GEMS
 #-------------------------------------------------------------------------------
+
+Show
+	Class "Gems"
+	BaseType "Awakened"
+	SetTextColor 0 0 0 255 # Black
+	SetBackgroundColor 27 162 155 255 # Gem
+	SetBorderColor 0 0 0 255 # Black
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 2 80 # Chaos
+	DisableDropSound
+	MinimapIcon 0 Green Diamond
 
 Show
 	Quality >= 20
@@ -2090,7 +2155,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Apprentice Cartographer's Sextant"
+	BaseType "Simple Sextant"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
@@ -2102,7 +2167,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Journeyman Cartographer's Sextant"
+	BaseType "Prime Sextant"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
@@ -2114,7 +2179,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Master Cartographer's Sextant"
+	BaseType "Awakened Sextant"
 	SetTextColor 255 32 0 255 # Map - T11
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
