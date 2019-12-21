@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.9 RC1
+# VERSION:       3.9.1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -692,16 +692,12 @@ Show
 	PlayEffect Yellow 
 
 #-------------------------------------------------------------------------------
-# Section: ELDER & SHAPER
-#-------------------------------------------------------------------------------
-
-#-------------------------------------------------------------------------------
-# Subsection: Elder
+# Section: INFLUENCE
 #-------------------------------------------------------------------------------
 
 # Top Bases
 Show
-	ElderItem True
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	BaseType "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 255 255 128 255 # Craft
@@ -712,7 +708,7 @@ Show
 	MinimapIcon 0 Blue Square
 
 Show
-	ElderItem True
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	Class "Rings" "Amulets"
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 255 255 128 255 # Craft
@@ -723,44 +719,7 @@ Show
 	MinimapIcon 1 Blue Square
 
 Show
-	ElderItem True
-	SetBackgroundColor 32 0 64 255 # Elder and Shaper
-	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
-	PlayAlertSound 12 80 # Elder and Shaper
-	DisableDropSound
-	MinimapIcon 2 Blue Square
-
-#-------------------------------------------------------------------------------
-# Subsection: Shaper
-#-------------------------------------------------------------------------------
-
-# Top Bases
-Show
-	ShaperItem True
-	BaseType "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
-	SetBackgroundColor 32 0 64 255 # Elder and Shaper
-	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
-	DisableDropSound
-	MinimapIcon 0 Blue Square
-
-Show
-	ShaperItem True
-	Class "Rings" "Amulets"
-	SetBackgroundColor 32 0 64 255 # Elder and Shaper
-	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 12 80 # Elder and Shaper
-	DisableDropSound
-	MinimapIcon 1 Blue Square
-
-Show
-	ShaperItem True
+	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 40
