@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.9.1
+# VERSION:       3.9.1b
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -2263,6 +2263,18 @@ Show
 	Class "Quest Items" "Pantheon Soul"
 	SetTextColor 74 230 58 255 # Quest
 	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 74 230 58 255 # Quest
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 4 80 # Quest
+	DisableDropSound
+	MinimapIcon 0 Green Triangle
+	PlayEffect Green 
+
+Show
+	BaseType "Cobalt Watchstone" "Crimson Watchstone" "Golden Watchstone" "Viridian Watchstone" "Ivory Watchstone"
+	SetTextColor 74 230 58 255 # Quest
+	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 74 230 58 255 # Quest
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
