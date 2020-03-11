@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.9.1b
+# VERSION:       3.10.0rc1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -100,6 +100,15 @@ Show
 	BaseType "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 72 0 0 204 # Scroll of Wisdom
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+
+Show
+	StackSize > 1
+	Class "Currency"
+	BaseType "Portal Scroll"
+	SetTextColor 170 158 130 255 # Currency - Low
+	SetBackgroundColor 0 0 72 204 # Portal Scroll
 	SetFontSize 40
 	#SetFontSizeTag 40 # 40
 
@@ -260,6 +269,57 @@ Show
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
+# Subsection: Delirium
+#-------------------------------------------------------------------------------
+
+Show
+	Class "Jewel"
+	BaseType "Cluster Jewel"
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 64 255 255 # Jewel
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 10 100 # League++
+	MinimapIcon 0 Blue Diamond
+	PlayEffect Blue 
+
+Show
+	Class "Map Fragments"
+	BaseType "Simulacrum"
+	SetTextColor 96 240 96 255 # Map - shaped
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 44
+	#SetFontSizeTag 44 # 44 - Top
+	PlayAlertSound 14 240 # Map - top
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class "Stackable Currency"
+	BaseType "Simulacrum Splinter"
+	SetTextColor 208 32 144 255 # Splinter
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 2 Blue Circle
+	PlayEffect Blue 
+
+Show
+	Class "Stackable Currency"
+	BaseType "Delirium Orb"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40
+	#SetFontSizeTag 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 1 Blue Circle
+	PlayEffect Blue 
+
+#-------------------------------------------------------------------------------
 # Subsection: Metamorph
 #-------------------------------------------------------------------------------
 
@@ -310,7 +370,7 @@ Show
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League++
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -350,7 +410,7 @@ Show
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League++
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -365,7 +425,7 @@ Show # ~League - Synthesis | Disable
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League++
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue 
 
@@ -391,7 +451,7 @@ Show
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40
 	#SetFontSizeTag 40 # 40
-	PlayAlertSound 10 80 # League++
+	PlayAlertSound 10 100 # League++
 	DisableDropSound
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue 
@@ -477,7 +537,7 @@ Show # ~League - Delve | Disable
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League++
+	PlayAlertSound 10 100 # League++
 	DisableDropSound
 	MinimapIcon 0 White Circle
 	PlayEffect White 
@@ -539,7 +599,7 @@ Show # ~League - Incursion | Disable
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44
 	#SetFontSizeTag 44 # 44 - Top
-	PlayAlertSound 10 80 # League++
+	PlayAlertSound 10 100 # League++
 	DisableDropSound
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue 
@@ -1867,7 +1927,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger"
+	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger" "The Progeny of Lunaris" "Council of Cats" "The Eldritch Decay" "The Cheater" "The Strategist" "The Easy Stroll"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1880,7 +1940,7 @@ Show
 
 Show
 	Class "Divination Card"
-	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship"
+	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship" "The Tinkerer's Table"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
