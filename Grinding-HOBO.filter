@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC2
+# VERSION:       3.11.0-RC3
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -252,15 +252,15 @@ Show
 	MinimapIcon 0 Blue Raindrop
 	PlayEffect Blue 
 
-Show
-	Class = "Harvest Infrastructure"
-	SetTextColor 231 180 120 255 # Currency - High
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
-	MinimapIcon 1 Blue UpsideDownHouse
-	PlayEffect Blue 
+#Show
+#	Class = "Harvest Infrastructure"
+#	SetTextColor 231 180 120 255 # Currency - High
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 40 # 40
+#	PlayAlertSound 11 80 # League
+#	MinimapIcon 1 Blue UpsideDownHouse
+#	PlayEffect Blue 
 
 Show
 	Class = "Stackable Currency"
