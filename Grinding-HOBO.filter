@@ -169,28 +169,24 @@ Show # Currency | Hide
 # Section: FLASKS
 #===============================================================================
 
-# utility flasks until
 Show # Flasks | Disable
 	Rarity <= Magic
-	ItemLevel <= 100
 	Class = "Utility Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32 # 32 - Default
-	#BlockStrictness 10 Disable
+	#BlockStrictness 7 Disable
 
 # top life flasks until
 Show # Flasks | Disable
 	Rarity <= Magic
-	ItemLevel <= 100
 	Class = "Life Flasks"
 	BaseType = "Divine Life Flask" "Eternal Life Flask"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32 # 32 - Default
-	#BlockStrictness 10 Disable
+	#BlockStrictness 7 Disable
 
-# quality flasks with
 Show # Flasks | Disable
 	Rarity <= Magic
 	Quality >= 1
@@ -198,9 +194,9 @@ Show # Flasks | Disable
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32 # 32 - Default
-	#BlockStrictness 10 Disable
+	#BlockStrictness 7 Disable
 
-Show # Leveling - Flasks | Disable
+Show
 	Rarity <= Magic
 	ItemLevel <= 18
 	Class = "Flasks"
@@ -210,7 +206,7 @@ Show # Leveling - Flasks | Disable
 	SetFontSize 28 # 28
 	DisableDropSound
 
-Show # Leveling - Flasks | Disable
+Show
 	Rarity <= Magic
 	ItemLevel <= 42
 	Class = "Flasks"
@@ -220,7 +216,7 @@ Show # Leveling - Flasks | Disable
 	SetFontSize 28 # 28
 	DisableDropSound
 
-Show # Leveling - Flasks | Disable
+Show
 	Rarity <= Magic
 	ItemLevel <= 60
 	Class = "Flasks"
