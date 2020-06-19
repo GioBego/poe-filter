@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC1
+# VERSION:       3.11.0-RC2
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -177,7 +177,6 @@ Show # Flasks | Disable
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Disable
 
-# top life flasks until
 Show # Flasks | Disable
 	Rarity <= Magic
 	Class = "Life Flasks"
@@ -620,8 +619,8 @@ Show # ~League - Bestiary | Disable
 # Subsection: Warband
 #-------------------------------------------------------------------------------
 
-# items with Bestiary explicit mods
-Show # ~League - Bestiary | Disable
+# items with Warband explicit mods
+Show # ~League - Warband | Disable
 	Identified = True
 	HasExplicitMod = "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
 	SetBackgroundColor 0 24 76 255 # League
@@ -795,7 +794,6 @@ Show # Leveling | Disable
 	Sockets = 3
 	SocketGroup >= "W"
 	Rarity <= Rare
-	ItemLevel <= 100
 	Class = "One Hand" "Daggers" "Wands" "Claws" "Sceptres" "Shields"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 255 255 # White
@@ -814,11 +812,10 @@ Show # Vendor - Chromatic recipe | Disable
 	Rarity <= Rare
 	Height = 3
 	Width = 1
-	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 36 # 36
-	#BlockStrictness 10 Disable
+	#BlockStrictness 7 Disable
 
 # small items (2x2)
 Show # Vendor - Chromatic recipe | Disable
@@ -826,11 +823,10 @@ Show # Vendor - Chromatic recipe | Disable
 	Rarity <= Rare
 	Height = 2
 	Width = 2
-	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 36 # 36
-	#BlockStrictness 10 Disable
+	#BlockStrictness 7 Disable
 
 # Chancing bases
 Show # Craft | Disable
@@ -1087,7 +1083,7 @@ Show # Leveling | Disable
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
-# all rare items intil level 67
+# all rare items until level 67
 Show # Rare Items | Disable
 	Sockets > 0
 	Rarity = Rare
@@ -1597,7 +1593,7 @@ Show # ~Maps | Disable
 	MinimapIcon 2 Yellow Hexagon
 	#BlockStrictness 9 Disable
 
-# maps Tier 6-10 in higher areas until
+# maps Tier 6-10 in higher areas
 Show # ~Maps | Hide
 	MapTier <= 10
 	Class = "Maps"
