@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC3
+# VERSION:       3.11.0-RC4
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -264,7 +264,7 @@ Show
 
 Show
 	Class = "Stackable Currency"
-	BaseType = "Catalyst"
+	BaseType = "Seed"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -771,7 +771,7 @@ Show
 
 # Jeweller's Orb recipe 6-socket items
 Show
-	Sockets = 6
+	Sockets = "6"
 	Rarity <= Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
@@ -791,7 +791,7 @@ Show # Craft | Disable
 
 # weapons and shields with white socket - good for leveling gems in swap slots
 Show # Leveling | Disable
-	Sockets = 3
+	Sockets = "3"
 	SocketGroup >= "W"
 	Rarity <= Rare
 	Class = "One Hand" "Daggers" "Wands" "Claws" "Sceptres" "Shields"
@@ -1053,7 +1053,7 @@ Show # Leveling | Disable
 
 # normal items until level 4
 Show # Leveling | Disable
-	Sockets > 0
+	Sockets > "0"
 	Rarity = Normal
 	ItemLevel <= 4
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -1069,7 +1069,7 @@ Show # Leveling | Disable
 
 # magic items until level 8
 Show # Leveling | Disable
-	Sockets > 0
+	Sockets > "0"
 	Rarity = Magic
 	ItemLevel <= 8
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -1085,7 +1085,7 @@ Show # Leveling | Disable
 
 # all rare items until level 67
 Show # Rare Items | Disable
-	Sockets > 0
+	Sockets > "0"
 	Rarity = Rare
 	ItemLevel <= 67
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -1100,7 +1100,7 @@ Show # Rare Items | Disable
 	SetFontSize 32 # 32 - Default
 
 Hide
-	Sockets > 0
+	Sockets > "0"
 	Rarity <= Magic
 	SetBackgroundColor 0 0 0 0 # Transparent
 	SetFontSize 20 # 20 - Low
@@ -1114,7 +1114,7 @@ Hide
 	DisableDropSound
 
 Hide
-	Sockets > 0
+	Sockets > "0"
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
