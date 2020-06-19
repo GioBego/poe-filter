@@ -3,318 +3,324 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.10.0rc1
+# VERSION:       3.11.0-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
-#
-# Created with Filter Master editor at https://grinding.zone
 #
 # Strictness 1:  Collector
 # Strictness 3:  Explorer
 # Strictness 5:  Normal
 # Strictness 7:  Strict
 # Strictness 9:  Drastic
-# Default strictness:  5
-#-------------------------------------------------------------------------------
+# Default strictness: 5
+#
+# Created with Filter Master editor at https://grinding.zone
+#
+#===============================================================================
 
 
 
-#-------------------------------------------------------------------------------
+
+#===============================================================================
 # Section: EXCEPTIONS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 # extra items you want to see
-#Show # ~EXCEPTIONS | Disable
-#	BaseType "Item Quantity Support"
+#Show
+#	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
-#	SetFontSize 40
-#	#SetFontSizeTag 40 # 40
+#	SetFontSize 40 # 40
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "basetype"
 
 # extra items you want to see
-#Show # ~EXCEPTIONS | Disable
+#Show
 #	Rarity = Rare
 #	ItemLevel >= 1
-#	BaseType "Item Quantity Support"
+#	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
-#	SetFontSize 40
-#	#SetFontSizeTag 40 # 40
+#	SetFontSize 40 # 40
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "rarity" "itemlevel" "basetype"
 
 # extra items you want to see
-#Show # ~EXCEPTIONS | Disable
+#Show
 #	Rarity = Magic
 #	ItemLevel >= 1
-#	BaseType "Item Quantity Support"
+#	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
-#	SetFontSize 40
-#	#SetFontSizeTag 40 # 40
+#	SetFontSize 40 # 40
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "itemlevel" "basetype"
 
 # extra rarity items you want to see
-#Show # ~EXCEPTIONS | Disable
+#Show
 #	Rarity = Normal
 #	ItemLevel >= 1
-#	BaseType "Item Quantity Support"
+#	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
-#	SetFontSize 40
-#	#SetFontSizeTag 40 # 40
+#	SetFontSize 40 # 40
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "itemlevel" "basetype"
 
 # items with extra linked sockets colors you want to see
-#Show # ~EXCEPTIONS | Disable
-#	SocketGroup "BBBBBB"
+#Show
+#	SocketGroup >= "BBBBBB"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
-#	SetFontSize 40
-#	#SetFontSizeTag 40 # 40
+#	SetFontSize 40 # 40
 #	PlayAlertSound 16 100 # Exception
 #	MinimapIcon 1 Yellow Triangle
 #	PlayEffect Yellow 
-#	#CustomizableValues "socketgroup"
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: CURRENCY - 3
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
 	StackSize > 1
-	Class "Currency"
-	BaseType "Scroll of Wisdom"
+	Class = "Currency"
+	BaseType = "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 72 0 0 204 # Scroll of Wisdom
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 
 Show
 	StackSize > 1
-	Class "Currency"
-	BaseType "Portal Scroll"
+	Class = "Currency"
+	BaseType = "Portal Scroll"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 72 204 # Portal Scroll
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 
-Show # Currency
-	Class "Currency"
-	BaseType "Scroll of Wisdom"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 72 0 0 204 # Scroll of Wisdom
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 7 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Portal Scroll"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Portal Scroll"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 72 204 # Portal Scroll
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 7 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Armourer's Scrap"
+Show
+	Class = "Currency"
+	BaseType = "Scroll"
+	SetTextColor 170 158 130 255 # Currency - Low
+	SetBackgroundColor 0 48 32 224 # Base
+	SetFontSize 40 # 40
+
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Armourer's Scrap"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Blacksmith's Whetstone"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Orb of Transmutation"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Orb of Transmutation"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 7 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Orb of Augmentation"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Orb of Augmentation"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 7 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Orb of Alteration"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Orb of Alteration"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 7 Hide
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: FLASKS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 # utility flasks until
 Show # Flasks | Disable
 	Rarity <= Magic
 	ItemLevel <= 100
-	Class "Utility Flasks"
+	Class = "Utility Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "itemlevel"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 67
 
 # top life flasks until
 Show # Flasks | Disable
 	Rarity <= Magic
 	ItemLevel <= 100
-	Class "Life Flasks"
-	BaseType "Divine Life Flask" "Eternal Life Flask"
+	Class = "Life Flasks"
+	BaseType = "Divine Life Flask" "Eternal Life Flask"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "itemlevel"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 67
 
 # quality flasks with
 Show # Flasks | Disable
 	Rarity <= Magic
 	Quality >= 1
-	Class "Flasks"
+	Class = "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "quality"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 10 Disable
-	#VariableStrictness quality 1 -1 5 -1 10 -1 20 -1 -1
 
 Show # Leveling - Flasks | Disable
 	Rarity <= Magic
 	ItemLevel <= 18
-	Class "Flasks"
-	BaseType "Small" "Medium" "Large" "Greater"
+	Class = "Flasks"
+	BaseType = "Small" "Medium" "Large" "Greater"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
+	SetFontSize 28 # 28
 	DisableDropSound
-	#CustomizableValues "itemlevel"
 
 Show # Leveling - Flasks | Disable
 	Rarity <= Magic
 	ItemLevel <= 42
-	Class "Flasks"
-	BaseType "Grand" "Giant" "Colossal" "Sacred"
+	Class = "Flasks"
+	BaseType = "Grand" "Giant" "Colossal" "Sacred"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
+	SetFontSize 28 # 28
 	DisableDropSound
-	#CustomizableValues "itemlevel"
 
 Show # Leveling - Flasks | Disable
 	Rarity <= Magic
 	ItemLevel <= 60
-	Class "Flasks"
-	BaseType "Hallowed" "Sanctified"
+	Class = "Flasks"
+	BaseType = "Hallowed" "Sanctified"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
+	SetFontSize 28 # 28
 	DisableDropSound
-	#CustomizableValues "itemlevel"
 
 Show
 	Rarity <= Magic
-	Class "Flasks"
+	Class = "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 24
-	#SetFontSizeTag 24 # 24
+	SetFontSize 24 # 24
 	#BlockStrictness 3 Hide
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: LEAGUE
+#===============================================================================
+
 #-------------------------------------------------------------------------------
+# Subsection: Harvest
+#-------------------------------------------------------------------------------
+
+Show
+	Class = "Harvest Seed"
+	BaseType = "Wild Thornfruit" "Vivid Scalefruit" "Primal Blisterfruit"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 0 Blue Raindrop
+	PlayEffect Blue 
+
+Show
+	Class = "Harvest Infrastructure"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue UpsideDownHouse
+	PlayEffect Blue 
+
+Show
+	Class = "Stackable Currency"
+	BaseType = "Catalyst"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 1 Blue Raindrop
+	PlayEffect Blue 
 
 #-------------------------------------------------------------------------------
 # Subsection: Delirium
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Jewel"
-	BaseType "Cluster Jewel"
+	Class = "Jewel"
+	BaseType = "Cluster Jewel"
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragments"
-	BaseType "Simulacrum"
+	Class = "Map Fragments"
+	BaseType = "Simulacrum"
 	SetTextColor 96 240 96 255 # Map - shaped
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
 Show
-	Class "Stackable Currency"
-	BaseType "Simulacrum Splinter"
+	Class = "Stackable Currency"
+	BaseType = "Simulacrum Splinter"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 11 80 # League
 	MinimapIcon 2 Blue Circle
 	PlayEffect Blue 
 
 Show
-	Class "Stackable Currency"
-	BaseType "Delirium Orb"
+	Class = "Stackable Currency"
+	BaseType = "Delirium Orb"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
@@ -324,24 +330,22 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Metamorph Sample"
+	Class = "Metamorph Sample"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
 Show
-	Class "Stackable Currency"
-	BaseType "Catalyst"
+	Class = "Stackable Currency"
+	BaseType = "Catalyst"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
@@ -351,25 +355,23 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Stackable Currency"
-	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil"
+	Class = "Stackable Currency"
+	BaseType = "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil" "Indigo Oil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
 Show
-	BlightedMap True
-	Class "Maps"
+	BlightedMap = True
+	Class = "Maps"
 	SetTextColor 96 240 96 255 # Map - shaped
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
@@ -379,37 +381,34 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Incubator"
-	BaseType "Incubator"
+	Class = "Incubator"
+	BaseType = "Incubator"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
 Show
-	Class "Stackable Currency"
-	BaseType "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+	Class = "Stackable Currency"
+	BaseType = "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragments"
-	BaseType "Emblem"
+	Class = "Map Fragments"
+	BaseType = "Emblem"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
@@ -419,23 +418,21 @@ Show
 #-------------------------------------------------------------------------------
 
 # Synthesised items
-Show # ~League - Synthesis | Disable
-	SynthesisedItem True
+Show
+	SynthesisedItem = True
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Square
 	PlayEffect Blue 
 
 # Fractured items
-Show # ~League - Synthesis | Disable
-	FracturedItem True
+Show
+	FracturedItem = True
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Square
 
@@ -444,48 +441,56 @@ Show # ~League - Synthesis | Disable
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Map Fragment"
-	BaseType "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Polished Cartography Scarab" "Polished Sulphite Scarab" "Gilded Ambush Scarab" "Rusted Sulphite Scarab"
+	Class = "Map Fragment"
+	BaseType = "Gilded Cartography Scarab" "Gilded Divination Scarab" "Gilded Sulphite Scarab" "Polished Cartography Scarab" "Polished Sulphite Scarab" "Gilded Ambush Scarab" "Rusted Sulphite Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 10 100 # League++
 	DisableDropSound
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragment"
-	BaseType "Polished Divination Scarab" "Gilded Breach Scarab" "Polished Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Bestiary Scarab" "Rusted Cartography Scarab" "Polished Harbinger Scarab" "Gilded Elder Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Rusted Ambush Scarab" "Rusted Divination Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Rusted Harbinger Scarab" "Rusted Bestiary Scarab" "Gilded Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Rusted Breach Scarab"
+	Class = "Map Fragment"
+	BaseType = "Polished Divination Scarab" "Gilded Breach Scarab" "Polished Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Bestiary Scarab" "Rusted Cartography Scarab" "Polished Harbinger Scarab" "Gilded Elder Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Rusted Ambush Scarab" "Rusted Divination Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Rusted Harbinger Scarab" "Rusted Bestiary Scarab" "Gilded Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Rusted Breach Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	PlayAlertSound 11 80 # League
 	DisableDropSound
 	MinimapIcon 1 Blue Triangle
 
 Show
-	Class "Map Fragment"
-	BaseType "Scarab"
+	Class = "Map Fragment"
+	BaseType = "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab" "Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 40 # 40
+	PlayAlertSound 10 100 # League++
+	DisableDropSound
+	MinimapIcon 0 Blue Triangle
+	PlayEffect Blue 
+
+Hide
+	Class = "Map Fragment"
+	BaseType = "Scarab"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 32 # 32 - Default
 	DisableDropSound
 
 Show
-	Identified True
-	HasExplicitMod "Veiled" "of the Veil" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
+	Identified = True
+	HasExplicitMod = "Veiled" "of the Veil" "Leo's Veiled" "Catarina's Veiled" "Elreon's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	DisableDropSound
 
 #-------------------------------------------------------------------------------
@@ -493,112 +498,103 @@ Show
 #-------------------------------------------------------------------------------
 
 Show # ~League - Delve | Disable
-	Class "Currency"
-	BaseType "Fractured Fossil" "Faceted Fossil" "Glyphic Fossil" "Tangled Fossil" "Hollow Fossil" "Shuddering Fossil"
+	Class = "Currency"
+	BaseType = "Fractured Fossil" "Faceted Fossil" "Glyphic Fossil" "Tangled Fossil" "Hollow Fossil" "Shuddering Fossil"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
 Show # ~League - Delve | Disable
-	Class "Currency"
-	BaseType "Gilded Fossil" "Sanctified Fossil"
+	Class = "Currency"
+	BaseType = "Gilded Fossil" "Sanctified Fossil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 0 Yellow Circle
 	PlayEffect Yellow 
 
 Show # ~League - Delve | Disable
-	Class "Currency"
-	BaseType "Fossil"
+	Class = "Currency"
+	BaseType = "Fossil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	DisableDropSound
 	MinimapIcon 1 Blue Circle
 
 Show # ~League - Delve | Disable
-	Class "Currency"
-	BaseType "Prime Chaotic Resonator" "Prime Alchemical Resonator"
+	Class = "Currency"
+	BaseType = "Prime Chaotic Resonator" "Prime Alchemical Resonator"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 10 100 # League++
 	DisableDropSound
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
 Show # ~League - Delve | Disable
-	Class "Currency"
-	BaseType "Resonator"
+	Class = "Currency"
+	BaseType = "Resonator"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	DisableDropSound
 	MinimapIcon 1 Blue Circle
 
 Show # ~League - Delve | Disable
-	Class "Misc Map Items"
-	BaseType "Timeworn Reliquary Key"
+	Class = "Misc Map Items"
+	BaseType = "Timeworn Reliquary Key"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Hexagon
 	PlayEffect White 
 
 Show
-	Identified True
-	HasExplicitMod "of Crafting" "of Spellcraft" "of Weaponcraft" "of the Underground" "Subterranean"
+	Identified = True
+	HasExplicitMod = "of Crafting" "of Spellcraft" "of Weaponcraft" "of the Underground" "Subterranean"
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 #-------------------------------------------------------------------------------
 # Subsection: Incursion
 #-------------------------------------------------------------------------------
 
-Show # ~League - Incursion | Disable
-	Class "Incursion Item"
-	BaseType "Stone of Passage" "Flashpowder Keg"
+Show
+	Class = "Incursion Item"
+	BaseType = "Stone of Passage" "Flashpowder Keg"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 11 80 # League
 	DisableDropSound
 	MinimapIcon 1 Blue Triangle
 	PlayEffect Blue 
 
-Show # ~League - Incursion | Disable
-	Class "Currency"
-	BaseType "Vial of"
+Show
+	Class = "Currency"
+	BaseType = "Vial of"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 10 100 # League++
 	DisableDropSound
 	MinimapIcon 0 Blue Circle
@@ -606,12 +602,11 @@ Show # ~League - Incursion | Disable
 
 # items with Incursion explicit mods
 Show # ~League - Incursion | Disable
-	Identified True
-	HasExplicitMod "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
+	Identified = True
+	HasExplicitMod = "Citaqualotl's" "Guatelitzi's" "Matatl's" "Tacati's" "Topotante's" "Xopec's" "of Citaqualotl" "of Guatelitzi" "of Matatl" "of Puhuarte" "of Tacati"
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 #-------------------------------------------------------------------------------
 # Subsection: Bestiary
@@ -619,12 +614,11 @@ Show # ~League - Incursion | Disable
 
 # items with Bestiary explicit mods
 Show # ~League - Bestiary | Disable
-	Identified True
-	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
+	Identified = True
+	HasExplicitMod = "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 #-------------------------------------------------------------------------------
 # Subsection: Warband
@@ -632,12 +626,11 @@ Show # ~League - Bestiary | Disable
 
 # items with Bestiary explicit mods
 Show # ~League - Bestiary | Disable
-	Identified True
-	HasExplicitMod "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
+	Identified = True
+	HasExplicitMod = "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 #-------------------------------------------------------------------------------
 # Subsection: Legacy
@@ -645,12 +638,11 @@ Show # ~League - Bestiary | Disable
 
 # Leaguestones
 #Show # ~League - Legacy | Disable
-#	Class "Leaguestones"
+#	Class = "Leaguestones"
 #	SetTextColor 231 180 120 255 # Currency - High
 #	SetBackgroundColor 0 24 76 255 # League
 #	SetBorderColor 0 255 255 255 # League
-#	SetFontSize 36
-#	#SetFontSizeTag 36 # 36
+#	SetFontSize 36 # 36
 #	PlayAlertSound 11 80 # League
 #	DisableDropSound
 #	MinimapIcon 1 Blue Triangle
@@ -658,31 +650,29 @@ Show # ~League - Bestiary | Disable
 
 # Ancient Reliquary Key
 #Show # ~League - Legacy | Disable
-#	Class "Misc Map Items"
-#	BaseType "Ancient Reliquary Key"
+#	Class = "Misc Map Items"
+#	BaseType = "Ancient Reliquary Key"
 #	SetTextColor 64 32 12 255 # Unique - top
 #	SetBackgroundColor 255 255 255 255 # White
 #	SetBorderColor 64 32 12 255 # Unique - top
-#	SetFontSize 44
-#	#SetFontSizeTag 44 # 44 - Top
+#	SetFontSize 44 # 44 - Top
 #	PlayAlertSound 1 80 # Exalt
 #	DisableDropSound
 #	MinimapIcon 0 White Hexagon
 #	PlayEffect White 
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: TOP DROPS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
 	LinkedSockets = 6
-	SocketGroup "WWWWWW"
-	BaseType "Simple Robe"
+	SocketGroup >= "WWWWWW"
+	BaseType = "Simple Robe"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Yellow Star
@@ -694,8 +684,7 @@ Show
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Star
@@ -707,8 +696,7 @@ Show
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Yellow Star
@@ -718,79 +706,73 @@ Show
 	LinkedSockets = 6
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 0 Yellow Square
 	PlayEffect Yellow 
 
 Show
-	BaseType "Fishing Rod"
+	BaseType = "Fishing Rod"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Square
 	PlayEffect White 
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: ENCHANTMENTS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
-	AnyEnchantment True
+	AnyEnchantment = True
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Yellow Square
 	PlayEffect Yellow 
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: INFLUENCE
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 # Top Bases
 Show
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	BaseType "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
+	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	BaseType = "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 Blue Square
 
 Show
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	Class "Rings" "Amulets"
+	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	Class = "Rings" "Amulets"
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 12 80 # Elder and Shaper
 	DisableDropSound
 	MinimapIcon 1 Blue Square
 
 Show
-	HasInfluence "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
+	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 12 80 # Elder and Shaper
 	DisableDropSound
 	MinimapIcon 2 Blue Square
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: MAIN SECTION
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 # Jeweller's Orb recipe 6-socket items
 Show
@@ -798,521 +780,436 @@ Show
 	Rarity <= Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 2 Green Square
 
-# 5-link items until
+# 5-link items
 Show # Craft | Disable
 	LinkedSockets = 5
-	Rarity <= Rare
-	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
-	PlayAlertSound 3 80 # Alch
-	DisableDropSound
-	#CustomizableValues "itemlevel"
+	SetFontSize 40 # 40
+	Continue
 	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 -1 -1 67
 
 # weapons and shields with white socket - good for leveling gems in swap slots
 Show # Leveling | Disable
 	Sockets = 3
-	SocketGroup "W"
+	SocketGroup >= "W"
 	Rarity <= Rare
 	ItemLevel <= 100
-	Class "One Hand" "Daggers" "Wands" "Claws" "Sceptres" "Shields"
+	Class = "One Hand" "Daggers" "Wands" "Claws" "Sceptres" "Shields"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 255 255 # White
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 -1 -1 67
 
 Show
-	Corrupted True
+	Corrupted = True
 	Rarity = Rare
 	SetBackgroundColor 96 0 0 255 # Corrupted
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 # small items (1x3)
 Show # Vendor - Chromatic recipe | Disable
-	SocketGroup "RGB"
+	SocketGroup >= "RGB"
 	Rarity <= Rare
 	Height = 3
 	Width = 1
 	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 67
 
 # small items (2x2)
 Show # Vendor - Chromatic recipe | Disable
-	SocketGroup "RGB"
+	SocketGroup >= "RGB"
 	Rarity <= Rare
 	Height = 2
 	Width = 2
 	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 -1 -1 77 -1 72 -1 67
 
 # Chancing bases
 Show # Craft | Disable
-	Corrupted False
+	Corrupted = False
 	Rarity = Normal
-	BaseType "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
+	BaseType = "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 175 96 37 255 # Unique
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "basetype"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Disable
 
-# normal maces with
 Show # Vendor - Chisel recipe | Disable
 	Rarity = Normal
 	Quality >= 15
-	Class "One Hand Maces"
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Class = "One Hand Maces"
+	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "quality"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Disable
-	#VariableStrictness quality 0 -1 -1 -1 -1 -1 -1 -1 -1
 
-# magic maces with
 Show # Vendor - Chisel recipe | Disable
 	Rarity = Magic
 	Quality >= 18
-	Class "One Hand Maces"
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Class = "One Hand Maces"
+	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "quality"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Disable
-	#VariableStrictness quality 12 -1 -1 -1 -1 -1 -1 -1 -1
 
-# rare maces with
 Show # Vendor - Chisel recipe | Disable
 	Rarity = Rare
 	Quality >= 19
-	Class "One Hand Maces"
-	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Class = "One Hand Maces"
+	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
 	SetBackgroundColor 0 0 0 240
 	SetFontSize 32
-	#CustomizableValues "quality"
 	#BlockStrictness 5 Disable
-	#VariableStrictness quality 16 -1 -1 -1 -1 -1 -1 -1 -1
 
 Show
 	Rarity <= Rare
-	BaseType "Steel Ring" "Opal Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 2 Yellow Square
 
 Show
 	Rarity = Rare
-	Class "Belts"
-	BaseType "Stygian Vise"
+	Class = "Belts"
+	BaseType = "Stygian Vise"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 11 80 # League
 	DisableDropSound
 	MinimapIcon 2 Yellow Square
 
 # Rings & Amulets
-Show # Rare Items
+Show # Rare Items | Hide
 	Rarity = Rare
 	DropLevel > 1
-	Class "Rings" "Amulets"
+	Class = "Rings" "Amulets"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	#BlockStrictness 9 Hide
 
 # Belts
-Show # Rare Items
+Show # Rare Items | Hide
 	Rarity = Rare
 	DropLevel > 1
-	Class "Belts"
+	Class = "Belts"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-# low bases Rings, Amulets & Belts until
-Show # Rare Items
+# low bases Rings, Amulets & Belts
+Show # Rare Items | Hide
 	Rarity = Rare
-	ItemLevel <= 100
-	Class "Rings" "Amulets" "Belts"
+	Class = "Rings" "Amulets" "Belts"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 67 -1 -1
+	SetFontSize 32 # 32 - Default
+	#BlockStrictness 9 Hide
 
 Show
 	Rarity = Rare
-	Class "Abyss Jewel"
+	Class = "Abyss Jewel"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 11 80 # League
 	DisableDropSound
 	MinimapIcon 2 Yellow Diamond
 
-# Abyss Jewel bases
-Show # Craft
-	Class "Abyss Jewel"
+Show # Craft | Hide
+	Class = "Abyss Jewel"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
 
 Show
 	Rarity = Rare
-	Class "Jewel"
+	Class = "Jewel"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 2 Yellow Diamond
 
-Show # Rare Items - Top Bases
+# Good helmet bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	Class "Helmets"
-	BaseType "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Bone Helmet"
+	Class = "Helmets"
+	BaseType = "Royal Burgonet" "Lion Pelt" "Hubris Circlet" "Bone Helmet"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-Show # Rare Items - Top Bases
+# Good gloves bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	Class "Gloves"
-	BaseType "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves"
+	Class = "Gloves"
+	BaseType = "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-Show # Rare Items - Top Bases
+# Good boots bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	Class "Boots"
-	BaseType "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots"
+	Class = "Boots"
+	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-Show # Rare Items - Top Bases
+# Good body armour bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	Class "Body Armours"
-	BaseType "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Astral Plate"
+	Class = "Body Armours"
+	BaseType = "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Astral Plate"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases
+# Top one-hand bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	BaseType "Imperial Claw" "Gemini Claw" "Imbued Wand" "Platinum Kris" "Jewelled Foil" "Spiraled Foil" "Corsair Sword" "Prophecy Wand"
+	BaseType = "Imperial Claw" "Gemini Claw" "Imbued Wand" "Platinum Kris" "Jewelled Foil" "Spiraled Foil" "Corsair Sword" "Prophecy Wand" "Convoking Wand"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-Show # Rare Items - Top Bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	BaseType "Siege Axe" "Opal Sceptre" "Void Sceptre"
+	BaseType = "Siege Axe" "Opal Sceptre" "Void Sceptre"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	BaseType "Harbinger Bow" "Vaal Axe"
+	BaseType = "Harbinger Bow" "Vaal Axe"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	BaseType "Archon Kite Shield"
+	BaseType = "Archon Kite Shield"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases
+Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	BaseType "Spike-Point Arrow Quiver"
+	BaseType = "Spike-Point Arrow Quiver"
 	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: LEVELING & JUNK
-#-------------------------------------------------------------------------------
+#===============================================================================
 
-# large items until
+# large RGB items
 Show # Vendor - Chromatic recipe | Disable
-	SocketGroup "RGB"
+	SocketGroup >= "RGB"
 	Rarity <= Rare
-	ItemLevel <= 100
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 	#BlockStrictness 7 Disable
-	#VariableStrictness itemlevel 77 -1 72 -1 60 -1 -1 -1 -1
 
-# 4-link items until
 Show # Leveling - Linked Sockets | Disable
 	LinkedSockets >= 4
 	Rarity <= Magic
 	ItemLevel <= 60
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 
-# 3-link items until
 Show # Leveling - Linked Sockets | Disable
 	LinkedSockets >= 3
 	Rarity <= Magic
 	ItemLevel <= 39
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 
-# normal Rings, Amulets & Belts until
 Show # Leveling | Disable
 	Rarity = Normal
 	ItemLevel <= 8
-	Class "Rings" "Amulets" "Belts"
-	#CustomizableValues "itemlevel"
+	Class = "Rings" "Amulets" "Belts"
 
-# magic Rings, Amulets & Belts until
 Show # Leveling | Disable
 	Rarity = Magic
 	ItemLevel <= 16
-	Class "Rings" "Amulets" "Belts"
-	#CustomizableValues "itemlevel"
+	Class = "Rings" "Amulets" "Belts"
 
-# normal items until
+# normal items until level 4
 Show # Leveling | Disable
 	Sockets > 0
 	Rarity = Normal
 	ItemLevel <= 4
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 
-# normal Quivers until
+# normal Quivers until level 4
 Show # Leveling | Disable
 	Rarity = Normal
 	ItemLevel <= 4
-	Class "Quivers"
+	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 
-# magic items until
+# magic items until level 8
 Show # Leveling | Disable
 	Sockets > 0
 	Rarity = Magic
 	ItemLevel <= 8
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 
-# magic Quivers until
+# magic Quivers until level 8
 Show # Leveling | Disable
 	Rarity = Magic
 	ItemLevel <= 8
-	Class "Quivers"
+	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
-	#CustomizableValues "itemlevel"
+	SetFontSize 28 # 28
 
-# all rare items until
+# all rare items intil level 67
 Show # Rare Items | Disable
 	Sockets > 0
 	Rarity = Rare
-	ItemLevel <= 100
+	ItemLevel <= 67
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 67 -1 -1
+	SetFontSize 32 # 32 - Default
 
-# all rare Quivers until
+# all rare Quivers until level 67
 Show # Rare Items | Disable
 	Rarity = Rare
-	ItemLevel <= 100
-	Class "Quivers"
+	ItemLevel <= 67
+	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 77 -1 72 -1 67 -1 -1
+	SetFontSize 32 # 32 - Default
 
 Hide
 	Sockets > 0
 	Rarity <= Magic
 	SetBackgroundColor 0 0 0 0 # Transparent
-	SetFontSize 20
-	#SetFontSizeTag 20 # 20 - Low
+	SetFontSize 20 # 20 - Low
 	DisableDropSound
 
 Hide
 	Rarity <= Magic
-	Class "Quivers"
+	Class = "Quivers"
 	SetBackgroundColor 0 0 0 0 # Transparent
-	SetFontSize 20
-	#SetFontSizeTag 20 # 20 - Low
+	SetFontSize 20 # 20 - Low
 	DisableDropSound
 
 Hide
 	Sockets > 0
 	Rarity = Rare
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
+	SetFontSize 28 # 28
 	DisableDropSound
 
 Hide
 	Rarity = Rare
-	Class "Quivers"
+	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
+	SetFontSize 28 # 28
 	DisableDropSound
 
 Hide
 	Rarity <= Magic
-	Class "Rings" "Amulets" "Belts"
+	Class = "Rings" "Amulets" "Belts"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 24
-	#SetFontSizeTag 24 # 24
+	SetFontSize 24 # 24
 	DisableDropSound
 
 Hide
 	Rarity <= Magic
-	Class "Jewel"
+	Class = "Jewel"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 24
-	#SetFontSizeTag 24 # 24
+	SetFontSize 24 # 24
 	DisableDropSound
 
 Hide
 	Rarity = Rare
-	Class "Rings" "Amulets" "Belts"
+	Class = "Rings" "Amulets" "Belts"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	DisableDropSound
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: CURRENCY - 2
-#-------------------------------------------------------------------------------
+#===============================================================================
 
-Show # Currency
-	Class "Currency"
-	BaseType "Jeweller's Orb"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Jeweller's Orb"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Orb of Chance"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Orb of Chance"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Silver Coin"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Silver Coin"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Chromatic Orb"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Chromatic Orb"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
 
-Show # Currency
-	Class "Currency"
-	BaseType "Glassblower's Bauble"
+Show # Currency | Hide
+	Class = "Currency"
+	BaseType = "Glassblower's Bauble"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: UNIQUE
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 #-------------------------------------------------------------------------------
 # Subsection: Flasks
@@ -1320,13 +1217,12 @@ Show # Currency
 
 Show
 	Rarity = Unique
-	Class "Flasks"
-	BaseType "Sapphire Flask"
+	Class = "Flasks"
+	BaseType = "Sapphire Flask"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Star
@@ -1334,25 +1230,23 @@ Show
 
 Show
 	Rarity = Unique
-	Class "Flasks"
-	BaseType "Quartz Flask" "Ruby Flask" "Stibnite Flask" "Grand Mana Flask" "Bismuth Flask" "Topaz Flask" "Sanctified Mana Flask" "Silver Flask"
+	Class = "Flasks"
+	BaseType = "Quartz Flask" "Ruby Flask" "Stibnite Flask" "Grand Mana Flask" "Bismuth Flask" "Topaz Flask" "Sanctified Mana Flask" "Silver Flask"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Yellow Star
 
 Show
 	Rarity = Unique
-	Class "Flasks"
+	Class = "Flasks"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 6 80 # Unique
 	DisableDropSound
 	MinimapIcon 2 Brown Star
@@ -1363,13 +1257,12 @@ Show
 
 Show
 	Rarity = Unique
-	Class "Jewel"
-	BaseType "Prismatic Jewel"
+	Class = "Jewel"
+	BaseType = "Prismatic Jewel"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Star
@@ -1377,12 +1270,11 @@ Show
 
 Show
 	Rarity = Unique
-	Class "Jewel"
+	Class = "Jewel"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 64 255 255 # Jewel
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 2 Brown Star
@@ -1393,13 +1285,12 @@ Show
 
 Show
 	Rarity = Unique
-	Class "Maps"
-	BaseType "Chateau Map" "Harbinger Map" "Museum Map" "Maze Map"
+	Class = "Maps"
+	BaseType = "Chateau Map" "Harbinger Map" "Museum Map" "Maze Map"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Hexagon
@@ -1407,13 +1298,12 @@ Show
 
 Show
 	Rarity = Unique
-	Class "Maps"
-	BaseType "Moon Temple Map" "Temple Map" "Courtyard Map" "Shore Map" "Vaal Pyramid Map" "Cemetery Map"
+	Class = "Maps"
+	BaseType = "Moon Temple Map" "Temple Map" "Courtyard Map" "Shore Map" "Vaal Pyramid Map" "Cemetery Map"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Brown Hexagon
@@ -1421,12 +1311,11 @@ Show
 
 Show
 	Rarity = Unique
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 175 96 37 255 # Unique
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 8 80 # Map - Unique
 	DisableDropSound
 	MinimapIcon 1 Brown Hexagon
@@ -1438,12 +1327,11 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Royal Axe" "Prophecy Wand"
+	BaseType = "Royal Axe" "Prophecy Wand"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Star
@@ -1451,12 +1339,11 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Cutlass" "Vaal Axe" "Tornado Wand" "Legion Sword" "Infernal Sword" "Carved Wand" "Vaal Blade" "Midnight Blade" "Gemstone Sword" "Imperial Bow" "Vaal Sceptre" "Ritual Sceptre" "Fiend Dagger"
+	BaseType = "Cutlass" "Vaal Axe" "Tornado Wand" "Legion Sword" "Infernal Sword" "Carved Wand" "Vaal Blade" "Midnight Blade" "Gemstone Sword" "Imperial Bow" "Vaal Sceptre" "Ritual Sceptre" "Fiend Dagger"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Yellow Star
@@ -1467,12 +1354,11 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Callous Mask" "Rawhide Boots" "Glorious Plate" "Crusader Boots" "Callous Mask Piece" "Ezomyte Tower Shield" "Harlequin Mask" "Ambush Mitts" "Legion Gloves" "Rawhide Tower Shield" "Occultist's Vestment"
+	BaseType = "Callous Mask" "Rawhide Boots" "Glorious Plate" "Crusader Boots" "Callous Mask Piece" "Ezomyte Tower Shield" "Harlequin Mask" "Ambush Mitts" "Legion Gloves" "Rawhide Tower Shield" "Occultist's Vestment"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Star
@@ -1480,12 +1366,11 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Two-Point Arrow Quiver" "Vaal Gauntlets" "Murder Boots" "Vaal Spirit Shield" "Sorcerer Boots" "Goathide Boots" "Steelscale Gauntlets" "Carnal Armour" "Archon Kite Shield" "Sacrificial Garb" "Hubris Circlet" "Ebony Tower Shield" "Blunt Arrow Quiver Piece" "Great Crown" "Carnal Boots" "Magistrate Crown" "Archon Kite Shield Piece" "Arcanist Slippers"
+	BaseType = "Two-Point Arrow Quiver" "Vaal Gauntlets" "Murder Boots" "Vaal Spirit Shield" "Sorcerer Boots" "Goathide Boots" "Steelscale Gauntlets" "Carnal Armour" "Archon Kite Shield" "Sacrificial Garb" "Hubris Circlet" "Ebony Tower Shield" "Blunt Arrow Quiver Piece" "Great Crown" "Carnal Boots" "Magistrate Crown" "Archon Kite Shield Piece" "Arcanist Slippers"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Yellow Star
@@ -1496,12 +1381,11 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Greatwolf Talisman" "Cloth Belt Piece" "Rotfeather Talisman" "Clutching Talisman" "Wereclaw Talisman" "Ruby Amulet"
+	BaseType = "Greatwolf Talisman" "Cloth Belt Piece" "Rotfeather Talisman" "Clutching Talisman" "Wereclaw Talisman" "Ruby Amulet"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Star
@@ -1509,12 +1393,11 @@ Show
 
 Show
 	Rarity = Unique
-	BaseType "Paua Amulet" "Leather Belt" "Amber Amulet" "Prismatic Ring" "Two-Stone Ring" "Onyx Amulet" "Lapis Amulet" "Cloth Belt" "Gold Amulet" "Moonstone Ring" "Topaz Ring" "Chain Belt" "Agate Amulet" "Jade Amulet" "Opal Ring" "Rustic Sash" "Unset Ring" "Citrine Amulet" "Paua Ring" "Gold Ring" "Steel Ring"
+	BaseType = "Paua Amulet" "Leather Belt" "Amber Amulet" "Prismatic Ring" "Two-Stone Ring" "Onyx Amulet" "Lapis Amulet" "Cloth Belt" "Gold Amulet" "Moonstone Ring" "Topaz Ring" "Chain Belt" "Agate Amulet" "Jade Amulet" "Opal Ring" "Rustic Sash" "Unset Ring" "Citrine Amulet" "Paua Ring" "Gold Ring" "Steel Ring"
 	SetTextColor 64 32 12 255 # Unique - top
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Yellow Star
@@ -1528,125 +1411,115 @@ Show
 	SetTextColor 175 96 37 255 # Unique
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 175 96 37 255 # Unique
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 6 80 # Unique
 	DisableDropSound
 	MinimapIcon 2 Brown Star
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: CURRENCY - 1
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
-	Class "Currency"
-	BaseType "Orb of Alchemy" "Orb of Scouring" "Blessed Orb" "Orb of Fusing" "Cartographer's Chisel" "Orb of Binding" "Annulment Shard"
+	Class = "Currency"
+	BaseType = "Orb of Alchemy" "Orb of Scouring" "Blessed Orb" "Orb of Fusing" "Cartographer's Chisel" "Orb of Binding" "Annulment Shard" "Infused Engineer's Orb"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 112 0 0 255 # Currency - Alch
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 3 80 # Alch
 	DisableDropSound
 	MinimapIcon 2 Red Circle
 
 Show
-	Class "Currency"
-	BaseType "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Regal Orb" "Vaal Orb" "Exalted Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Shard" "Harbinger's Shard"
+	Class = "Currency"
+	BaseType = "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Regal Orb" "Vaal Orb" "Exalted Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Shard" "Harbinger's Shard" "Facetor's Lens"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 1 Red Circle
 
 Show
-	Class "Currency"
-	BaseType "Splinter of Chayula"
+	Class = "Currency"
+	BaseType = "Splinter of Chayula"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 1 Red Circle
 
 Show
-	Class "Currency"
-	BaseType "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
+	Class = "Currency"
+	BaseType = "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 Show
-	Class "Currency"
-	BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
+	Class = "Currency"
+	BaseType = "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
 	SetTextColor 50 230 100 255 # Essence
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Green Circle
 	PlayEffect Green 
 
 Show
-	Class "Currency"
-	BaseType "Essence"
+	Class = "Currency"
+	BaseType = "Essence"
 	SetTextColor 50 230 100 255 # Essence
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 Show
-	Class "Currency"
-	BaseType "Remnant of Corruption"
+	Class = "Currency"
+	BaseType = "Remnant of Corruption"
 	SetTextColor 50 230 100 255 # Essence
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 1 Green Circle
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: MAPS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 #-------------------------------------------------------------------------------
 # Subsection: Shaped
 #-------------------------------------------------------------------------------
 
 Show
-	ShapedMap True
+	HasInfluence = "Shaper"
 	MapTier <= 10
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 96 240 96 255 # Map - shaped
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 7 80 # Map - T6
 	DisableDropSound
 	MinimapIcon 1 Yellow Hexagon
 
 Show
-	ShapedMap True
+	HasInfluence = "Shaper"
 	MapTier <= 15
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 255 32 0 255 # Map - T11
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 96 240 96 255 # Map - shaped
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
 	MinimapIcon 0 Red Hexagon
@@ -1654,13 +1527,12 @@ Show
 
 # Safety
 Show
-	ShapedMap True
-	Class "Maps"
+	HasInfluence = "Shaper"
+	Class = "Maps"
 	SetTextColor 96 240 96 255 # Map - shaped
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 96 240 96 255 # Map - shaped
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
 	MinimapIcon 0 Green Hexagon
@@ -1671,13 +1543,12 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	ElderMap True
-	Class "Maps"
+	HasInfluence = "Elder"
+	Class = "Maps"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 96 240 96 255 # Map - top
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Green Hexagon
@@ -1687,47 +1558,30 @@ Show
 # Subsection: Tier 1-5
 #-------------------------------------------------------------------------------
 
-# maps Tier 1-5 with AlertSound until
+# maps in Tier 1-5 with AlertSound
 Show # ~Maps | Disable
 	MapTier <= 5
-	ItemLevel <= 100
-	Class "Maps"
+	AreaLevel <= 73
+	Class = "Maps"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 232 232 232 255 # Map - T1
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
 	MinimapIcon 2 White Hexagon
-	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 77 -1 74 -1 -1 -1 -1
+	#BlockStrictness 7 Disable
 
-# maps Tier 1-5 in higher areas until
-Show # ~Maps
+# maps Tier 1-5 in higher areas
+Show # ~Maps | Hide
 	MapTier <= 5
-	ItemLevel <= 100
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 232 232 232 255 # Map - T1
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	DisableDropSound
-	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 77 -1 -1
-
-Hide
-	MapTier <= 5
-	Class "Maps"
-	SetTextColor 232 232 232 255 # Map - T1
-	SetBackgroundColor 40 32 28 255 # Map
-	SetBorderColor 232 232 232 255 # Map - T1
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
-	DisableDropSound
+	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Tier 6-10
@@ -1736,44 +1590,27 @@ Hide
 # maps Tier 6-10 with AlertSound until
 Show # ~Maps | Disable
 	MapTier <= 10
-	ItemLevel <= 100
-	Class "Maps"
+	ItemLevel <= 78
+	Class = "Maps"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 255 224 0 255 # Map - T6
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
 	MinimapIcon 2 Yellow Hexagon
-	#CustomizableValues "itemlevel"
-	#BlockStrictness 10 Disable
-	#VariableStrictness itemlevel -1 -1 82 -1 79 -1 -1 -1 -1
+	#BlockStrictness 9 Disable
 
 # maps Tier 6-10 in higher areas until
-Show # ~Maps
+Show # ~Maps | Hide
 	MapTier <= 10
-	ItemLevel <= 100
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 255 224 0 255 # Map - T6
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	DisableDropSound
-	#CustomizableValues "itemlevel"
 	#BlockStrictness 10 Hide
-	#VariableStrictness itemlevel -1 -1 -1 -1 -1 -1 82 -1 -1
-
-Hide
-	MapTier <= 10
-	Class "Maps"
-	SetTextColor 255 224 0 255 # Map - T6
-	SetBackgroundColor 40 32 28 255 # Map
-	SetBorderColor 255 224 0 255 # Map - T6
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
-	DisableDropSound
 
 #-------------------------------------------------------------------------------
 # Subsection: Tier 11+
@@ -1781,12 +1618,11 @@ Hide
 
 Show
 	MapTier <= 15
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 255 32 0 255 # Map - T11
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 255 32 0 255 # Map - T11
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 9 100
 	DisableDropSound
 	MinimapIcon 1 Red Hexagon
@@ -1798,12 +1634,11 @@ Show
 
 Show
 	MapTier >= 16
-	Class "Maps"
+	Class = "Maps"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 96 240 96 255 # Map - top
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
@@ -1813,85 +1648,78 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Atlas Region Upgrade Item"
-	BaseType "Ivory Watchstone"
+	Class = "Atlas Region Upgrade Item"
+	BaseType = "Ivory Watchstone"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragments" "Labyrinth" "Misc Map Items"
-	BaseType "Fragment of Enslavement" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	Class = "Map Fragments" "Labyrinth" "Misc Map Items"
+	BaseType = "Fragment of Enslavement" "Fragment of Constriction" "Fragment of Eradication" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
 	SetTextColor 255 32 0 255 # Map - T11
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragments" "Labyrinth" "Misc Map Items"
-	BaseType "Mortal Ignorance" "Mortal Hope" "Fragment of the Chimera"
+	Class = "Map Fragments" "Labyrinth" "Misc Map Items"
+	BaseType = "Mortal Ignorance" "Mortal Hope" "Fragment of the Chimera"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragments" "Labyrinth" "Misc Map Items"
-	BaseType "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of the Hydra" "Volkuur's Key" "Inya's Key" "Eber's Key" "Yriel's Key" "Mortal Rage" "Mortal Grief" "Offering to the Goddess" "Breachstone"
+	Class = "Map Fragments" "Labyrinth" "Misc Map Items"
+	BaseType = "Fragment of the Minotaur" "Fragment of the Phoenix" "Fragment of the Hydra" "Volkuur's Key" "Inya's Key" "Eber's Key" "Yriel's Key" "Mortal Rage" "Mortal Grief" "Offering to the Goddess" "Breachstone" "Tribute to the Goddess" "Gift to the Goddess" "Dedication to the Goddess"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
 	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
 Show
-	Class "Map Fragments" "Labyrinth" "Misc Map Items"
+	Class = "Map Fragments" "Labyrinth" "Misc Map Items"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
 	MinimapIcon 2 Blue Hexagon
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: DIVINATION CARDS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 #-------------------------------------------------------------------------------
 # Subsection: Shit cards
 #-------------------------------------------------------------------------------
 
 # worthless cards
-Show # Divination Cards
-	Class "Divination Card"
-	BaseType "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
+Show # Divination Cards | Hide
+	Class = "Divination Card"
+	BaseType = "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "basetype"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
 
 #-------------------------------------------------------------------------------
@@ -1899,13 +1727,12 @@ Show # Divination Cards
 #-------------------------------------------------------------------------------
 
 # exception - prevent collision with valuable card
-Show # Divination Cards
-	Class "Divination Card"
-	BaseType "The Wolf's Shadow" "The Master Artisan" "The Demoness"
+Show # Divination Cards | Hide
+	Class = "Divination Card"
+	BaseType = "The Wolf's Shadow" "The Master Artisan" "The Demoness"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
@@ -1913,447 +1740,399 @@ Show # Divination Cards
 #-------------------------------------------------------------------------------
 
 Show
-	Class "Divination Card"
-	BaseType "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon" "Squandered Prosperity" "Succor of the Sinless"
+	Class = "Divination Card"
+	BaseType = "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon" "Squandered Prosperity" "Succor of the Sinless"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue 
 
 Show
-	Class "Divination Card"
-	BaseType "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger" "The Progeny of Lunaris" "Council of Cats" "The Eldritch Decay" "The Cheater" "The Strategist" "The Easy Stroll"
+	Class = "Divination Card"
+	BaseType = "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger" "The Progeny of Lunaris" "Council of Cats" "The Eldritch Decay" "The Cheater" "The Strategist" "The Easy Stroll" "Prometheus' Armoury" "Peaceful Moments" "The Greatest Intentions" "The Awakened" "The White Knight" "The Sustenance" "A Note in the Wind"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 1 Blue Diamond
 	PlayEffect Blue 
 
 Show
-	Class "Divination Card"
-	BaseType "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship" "The Tinkerer's Table"
+	Class = "Divination Card"
+	BaseType = "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship" "The Tinkerer's Table" "A Familiar Call" "The Tumbleweed" "The Hive of Knowledge" "The Long Con" "Gift of Asenath"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 2 Blue Diamond
 
 # common cards that could be worth picking up
-Show # Divination Cards
-	Class "Divination Card"
-	BaseType "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
+Show # Divination Cards | Hide
+	Class = "Divination Card"
+	BaseType = "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "basetype"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
 
-# all other (unfiltered) cards
-Show # Divination Cards
-	Class "Divination Card"
+# all other (unfiltered/cheap) cards
+Show # Divination Cards | Hide
+	Class = "Divination Card"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: GEMS
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
-	Class "Gems"
-	BaseType "Awakened"
+	Class = "Gems"
+	BaseType = "Awakened"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 0 Green Diamond
 
 Show
 	Quality >= 20
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 0 Green Diamond
 
 Show
 	GemLevel >= 20
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 0 Green Diamond
 
-# Vaal gems
-Show # Gems
-	Corrupted True
-	Class "Gems"
+# Corrupted (Vaal) gems
+Show # Gems | Hide
+	Corrupted = True
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
-# corrupted gems with AlertSound if
+# Corrupted (Vaal) gems with AlertSound if Quality>=10
 Show # Gems | Disable
-	Corrupted True
+	Corrupted = True
 	Quality >= 10
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 3 80 # Alch
 	DisableDropSound
 	MinimapIcon 2 Green Diamond
-	#CustomizableValues "quality"
 	#BlockStrictness 10 Disable
-	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 18
 
-# gems with AlertSound if
+# gems with AlertSound if Quality>=10
 Show # Gems | Disable
 	Quality >= 10
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 3 80 # Alch
 	DisableDropSound
 	MinimapIcon 2 Green Diamond
-	#CustomizableValues "quality"
 	#BlockStrictness 10 Disable
-	#VariableStrictness quality 5 -1 10 -1 15 -1 -1 -1 18
 
 # drop-only gems - Empower, Enlighten
 Show # Gems | Disable
-	Class "Gems"
-	BaseType "Empower Support" "Enlighten Support"
+	Class = "Gems"
+	BaseType = "Empower Support" "Enlighten Support"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Green Diamond
 
 # drop-only gems - other
 Show # Gems | Disable
-	Class "Gems"
-	BaseType "Enhance Support" "Vaal Breach" "Portal"
+	Class = "Gems"
+	BaseType = "Enhance Support" "Vaal Breach" "Portal"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 	PlayAlertSound 3 80 # Alch
 	MinimapIcon 2 Green Diamond
 	#BlockStrictness 9 Disable
 
-# corrupted gems with
-Show # Gems
-	Corrupted True
+# corrupted gems with any Quality
+Show # Gems | Hide
+	Corrupted = True
 	Quality >= 1
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
-	#CustomizableValues "quality"
+	SetFontSize 36 # 36
 	#BlockStrictness 10 Hide
-	#VariableStrictness quality -1 -1 -1 -1 5 -1 10 -1 -1
 
-# gems with
-Show # Gems
+# gems with Quality 1-10
+Show # Gems | Hide
 	Quality >= 1
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
-	#CustomizableValues "quality"
+	SetFontSize 36 # 36
 	#BlockStrictness 10 Hide
-	#VariableStrictness quality -1 -1 -1 -1 5 -1 10 -1 -1
 
-# gems with
-Show # Gems
+# gems with level
+Show # Gems | Hide
 	GemLevel > 1
-	Class "Gems"
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 27 162 155 255 # Gem
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "gemlevel"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 10 Hide
-	#VariableStrictness gemlevel -1 -1 -1 -1 16 -1 18 -1 -1
 
 # all unfiltered gems
-Show # Gems
-	Class "Gems"
+Show # Gems | Hide
+	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 28
-	#SetFontSizeTag 28 # 28
+	SetFontSize 28 # 28
 	#BlockStrictness 9 Hide
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: PROPHECIES
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
-	Prophecy "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Monstrous Treasure" "The King's Path"
+	Prophecy = "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Monstrous Treasure" "The King's Path"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 Red Diamond
 	PlayEffect Red 
 
 Show
-	Prophecy "The Unbreathing Queen V" "A Vision of Ice and Fire" "Wind and Thunder" "The Jeweller's Touch" "Darktongue's Shriek" "Lost in the Pages" "The Feral Lord V" "The Plaguemaw V" "Cleanser of Sins" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Flesh of the Beast" "The Lost Undying" "The Servant's Heart"
+	Prophecy = "The Unbreathing Queen V" "A Vision of Ice and Fire" "Wind and Thunder" "The Jeweller's Touch" "Darktongue's Shriek" "Lost in the Pages" "The Feral Lord V" "The Plaguemaw V" "Cleanser of Sins" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Flesh of the Beast" "The Lost Undying" "The Servant's Heart"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Red Diamond
 
 Show
-	Prophecy " "
+	Prophecy = " "
 	SetTextColor 224 0 204 255 # Prophecy
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 224 0 204 255 # Prophecy
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
 Show
-	Class "Currency"
-	BaseType "Prophecy"
+	Class = "Currency"
+	BaseType = "Prophecy"
 	SetTextColor 224 0 204 255 # Prophecy
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: CURRENCY - 0
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
-	Class "Currency"
-	BaseType "Simple Sextant"
+	Class = "Currency"
+	BaseType = "Simple Sextant"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 2 White Circle
 
 Show
-	Class "Currency"
-	BaseType "Prime Sextant"
+	Class = "Currency"
+	BaseType = "Prime Sextant"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 1 Yellow Circle
 
 Show
-	Class "Currency"
-	BaseType "Awakened Sextant"
+	Class = "Currency"
+	BaseType = "Awakened Sextant"
 	SetTextColor 255 32 0 255 # Map - T11
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 0 Red Circle
 	PlayEffect Red 
 
 Show
-	Class "Currency"
-	BaseType "Divine Orb" "Ancient Orb" "Harbinger's Orb" "Orb of Annulment"
+	Class = "Currency"
+	BaseType = "Divine Orb" "Ancient Orb" "Harbinger's Orb" "Orb of Annulment"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
 	MinimapIcon 0 Red Circle
 	PlayEffect Red 
 
 Show
-	Class "Currency"
-	BaseType "Exalted Orb" "Mirror of Kalandra" "Mirror Shard" "Albino Rhoa Feather" "Eternal Orb"
+	Class = "Currency"
+	BaseType = "Exalted Orb" "Mirror of Kalandra" "Mirror Shard" "Albino Rhoa Feather" "Eternal Orb"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 224 164 255 # Currency - Top
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
 Show
-	Class "Currency"
-	BaseType "Stacked Deck"
+	Class = "Currency"
+	BaseType = "Stacked Deck"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 1 Blue Circle
 
 Show
-	Class "Currency"
-	BaseType "Blessing of Chayula"
+	Class = "Currency"
+	BaseType = "Blessing of Chayula"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
 Show
-	Class "Currency"
-	BaseType "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph"
+	Class = "Currency"
+	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph"
 	SetTextColor 208 32 144 255 # Splinter
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
-	SetFontSize 40
-	#SetFontSizeTag 40 # 40
+	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 0 Red Circle
 
-Show # Currency
+Show # Currency | Hide
 	StackSize >= 1
-	Class "Currency"
-	BaseType "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
+	Class = "Currency"
+	BaseType = "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
 
-Show # Currency
+Show # Currency | Hide
 	StackSize >= 1
-	Class "Currency"
-	BaseType "Binding Shard" "Engineer's Shard" "Horizon Shard"
+	Class = "Currency"
+	BaseType = "Binding Shard" "Engineer's Shard" "Horizon Shard"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32
-	#SetFontSizeTag 32 # 32 - Default
-	#CustomizableValues "stacksize"
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Currency
+Show # Currency | Hide
 	StackSize >= 1
-	Class "Currency"
-	BaseType "Perandus Coin"
+	Class = "Currency"
+	BaseType = "Perandus Coin"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
-	#CustomizableValues "stacksize"
+	SetFontSize 36 # 36
 	#BlockStrictness 10 Hide
-	#VariableStrictness stacksize -1 -1 -1 -1 -1 -1 2 -1 2
 
-Hide
-	Class "Currency"
-	BaseType "Perandus Coin" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
+# Single (non-stacked) cheap currencies
+Hide # Currency | Hide
+	Class = "Currency"
+	BaseType = "Perandus Coin" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 36
-	#SetFontSizeTag 36 # 36
+	SetFontSize 36 # 36
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: QUEST
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
-	Class "Quest Items" "Pantheon Soul"
+	Class = "Quest Items" "Pantheon Soul"
 	SetTextColor 74 230 58 255 # Quest
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 74 230 58 255 # Quest
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 4 80 # Quest
 	DisableDropSound
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green 
 
 Show
-	BaseType "Cobalt Watchstone" "Crimson Watchstone" "Golden Watchstone" "Viridian Watchstone" "Ivory Watchstone"
+	BaseType = "Cobalt Watchstone" "Crimson Watchstone" "Golden Watchstone" "Viridian Watchstone" "Ivory Watchstone"
 	SetTextColor 74 230 58 255 # Quest
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 74 230 58 255 # Quest
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 4 80 # Quest
 	DisableDropSound
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green 
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Section: EMERGENCY
-#-------------------------------------------------------------------------------
+#===============================================================================
 
 Show
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 0 0 255 # Emergency
 	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44
-	#SetFontSizeTag 44 # 44 - Top
+	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red 
+
