@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC5
+# VERSION:       3.11.0-RC6
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -782,10 +782,10 @@ Show
 # 5-link items
 Show # Craft | Disable
 	LinkedSockets = 5
+	AreaLevel <= 75
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 40 # 40
-	Continue
 	#BlockStrictness 10 Disable
 
 # weapons and shields with white socket - good for leveling gems in swap slots
