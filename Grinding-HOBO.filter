@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC7
+# VERSION:       3.11.0-RC12
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -470,13 +470,13 @@ Show
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue 
 
-Hide
+Show
 	Class = "Map Fragment"
 	BaseType = "Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
-	SetFontSize 32 # 32 - Default
+	SetFontSize 36 # 36
 	DisableDropSound
 
 Show
