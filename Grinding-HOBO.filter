@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC12
+# VERSION:       3.11.0-RC13
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -114,14 +114,7 @@ Show # Currency | Hide
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 72 204 # Portal Scroll
 	SetFontSize 36 # 36
-	#BlockStrictness 7 Hide
-
-Show
-	Class = "Currency"
-	BaseType = "Scroll"
-	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 48 32 224 # Base
-	SetFontSize 40 # 40
+	#BlockStrictness 9 Hide
 
 Show # Currency | Hide
 	Class = "Currency"
@@ -1452,6 +1445,7 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 36 # 36
+	MinimapIcon 2 Red Circle
 
 Show
 	Class = "Currency"
@@ -1590,7 +1584,7 @@ Show # ~Maps | Disable
 	SetFontSize 40 # 40
 	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
-	MinimapIcon 2 Yellow Hexagon
+	MinimapIcon 1 Yellow Hexagon
 	#BlockStrictness 9 Disable
 
 # maps Tier 6-10 in higher areas
@@ -1602,6 +1596,7 @@ Show # ~Maps | Hide
 	SetBorderColor 255 224 0 255 # Map - T6
 	SetFontSize 40 # 40
 	DisableDropSound
+	MinimapIcon 1 Yellow Hexagon
 
 #-------------------------------------------------------------------------------
 # Subsection: Tier 11+
@@ -1616,7 +1611,7 @@ Show
 	SetFontSize 44 # 44 - Top
 	PlayAlertSound 9 100
 	DisableDropSound
-	MinimapIcon 1 Red Hexagon
+	MinimapIcon 0 Red Hexagon
 	PlayEffect Red 
 
 #-------------------------------------------------------------------------------
@@ -1771,7 +1766,9 @@ Show # Divination Cards | Hide
 	BaseType = "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 36 # 36
+	MinimapIcon 2 Blue Diamond
 	#BlockStrictness 9 Hide
 
 # all other (unfiltered/cheap) cards
@@ -1936,8 +1933,8 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
 	PlayAlertSound 1 80 # Exalt
-	MinimapIcon 0 Red Diamond
-	PlayEffect Red 
+	MinimapIcon 0 Purple Diamond
+	PlayEffect Purple 
 
 Show
 	Prophecy = "The Unbreathing Queen V" "A Vision of Ice and Fire" "Wind and Thunder" "The Jeweller's Touch" "Darktongue's Shriek" "Lost in the Pages" "The Feral Lord V" "The Plaguemaw V" "Cleanser of Sins" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Flesh of the Beast" "The Lost Undying" "The Servant's Heart"
@@ -1946,7 +1943,7 @@ Show
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
-	MinimapIcon 1 Red Diamond
+	MinimapIcon 1 Purple Diamond
 
 Show
 	Prophecy = " "
@@ -1975,7 +1972,7 @@ Show
 	SetFontSize 40 # 40
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
-	MinimapIcon 2 White Circle
+	MinimapIcon 1 White Circle
 
 Show
 	Class = "Currency"
@@ -2011,6 +2008,17 @@ Show
 	DisableDropSound
 	MinimapIcon 0 Red Circle
 	PlayEffect Red 
+
+Show
+	Class = "Currency"
+	BaseType = "Scroll" "Scroll"
+	SetTextColor 170 158 130 255 # Currency - Low
+	SetBackgroundColor 0 48 32 224 # Base
+	SetBorderColor 231 180 120 255 # Currency - High
+	SetFontSize 44 # 44 - Top
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 White Circle
+	PlayEffect White 
 
 Show
 	Class = "Currency"
