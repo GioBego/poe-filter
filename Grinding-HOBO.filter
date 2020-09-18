@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.11.0-RC13
+# VERSION:       3.12.0-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -230,6 +230,98 @@ Show
 #===============================================================================
 # Section: LEAGUE
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: Heist
+#-------------------------------------------------------------------------------
+
+Show
+	Class = "Divination Card"
+	BaseType == "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "Unrequited Love" "The Cache" "The Academic" "Desecrated Virtue" "Brother's Stash" "Unchained" "The Unexpected Prize" "Cursed Words" "The Journalist"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 2 80 # Chaos
+	DisableDropSound
+	MinimapIcon 0 Blue Diamond
+
+Show
+	AlternateQuality = True
+	Class = "Gem"
+	SetTextColor 0 0 0 255 # Black
+	SetBackgroundColor 27 162 155 255 # Gem
+	SetBorderColor 0 0 0 255 # Black
+	SetFontSize 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 Green Diamond
+	PlayEffect Green 
+
+Show
+	Replica = True
+	Rarity = Unique
+	SetBorderColor 224 0 204 255 # Prophecy
+	SetFontSize 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 Purple Star
+	PlayEffect Purple 
+
+Show
+	Class = "Stackable Currency"
+	BaseType = "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb" "Rogue's Marker"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 10 100 # League++
+	MinimapIcon 0 Cyan Circle
+	PlayEffect Cyan 
+
+Show
+	Class = "Trinket"
+	BaseType = "Thief's Trinket"
+	SetTextColor 255 196 0 255 # Accessories
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 10 100 # League++
+	MinimapIcon 0 Yellow Raindrop
+	PlayEffect Yellow 
+
+Show
+	Class = "Heist Target"
+	SetTextColor 255 32 0 255 # Map - T11
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 10 100 # League++
+	MinimapIcon 0 Red Cross
+	PlayEffect Red 
+
+Show
+	Class = "Contract"
+	SetTextColor 96 240 96 255 # Map - shaped
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class = "Blueprint"
+	SetTextColor 96 240 96 255 # Map - shaped
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 11 80 # League
+	MinimapIcon 0 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class = "Heist"
+	SetTextColor 96 240 96 255 # Map - shaped
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
+	MinimapIcon 1 Blue Triangle
 
 #-------------------------------------------------------------------------------
 # Subsection: Harvest
@@ -1702,24 +1794,11 @@ Show
 # worthless cards
 Show # Divination Cards | Hide
 	Class = "Divination Card"
-	BaseType = "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
+	BaseType == "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
-
-#-------------------------------------------------------------------------------
-# Subsection: Exception cards
-#-------------------------------------------------------------------------------
-
-# exception - prevent collision with valuable card
-Show # Divination Cards | Hide
-	Class = "Divination Card"
-	BaseType = "The Wolf's Shadow" "The Master Artisan" "The Demoness"
-	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 9 Hide
 
 #-------------------------------------------------------------------------------
 # Subsection: Cards by value - Top to Low
@@ -1727,7 +1806,7 @@ Show # Divination Cards | Hide
 
 Show
 	Class = "Divination Card"
-	BaseType = "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon" "Squandered Prosperity" "Succor of the Sinless"
+	BaseType == "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon" "Squandered Prosperity" "Succor of the Sinless"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1739,7 +1818,7 @@ Show
 
 Show
 	Class = "Divination Card"
-	BaseType = "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger" "The Progeny of Lunaris" "Council of Cats" "The Eldritch Decay" "The Cheater" "The Strategist" "The Easy Stroll" "Prometheus' Armoury" "Peaceful Moments" "The Greatest Intentions" "The Awakened" "The White Knight" "The Sustenance" "A Note in the Wind"
+	BaseType == "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger" "The Progeny of Lunaris" "Council of Cats" "The Eldritch Decay" "The Cheater" "The Strategist" "The Easy Stroll" "Prometheus' Armoury" "Peaceful Moments" "The Greatest Intentions" "The Awakened" "The White Knight" "The Sustenance" "A Note in the Wind"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1751,7 +1830,7 @@ Show
 
 Show
 	Class = "Divination Card"
-	BaseType = "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship" "The Tinkerer's Table" "A Familiar Call" "The Tumbleweed" "The Hive of Knowledge" "The Long Con" "Gift of Asenath"
+	BaseType == "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship" "The Tinkerer's Table" "A Familiar Call" "The Tumbleweed" "The Hive of Knowledge" "The Long Con" "Gift of Asenath"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1763,7 +1842,7 @@ Show
 # common cards that could be worth picking up
 Show # Divination Cards | Hide
 	Class = "Divination Card"
-	BaseType = "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
+	BaseType == "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
