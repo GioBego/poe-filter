@@ -219,7 +219,7 @@ Show
 	DisableDropSound
 	#BlockStrictness 7 Disable
 
-Show
+Hide
 	Rarity <= Magic
 	Class = "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -922,41 +922,41 @@ Show # Vendor - Chromatic recipe | Disable
 	#BlockStrictness 7 Disable
 
 # Chancing bases
-Show # Craft | Disable
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 175 96 37 255 # Unique
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 5 Disable
+#Show # Craft | Disable
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 175 96 37 255 # Unique
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 5 Disable
 
-Show # Vendor - Chisel recipe | Disable
-	Rarity = Normal
-	Quality >= 15
-	Class = "One Hand Maces"
-	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 5 Disable
+#Show # Vendor - Chisel recipe | Disable
+#	Rarity = Normal
+#	Quality >= 15
+#	Class = "One Hand Maces"
+#	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 5 Disable
 
-Show # Vendor - Chisel recipe | Disable
-	Rarity = Magic
-	Quality >= 18
-	Class = "One Hand Maces"
-	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 5 Disable
+#Show # Vendor - Chisel recipe | Disable
+#	Rarity = Magic
+#	Quality >= 18
+#	Class = "One Hand Maces"
+#	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 5 Disable
 
-Show # Vendor - Chisel recipe | Disable
-	Rarity = Rare
-	Quality >= 19
-	Class = "One Hand Maces"
-	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 240
-	SetFontSize 32
-	#BlockStrictness 5 Disable
+#Show # Vendor - Chisel recipe | Disable
+#	Rarity = Rare
+#	Quality >= 19
+#	Class = "One Hand Maces"
+#	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
+#	SetBackgroundColor 0 0 0 240
+#	SetFontSize 32
+#	#BlockStrictness 5 Disable
 
 Show
 	Rarity <= Rare
@@ -1800,7 +1800,7 @@ Show
 #-------------------------------------------------------------------------------
 
 # worthless cards
-Show # Divination Cards | Hide
+Hide # Divination Cards | Hide
 	Class = "Divination Card"
 	BaseType == "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
 	SetTextColor 0 168 242 255 # Card
@@ -2153,7 +2153,7 @@ Show
 	DisableDropSound
 	MinimapIcon 0 Red Circle
 
-Show # Currency | Hide
+Hide # Currency | Hide
 	StackSize >= 1
 	Class = "Currency"
 	BaseType = "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"

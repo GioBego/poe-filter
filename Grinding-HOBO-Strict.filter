@@ -100,7 +100,7 @@ Show
 	SetBackgroundColor 0 0 72 204 # Portal Scroll
 	SetFontSize 40 # 40
 
-Show # Currency | Hide
+Hide # Currency | Hide
 	Class = "Currency"
 	BaseType = "Scroll of Wisdom"
 	SetTextColor 170 158 130 255 # Currency - Low
@@ -116,7 +116,7 @@ Show # Currency | Hide
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-Show # Currency | Hide
+Hide # Currency | Hide
 	Class = "Currency"
 	BaseType = "Armourer's Scrap"
 	SetTextColor 170 158 130 255 # Currency - Low
@@ -124,7 +124,7 @@ Show # Currency | Hide
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Currency | Hide
+Hide # Currency | Hide
 	Class = "Currency"
 	BaseType = "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency - Low
@@ -177,49 +177,49 @@ Show # Flasks | Hide
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
 
-Show # Flasks | Disable
-	Rarity <= Magic
-	Quality >= 1
-	Class = "Flasks"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 7 Disable
+#Show # Flasks | Disable
+#	Rarity <= Magic
+#	Quality >= 1
+#	Class = "Flasks"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 176 32 24 255 # Flask
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 7 Disable
 
-Show
-	Rarity <= Magic
-	ItemLevel <= 18
-	Class = "Flasks"
-	BaseType = "Small" "Medium" "Large" "Greater"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 28 # 28
-	DisableDropSound
-	#BlockStrictness 7 Disable
+#Show
+#	Rarity <= Magic
+#	ItemLevel <= 18
+#	Class = "Flasks"
+#	BaseType = "Small" "Medium" "Large" "Greater"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 176 32 24 255 # Flask
+#	SetFontSize 28 # 28
+#	DisableDropSound
+#	#BlockStrictness 7 Disable
 
-Show
-	Rarity <= Magic
-	ItemLevel <= 42
-	Class = "Flasks"
-	BaseType = "Grand" "Giant" "Colossal" "Sacred"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 28 # 28
-	DisableDropSound
-	#BlockStrictness 7 Disable
+#Show
+#	Rarity <= Magic
+#	ItemLevel <= 42
+#	Class = "Flasks"
+#	BaseType = "Grand" "Giant" "Colossal" "Sacred"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 176 32 24 255 # Flask
+#	SetFontSize 28 # 28
+#	DisableDropSound
+#	#BlockStrictness 7 Disable
 
-Show
-	Rarity <= Magic
-	ItemLevel <= 60
-	Class = "Flasks"
-	BaseType = "Hallowed" "Sanctified"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 176 32 24 255 # Flask
-	SetFontSize 28 # 28
-	DisableDropSound
-	#BlockStrictness 7 Disable
+#Show
+#	Rarity <= Magic
+#	ItemLevel <= 60
+#	Class = "Flasks"
+#	BaseType = "Hallowed" "Sanctified"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 176 32 24 255 # Flask
+#	SetFontSize 28 # 28
+#	DisableDropSound
+#	#BlockStrictness 7 Disable
 
-Show
+Hide
 	Rarity <= Magic
 	Class = "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -900,63 +900,63 @@ Show
 	SetFontSize 36 # 36
 
 # small items (1x3)
-Show # Vendor - Chromatic recipe | Disable
-	SocketGroup >= "RGB"
-	Rarity <= Rare
-	Height = 3
-	Width = 1
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 36 # 36
-	#BlockStrictness 7 Disable
+#Show # Vendor - Chromatic recipe | Disable
+#	SocketGroup >= "RGB"
+#	Rarity <= Rare
+#	Height = 3
+#	Width = 1
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 48 232 96 255 # RGB
+#	SetFontSize 36 # 36
+#	#BlockStrictness 7 Disable
 
 # small items (2x2)
-Show # Vendor - Chromatic recipe | Disable
-	SocketGroup >= "RGB"
-	Rarity <= Rare
-	Height = 2
-	Width = 2
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 36 # 36
-	#BlockStrictness 7 Disable
+#Show # Vendor - Chromatic recipe | Disable
+#	SocketGroup >= "RGB"
+#	Rarity <= Rare
+#	Height = 2
+#	Width = 2
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 48 232 96 255 # RGB
+#	SetFontSize 36 # 36
+#	#BlockStrictness 7 Disable
 
 # Chancing bases
-Show # Craft | Disable
-	Corrupted = False
-	Rarity = Normal
-	BaseType = "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 175 96 37 255 # Unique
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 5 Disable
+#Show # Craft | Disable
+#	Corrupted = False
+#	Rarity = Normal
+#	BaseType = "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 175 96 37 255 # Unique
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 5 Disable
 
-Show # Vendor - Chisel recipe | Disable
-	Rarity = Normal
-	Quality >= 15
-	Class = "One Hand Maces"
-	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 5 Disable
+#Show # Vendor - Chisel recipe | Disable
+#	Rarity = Normal
+#	Quality >= 15
+#	Class = "One Hand Maces"
+#	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 5 Disable
 
-Show # Vendor - Chisel recipe | Disable
-	Rarity = Magic
-	Quality >= 18
-	Class = "One Hand Maces"
-	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32 # 32 - Default
-	#BlockStrictness 5 Disable
+#Show # Vendor - Chisel recipe | Disable
+#	Rarity = Magic
+#	Quality >= 18
+#	Class = "One Hand Maces"
+#	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetFontSize 32 # 32 - Default
+#	#BlockStrictness 5 Disable
 
-Show # Vendor - Chisel recipe | Disable
-	Rarity = Rare
-	Quality >= 19
-	Class = "One Hand Maces"
-	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 240
-	SetFontSize 32
-	#BlockStrictness 5 Disable
+#Show # Vendor - Chisel recipe | Disable
+#	Rarity = Rare
+#	Quality >= 19
+#	Class = "One Hand Maces"
+#	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
+#	SetBackgroundColor 0 0 0 240
+#	SetFontSize 32
+#	#BlockStrictness 5 Disable
 
 Show
 	Rarity <= Rare
@@ -1063,7 +1063,7 @@ Show # Rare Items - Top Bases | Hide
 	#BlockStrictness 9 Hide
 
 # Good body armour bases
-Show # Rare Items - Top Bases | Hide
+Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	Class = "Body Armours"
 	BaseType = "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Astral Plate"
@@ -1079,28 +1079,28 @@ Show # Rare Items - Top Bases | Hide
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-Show # Rare Items - Top Bases | Hide
+Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	BaseType = "Siege Axe" "Opal Sceptre" "Void Sceptre"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases | Hide
+Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	BaseType = "Harbinger Bow" "Vaal Axe"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases | Hide
+Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	BaseType = "Archon Kite Shield"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
-Show # Rare Items - Top Bases | Hide
+Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	BaseType = "Spike-Point Arrow Quiver"
 	SetBackgroundColor 0 48 32 224 # Base
@@ -1112,13 +1112,13 @@ Show # Rare Items - Top Bases | Hide
 #===============================================================================
 
 # large RGB items
-Show # Vendor - Chromatic recipe | Disable
-	SocketGroup >= "RGB"
-	Rarity <= Rare
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 48 232 96 255 # RGB
-	SetFontSize 28 # 28
-	#BlockStrictness 7 Disable
+#Show # Vendor - Chromatic recipe | Disable
+#	SocketGroup >= "RGB"
+#	Rarity <= Rare
+#	SetBackgroundColor 0 0 0 224 # Black - transparent
+#	SetBorderColor 48 232 96 255 # RGB
+#	SetFontSize 28 # 28
+#	#BlockStrictness 7 Disable
 
 Show # Leveling - Linked Sockets | Disable
 	LinkedSockets >= 4
@@ -1800,7 +1800,7 @@ Show
 #-------------------------------------------------------------------------------
 
 # worthless cards
-Show # Divination Cards | Hide
+Hide # Divination Cards | Hide
 	Class = "Divination Card"
 	BaseType == "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
 	SetTextColor 0 168 242 255 # Card
@@ -1983,7 +1983,7 @@ Show # Gems | Hide
 	#BlockStrictness 9 Hide
 
 # gems with Quality 1-10
-Show # Gems | Hide
+Hide # Gems | Hide
 	Quality >= 1
 	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
@@ -2153,7 +2153,7 @@ Show
 	DisableDropSound
 	MinimapIcon 0 Red Circle
 
-Show # Currency | Hide
+Hide # Currency | Hide
 	StackSize >= 1
 	Class = "Currency"
 	BaseType = "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
@@ -2162,7 +2162,7 @@ Show # Currency | Hide
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
 
-Show # Currency | Hide
+Hide # Currency | Hide
 	StackSize >= 1
 	Class = "Currency"
 	BaseType = "Binding Shard" "Engineer's Shard" "Horizon Shard"
