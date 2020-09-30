@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.12.0-RC2
+# VERSION:       3.12.0-RC3
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -236,17 +236,6 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class = "Divination Card"
-	BaseType == "The Gulf" "The Bitter Blossom" "Triskaidekaphobia" "Unrequited Love" "The Cache" "The Academic" "Desecrated Virtue" "Brother's Stash" "Unchained" "The Unexpected Prize" "Cursed Words" "The Journalist"
-	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
-	DisableDropSound
-	MinimapIcon 0 Blue Diamond
-
-Show
 	AlternateQuality = True
 	Class = "Gem"
 	SetTextColor 0 0 0 255 # Black
@@ -444,7 +433,18 @@ Show
 
 Show
 	Class = "Stackable Currency"
-	BaseType = "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Silver Oil" "Golden Oil" "Indigo Oil"
+	BaseType == "Golden Oil" "Silver Oil"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 44 # 44 - Top
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 White Circle
+	PlayEffect White 
+
+Show
+	Class = "Stackable Currency"
+	BaseType = "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Indigo Oil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -587,7 +587,7 @@ Show
 
 Show # ~League - Delve | Disable
 	Class = "Currency"
-	BaseType = "Fractured Fossil" "Faceted Fossil" "Glyphic Fossil" "Tangled Fossil" "Hollow Fossil" "Shuddering Fossil"
+	BaseType == "Fractured Fossil" "Faceted Fossil" "Bloodstained Fossil"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
@@ -599,7 +599,7 @@ Show # ~League - Delve | Disable
 
 Show # ~League - Delve | Disable
 	Class = "Currency"
-	BaseType = "Gilded Fossil" "Sanctified Fossil"
+	BaseType == "Glyphic Fossil" "Hollow Fossil" "Corroded Fossil" "Sanctified Fossil" "Bound Fossil" "Shuddering Fossil" "Tangled Fossil" "Perfect Fossil" "Enchanted Fossil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -616,6 +616,7 @@ Show # ~League - Delve | Disable
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36 # 36
+	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 1 Blue Circle
 
@@ -1814,7 +1815,7 @@ Show # Divination Cards | Hide
 
 Show
 	Class = "Divination Card"
-	BaseType == "House of Mirrors" "The Doctor" "Beauty Through Death" "The Fiend" "Immortal Resolve" "The Nurse" "The Immortal" "Abandoned Wealth" "The Spark and the Flame" "The Dragon's Heart" "The Samurai's Eye" "The Iron Bard" "The Wolven King's Bite" "Hunter's Reward" "Wealth and Power" "The Queen" "Pride Before the Fall" "The World Eater" "A Dab of Ink" "The Risk" "The Mayor" "The Ethereal" "The King's Heart" "The Celestial Stone" "The Saint's Treasure" "Seven Years Bad Luck" "Alluring Bounty" "Pride of the First Ones" "The Damned" "The Demon" "Squandered Prosperity" "Succor of the Sinless"
+	BaseType == "House of Mirrors" "Unrequited Love" "The Doctor" "Brother's Stash" "The Demon" "The Fiend" "Gift of Asenath" "The Cheater" "Beauty Through Death" "Nook's Crown" "The Immortal" "Succor of the Sinless" "Alluring Bounty" "Immortal Resolve" "The Nurse" "Desecrated Virtue" "The Samurai's Eye" "The Craving"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
@@ -1826,7 +1827,7 @@ Show
 
 Show
 	Class = "Divination Card"
-	BaseType == "The Artist" "Mawr Blaidd" "The Brittle Emperor" "The Enlightened" "The Offering" "The Endless Darkness" "The Last One Standing" "The Celestial Justicar" "The Master" "The Professor" "The Hoarder" "The Undaunted" "The Polymath" "The Sacrifice" "The Sephirot" "The Hunger" "Boon of the First Ones" "The Valkyrie" "The Valley of Steel Boxes" "The Wolf" "The Dapper Prodigy" "The Thaumaturgist" "Perfection" "Chaotic Disposition" "The Journey" "The Landing" "The Mad King" "Monochrome" "Sambodhi's Vow" "The Seeker" "Arrogance of the Vaal" "Alone in the Darkness" "Buried Treasure" "Burning Blood" "Dark Dreams" "Akil's Prophecy" "Azyran's Reward" "The Bargain" "The Eye of Terror" "The Old Man" "The Price of Loyalty" "Remembrance" "Baited Expectations" "The Chosen" "Deathly Designs" "The Escape" "Etched in Blood" "The Fishmonger" "The Progeny of Lunaris" "Council of Cats" "The Eldritch Decay" "The Cheater" "The Strategist" "The Easy Stroll" "Prometheus' Armoury" "Peaceful Moments" "The Greatest Intentions" "The Awakened" "The White Knight" "The Sustenance" "A Note in the Wind"
+	BaseType == "Abandoned Wealth" "The Progeny of Lunaris" "The Iron Bard" "Pride of the First Ones" "Seven Years Bad Luck" "The Greatest Intentions" "Azyran's Reward" "The Long Con" "The White Knight" "The Dragon's Heart" "The Price of Loyalty" "Wealth and Power" "The Sustenance" "The Hive of Knowledge" "The World Eater" "The Escape" "The Saint's Treasure" "The Damned" "The Primordial" "Hunter's Reward" "The Enlightened" "The Eye of Terror" "The Gulf" "The Soul" "Dark Dreams" "Peaceful Moments" "The Bitter Blossom" "The Spark and the Flame" "Void of the Elements"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1838,7 +1839,7 @@ Show
 
 Show
 	Class = "Divination Card"
-	BaseType == "Humility" "Heterochromia" "The Breach" "The Dreamer" "The Jeweller's Boon" "The Throne" "The Undisputed" "The Porcupine" "Left to Fate" "The Obscured" "Bowyer's Dream" "Last Hope" "Lingering Remnants" "Lucky Deck" "Rebirth" "The Cartographer" "The Formless Sea" "The Wind" "The Innocent" "The Void" "The Vast" "Emperor of Purity" "Glimmer of Hope" "The Body" "The Chains that Bind" "The Cursed King" "The Gladiator" "The Hale Heart" "The Penitent" "The Price of Protection" "The Survivalist" "The Warlord" "The Twilight Moon" "The Beast" "The Wilted Rose" "The Messenger" "The Deep Ones" "Demigod's Wager" "Echoes of Love" "The Fool" "Imperial Legacy" "The Primordial" "Vanity" "The Deal" "The Heroic Shot" "More is Never Enough" "Nook's Crown" "The Skeleton" "Void of the Elements" "The Wolf's Legacy" "The Bones" "Cameria's Cut" "The Craving" "Divine Justice" "Friendship" "The Tinkerer's Table" "A Familiar Call" "The Tumbleweed" "The Hive of Knowledge" "The Long Con" "Gift of Asenath"
+	BaseType == "Council of Cats" "The Mayor" "Squandered Prosperity" "The Artist" "The Bargain" "The Offering" "Etched in Blood" "The Betrayal" "The Hoarder" "The Queen" "The Strategist" "A Familiar Call" "Blessing of God" "Chaotic Disposition" "The Celestial Justicar" "The Eldritch Decay" "A Note in the Wind" "Burning Blood" "Pride Before the Fall" "Remembrance" "The Academic" "The Brittle Emperor" "The Ethereal" "The Life Thief" "The Pact" "The Polymath" "The Sephirot" "The Wolven King's Bite" "Rebirth" "The Awakened" "The Breach" "The Cartographer" "The Celestial Stone" "The Cursed King" "The King's Heart" "The Landing" "The Sacrifice" "The Undaunted" "The Valkyrie" "Triskaidekaphobia" "Unchained" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Mawr Blaidd" "Perfection" "Prometheus' Armoury" "Sambodhi's Vow" "The Dapper Prodigy" "The Hale Heart" "The Heroic Shot" "The Innocent" "The Jeweller's Boon" "The Last One Standing" "The Mad King" "The Old Man" "The Porcupine" "The Professor" "The Realm" "The Risk" "The Rite of Elements" "The Tinkerer's Table" "The Undisputed" "The Vast" "The Void" "The Wolf" "Time-Lost Relic" "Underground Forest" "Earth Drinker" "The Hunger" "Divine Justice"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -2014,7 +2015,7 @@ Show # Gems | Hide
 #===============================================================================
 
 Show
-	Prophecy = "The Queen's Sacrifice" "Trash to Treasure" "Fated Connections" "Monstrous Treasure" "The King's Path"
+	Prophecy == "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
@@ -2024,7 +2025,16 @@ Show
 	PlayEffect Purple 
 
 Show
-	Prophecy = "The Unbreathing Queen V" "A Vision of Ice and Fire" "Wind and Thunder" "The Jeweller's Touch" "Darktongue's Shriek" "Lost in the Pages" "The Feral Lord V" "The Plaguemaw V" "Cleanser of Sins" "Twice Enchanted" "Unbearable Whispers V" "Vaal Winds" "Flesh of the Beast" "The Lost Undying" "The Servant's Heart"
+	Prophecy = "A Master Seeks Help"
+	SetTextColor 0 0 0 255 # Black
+	SetBackgroundColor 224 0 204 255 # Prophecy
+	SetBorderColor 0 0 0 255 # Black
+	SetFontSize 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 1 Purple Diamond
+
+Show
+	Prophecy == "A Prodigious Hand" "Song of the Sekhema" "The Hollow Pledge" "The Soulless Beast" "Darktongue's Shriek" "The King's Path" "The Great Leader of the North" "The Bowstring's Music" "The Jeweller's Touch" "Fire, Wood and Stone" "A Dishonourable Death" "The King and the Brambles" "Cleanser of Sins" "Fire and Brimstone" "Lost in the Pages" "Monstrous Treasure" "The Silverwood" "Twice Enchanted" "The Misunderstood Queen" "A Vision of Ice and Fire" "Agony at Dusk"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 224 0 204 255 # Prophecy
 	SetBorderColor 0 0 0 255 # Black
