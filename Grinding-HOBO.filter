@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.12.0-RC3
+# VERSION:       3.13.0-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -232,6 +232,83 @@ Show
 #===============================================================================
 
 #-------------------------------------------------------------------------------
+# Subsection: Ritual
+#-------------------------------------------------------------------------------
+
+Show
+	Class = "Currency"
+	BaseType = "Orb of Unmaking" "Maven's Orb"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 156 0 0 255 # Currency - Chaos
+	SetBorderColor 231 180 120 255 # Currency - High
+	SetFontSize 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 White Circle
+	PlayEffect White 
+
+Show
+	Class = "Stackable Currency"
+	BaseType = "Ritual Splinter" "Ritual Vessel" "Crescent Splinter"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 40 # 40
+	PlayAlertSound 10 100 # League++
+	MinimapIcon 0 Cyan Circle
+	PlayEffect Cyan 
+
+Show
+	Class = "Atlas Region Upgrade Item"
+	BaseType = "Watchstone"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 74 230 58 255 # Quest
+	SetFontSize 44 # 44 - Top
+	PlayAlertSound 14 240 # Map - top
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green 
+
+Show
+	Class = "Map Fragments"
+	BaseType = "The Maven's Writ" "Blood-filled Vessel"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 44 # 44 - Top
+	PlayAlertSound 14 240 # Map - top
+	MinimapIcon 0 Purple Hexagon
+	PlayEffect Purple 
+
+Show
+	Class = "Misc Map Items"
+	BaseType = "Maven's Invitation"
+	SetTextColor 74 230 58 255 # Quest
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 74 230 58 255 # Quest
+	SetFontSize 44 # 44 - Top
+	PlayAlertSound 4 80 # Quest
+	MinimapIcon 0 Green Hexagon
+	PlayEffect Green 
+
+Show
+	Class = "Boots"
+	BaseType = "Dreamquest Slippers" "Cloudwhisper Boots" "Brimstone Treads" "Nightwind Slippers" "Windbreak Boots" "Darksteel Treads" "Duskwalk Slippers" "Stormrider Boots" "Basemetal Treads"
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
+
+Show
+	Class = "Gloves"
+	BaseType = "Debilitation Gauntlets" "Gruelling Gauntlets" "Taxing Gauntlets" "Sinistral Gloves" "Southswing Gloves" "Gauche Gloves" "Nexus Gloves" "Aetherwind Gloves" "Leyline Gloves"
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
+
+Show
+	Class = "Helmets"
+	BaseType = "Blizzard Crown" "Winter Crown" "Gale Crown" "Archdemon Crown" "Demon Crown" "Imp Crown" "Atonement Mask" "Penitent Mask" "Sorrow Mask"
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
+
+#-------------------------------------------------------------------------------
 # Subsection: Heist
 #-------------------------------------------------------------------------------
 
@@ -324,16 +401,16 @@ Show
 # Subsection: Harvest
 #-------------------------------------------------------------------------------
 
-Show
-	Class = "Harvest Seed"
-	BaseType = "Wild Thornfruit" "Vivid Scalefruit" "Primal Blisterfruit"
-	SetTextColor 231 180 120 255 # Currency - High
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
-	MinimapIcon 0 Blue Raindrop
-	PlayEffect Blue 
+#Show
+#	Class = "Harvest Seed"
+#	BaseType = "Wild Thornfruit" "Vivid Scalefruit" "Primal Blisterfruit"
+#	SetTextColor 231 180 120 255 # Currency - High
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 40 # 40
+#	PlayAlertSound 11 80 # League
+#	MinimapIcon 0 Blue Raindrop
+#	PlayEffect Blue 
 
 #Show
 #	Class = "Harvest Infrastructure"
@@ -345,15 +422,15 @@ Show
 #	MinimapIcon 1 Blue UpsideDownHouse
 #	PlayEffect Blue 
 
-Show
-	Class = "Harvest Seed"
-	SetTextColor 231 180 120 255 # Currency - High
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
-	MinimapIcon 1 Blue Raindrop
-	PlayEffect Blue 
+#Show
+#	Class = "Harvest Seed"
+#	SetTextColor 231 180 120 255 # Currency - High
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 40 # 40
+#	PlayAlertSound 11 80 # League
+#	MinimapIcon 1 Blue Raindrop
+#	PlayEffect Blue 
 
 #-------------------------------------------------------------------------------
 # Subsection: Delirium
@@ -1812,6 +1889,18 @@ Show # Divination Cards | Hide
 #-------------------------------------------------------------------------------
 # Subsection: Cards by value - Top to Low
 #-------------------------------------------------------------------------------
+
+# New cards
+Show
+	Class = "Divination Card"
+	BaseType = "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 0 168 242 255 # Card
+	SetFontSize 40 # 40
+	PlayAlertSound 2 80 # Chaos
+	DisableDropSound
+	MinimapIcon 2 Blue Diamond
 
 Show
 	Class = "Divination Card"
