@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.13.0-RC1
+# VERSION:       3.13.0-RC2
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -331,6 +331,13 @@ Show
 	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Purple Star
 	PlayEffect Purple 
+
+Show
+	Class = "Stackable Currency"
+	BaseType = "Rogue's Marker"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
 
 Show
 	Class = "Stackable Currency"
@@ -1945,7 +1952,8 @@ Show # Divination Cards | Hide
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 36 # 36
-	MinimapIcon 2 Blue Diamond
+	PlayAlertSound 3 80 # Alch
+	MinimapIcon 1 Blue Diamond
 	#BlockStrictness 9 Hide
 
 # all other (unfiltered/cheap) cards
