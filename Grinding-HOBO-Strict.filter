@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.13.0-RC2
+# VERSION:       3.14.0-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -517,7 +517,7 @@ Show
 
 Show
 	Class = "Stackable Currency"
-	BaseType == "Golden Oil" "Silver Oil"
+	BaseType == "Golden Oil" "Silver Oil" "Tainted Oil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -1045,7 +1045,7 @@ Show
 
 Show
 	Rarity <= Rare
-	BaseType = "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring"
+	BaseType = "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring" "Seaglass Amulet"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
@@ -1133,7 +1133,7 @@ Show # Rare Items - Top Bases | Hide
 Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	Class = "Gloves"
-	BaseType = "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves"
+	BaseType = "Titan Gauntlets" "Spiked Gloves" "Slink Gloves" "Gripped Gloves" "Sorcerer Gloves" "Fingerless Silk Gloves" "Apothecary's Gloves"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
@@ -1142,7 +1142,7 @@ Show # Rare Items - Top Bases | Hide
 Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	Class = "Boots"
-	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots"
+	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Blessed Boots"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
@@ -1151,7 +1151,7 @@ Show # Rare Items - Top Bases | Hide
 Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	Class = "Body Armours"
-	BaseType = "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Astral Plate"
+	BaseType = "Glorious Plate" "Zodiac Leather" "Assassin's Garb" "Vaal Regalia" "Astral Plate" "Grasping Mail"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
@@ -1187,7 +1187,7 @@ Hide # Rare Items - Top Bases | Hide
 
 Hide # Rare Items - Top Bases | Hide
 	Rarity = Rare
-	BaseType = "Spike-Point Arrow Quiver"
+	BaseType = "Spike-Point Arrow Quiver" "Artillery Quiver"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
@@ -1603,7 +1603,7 @@ Show
 
 Show
 	Class = "Currency"
-	BaseType = "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Regal Orb" "Vaal Orb" "Exalted Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Shard" "Harbinger's Shard" "Facetor's Lens"
+	BaseType = "Chaos Orb" "Gemcutter's Prism" "Orb of Regret" "Regal Orb" "Vaal Orb" "Exalted Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Shard" "Harbinger's Shard" "Facetor's Lens" "Veiled Chaos Orb"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
@@ -1819,8 +1819,8 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class = "Atlas Region Upgrade Item"
-	BaseType = "Ivory Watchstone"
+	Class = "Atlas Region Upgrade Item" "Misc Map Items"
+	BaseType = "Ivory Watchstone" "Sacred Blossom" "Vaal Reliquary Key" "Chronicle of Atzoatl" "Inscribed Ultimatum"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
@@ -1900,7 +1900,7 @@ Hide # Divination Cards | Hide
 # New cards
 Show
 	Class = "Divination Card"
-	BaseType = "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile"
+	BaseType = "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
