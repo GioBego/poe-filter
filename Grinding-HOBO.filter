@@ -1168,7 +1168,7 @@ Show # Rare Items - Top Bases | Hide
 Show # Rare Items - Top Bases | Hide
 	Rarity = Rare
 	Class = "Boots"
-	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots" "Blessed Boots"
+	BaseType = "Titan Greaves" "Slink Boots" "Sorcerer Boots" "Two-Toned Boots"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
@@ -1920,13 +1920,13 @@ Show # Divination Cards | Hide
 	#BlockStrictness 5 Hide
 
 #-------------------------------------------------------------------------------
-# Subsection: Cards by value - Top to Low
+# Subsection: New cards (added in leagues)
 #-------------------------------------------------------------------------------
 
 # New cards
 Show
 	Class = "Divination Card"
-	BaseType = "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
+	BaseType == "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
@@ -1934,6 +1934,22 @@ Show
 	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
 	MinimapIcon 2 Blue Diamond
+
+# New cards
+Show
+	Class = "Divination Card"
+	BaseType == "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 0 168 242 255 # Card
+	SetFontSize 40 # 40
+	PlayAlertSound 2 80 # Chaos
+	DisableDropSound
+	MinimapIcon 2 Blue Diamond
+
+#-------------------------------------------------------------------------------
+# Subsection: Cards by value - Top to Low
+#-------------------------------------------------------------------------------
 
 Show
 	Class = "Divination Card"
