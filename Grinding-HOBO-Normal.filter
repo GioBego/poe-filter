@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.15.0-RC1
+# VERSION:       3.16.0-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -36,8 +36,8 @@
 
 # extra items you want to see
 #Show
-#	Rarity = Rare
 #	ItemLevel >= 1
+#	Rarity = Rare
 #	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -48,8 +48,8 @@
 
 # extra items you want to see
 #Show
-#	Rarity = Magic
 #	ItemLevel >= 1
+#	Rarity = Magic
 #	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -60,8 +60,8 @@
 
 # extra rarity items you want to see
 #Show
-#	Rarity = Normal
 #	ItemLevel >= 1
+#	Rarity = Normal
 #	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -187,8 +187,8 @@ Show # Flasks | Disable
 	#BlockStrictness 7 Disable
 
 Show
-	Rarity <= Magic
 	ItemLevel <= 18
+	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Small" "Medium" "Large" "Greater"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -198,8 +198,8 @@ Show
 	#BlockStrictness 7 Disable
 
 Show
-	Rarity <= Magic
 	ItemLevel <= 42
+	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Grand" "Giant" "Colossal" "Sacred"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -209,8 +209,8 @@ Show
 	#BlockStrictness 7 Disable
 
 Show
-	Rarity <= Magic
 	ItemLevel <= 60
+	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Hallowed" "Sanctified"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -230,6 +230,21 @@ Hide
 #===============================================================================
 # Section: LEAGUE
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: 3.16 - Scourge
+#-------------------------------------------------------------------------------
+
+Show
+	Class = "Currency"
+	BaseType = "Sacred Orb" "Tainted"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 156 0 0 255 # Currency - Chaos
+	SetBorderColor 231 180 120 255 # Currency - High
+	SetFontSize 40 # 40
+	PlayAlertSound 5 80 # Chaos++
+	MinimapIcon 0 White Circle
+	PlayEffect White 
 
 #-------------------------------------------------------------------------------
 # Subsection: 3.15 - Expedition
@@ -645,8 +660,8 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 10 100 # League++
 	DisableDropSound
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue 
 
@@ -657,8 +672,8 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36 # 36
-	PlayAlertSound 11 80 # League
 	DisableDropSound
+	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Triangle
 
 Show
@@ -668,8 +683,8 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 10 100 # League++
 	DisableDropSound
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Triangle
 	PlayEffect Blue 
 
@@ -702,8 +717,8 @@ Show # ~League - Delve | Disable
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
@@ -714,8 +729,8 @@ Show # ~League - Delve | Disable
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Yellow Circle
 	PlayEffect Yellow 
 
@@ -726,8 +741,8 @@ Show # ~League - Delve | Disable
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36 # 36
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Blue Circle
 
 Show # ~League - Delve | Disable
@@ -737,8 +752,8 @@ Show # ~League - Delve | Disable
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 10 100 # League++
 	DisableDropSound
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
@@ -759,8 +774,8 @@ Show # ~League - Delve | Disable
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Hexagon
 	PlayEffect White 
 
@@ -782,8 +797,8 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 11 80 # League
 	DisableDropSound
+	PlayAlertSound 11 80 # League
 	MinimapIcon 1 Blue Triangle
 	PlayEffect Blue 
 
@@ -794,8 +809,8 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 10 100 # League++
 	DisableDropSound
+	PlayAlertSound 10 100 # League++
 	MinimapIcon 0 Blue Circle
 	PlayEffect Blue 
 
@@ -842,8 +857,8 @@ Show # ~League - Warband | Disable
 #	SetBackgroundColor 0 24 76 255 # League
 #	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 36 # 36
-#	PlayAlertSound 11 80 # League
 #	DisableDropSound
+#	PlayAlertSound 11 80 # League
 #	MinimapIcon 1 Blue Triangle
 #	PlayEffect Blue 
 
@@ -855,8 +870,8 @@ Show # ~League - Warband | Disable
 #	SetBackgroundColor 255 255 255 255 # White
 #	SetBorderColor 64 32 12 255 # Unique - top
 #	SetFontSize 44 # 44 - Top
-#	PlayAlertSound 1 80 # Exalt
 #	DisableDropSound
+#	PlayAlertSound 1 80 # Exalt
 #	MinimapIcon 0 White Hexagon
 #	PlayEffect White 
 
@@ -872,8 +887,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow 
 
@@ -884,8 +899,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Star
 	PlayEffect White 
 
@@ -896,8 +911,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow 
 
@@ -906,8 +921,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Yellow Square
 	PlayEffect Yellow 
 
@@ -917,8 +932,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Square
 	PlayEffect White 
 
@@ -946,8 +961,8 @@ Show
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 Blue Square
 
 Show
@@ -956,8 +971,8 @@ Show
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 12 80 # Elder and Shaper
 	DisableDropSound
+	PlayAlertSound 12 80 # Elder and Shaper
 	MinimapIcon 1 Blue Square
 
 Show
@@ -965,8 +980,8 @@ Show
 	SetBackgroundColor 32 0 64 255 # Elder and Shaper
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 40 # 40
-	PlayAlertSound 12 80 # Elder and Shaper
 	DisableDropSound
+	PlayAlertSound 12 80 # Elder and Shaper
 	MinimapIcon 2 Blue Square
 
 #===============================================================================
@@ -980,14 +995,14 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 2 Green Square
 
 # 5-link items
 Show # Craft | Disable
-	LinkedSockets = 5
 	AreaLevel <= 75
+	LinkedSockets = 5
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 40 # 40
@@ -1071,12 +1086,12 @@ Show # Vendor - Chromatic recipe | Disable
 
 Show
 	Rarity <= Rare
-	BaseType = "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring" "Seaglass Amulet"
+	BaseType = "Steel Ring" "Opal Ring" "Vermillion Ring" "Cerulean Ring" "Iolite Ring" "Seaglass Amulet" "Unset Amulet"
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 2 Yellow Square
 
 Show
@@ -1086,14 +1101,14 @@ Show
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 11 80 # League
 	DisableDropSound
+	PlayAlertSound 11 80 # League
 	MinimapIcon 2 Yellow Square
 
 # Rings & Amulets
 Show # Rare Items | Hide
-	Rarity = Rare
 	DropLevel > 1
+	Rarity = Rare
 	Class = "Rings" "Amulets"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
@@ -1102,8 +1117,8 @@ Show # Rare Items | Hide
 
 # Belts
 Show # Rare Items | Hide
-	Rarity = Rare
 	DropLevel > 1
+	Rarity = Rare
 	Class = "Belts"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
@@ -1125,8 +1140,8 @@ Show
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 11 80 # League
 	DisableDropSound
+	PlayAlertSound 11 80 # League
 	MinimapIcon 2 Yellow Diamond
 
 Show # Craft | Hide
@@ -1142,8 +1157,8 @@ Show
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 2 Yellow Diamond
 
 # Good helmet bases
@@ -1232,73 +1247,73 @@ Show # Vendor - Chromatic recipe | Disable
 	#BlockStrictness 7 Disable
 
 Show # Leveling - Linked Sockets | Disable
+	ItemLevel <= 60
 	LinkedSockets >= 4
 	Rarity <= Magic
-	ItemLevel <= 60
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 Show # Leveling - Linked Sockets | Disable
+	ItemLevel <= 39
 	LinkedSockets >= 3
 	Rarity <= Magic
-	ItemLevel <= 39
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 Show # Leveling | Disable
-	Rarity = Normal
 	ItemLevel <= 8
+	Rarity = Normal
 	Class = "Rings" "Amulets" "Belts"
 
 Show # Leveling | Disable
-	Rarity = Magic
 	ItemLevel <= 16
+	Rarity = Magic
 	Class = "Rings" "Amulets" "Belts"
 
 # normal items until level 4
 Show # Leveling | Disable
+	ItemLevel <= 4
 	Sockets > "0"
 	Rarity = Normal
-	ItemLevel <= 4
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # normal Quivers until level 4
 Show # Leveling | Disable
-	Rarity = Normal
 	ItemLevel <= 4
+	Rarity = Normal
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # magic items until level 8
 Show # Leveling | Disable
+	ItemLevel <= 8
 	Sockets > "0"
 	Rarity = Magic
-	ItemLevel <= 8
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # magic Quivers until level 8
 Show # Leveling | Disable
-	Rarity = Magic
 	ItemLevel <= 8
+	Rarity = Magic
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # all rare items until level 67
 Show # Rare Items | Disable
+	ItemLevel <= 67
 	Sockets > "0"
 	Rarity = Rare
-	ItemLevel <= 67
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
 
 # all rare Quivers until level 67
 Show # Rare Items | Disable
-	Rarity = Rare
 	ItemLevel <= 67
+	Rarity = Rare
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
@@ -1419,8 +1434,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Star
 	PlayEffect White 
 
@@ -1432,8 +1447,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Yellow Star
 
 Show
@@ -1443,8 +1458,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 40 # 40
-	PlayAlertSound 6 80 # Unique
 	DisableDropSound
+	PlayAlertSound 6 80 # Unique
 	MinimapIcon 2 Brown Star
 
 #-------------------------------------------------------------------------------
@@ -1459,8 +1474,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Star
 	PlayEffect White 
 
@@ -1471,8 +1486,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 2 Brown Star
 
 #-------------------------------------------------------------------------------
@@ -1487,8 +1502,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Hexagon
 	PlayEffect White 
 
@@ -1500,8 +1515,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
+	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Brown Hexagon
 	PlayEffect Brown 
 
@@ -1512,8 +1527,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 175 96 37 255 # Unique
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 8 80 # Map - Unique
 	DisableDropSound
+	PlayAlertSound 8 80 # Map - Unique
 	MinimapIcon 1 Brown Hexagon
 	PlayEffect Brown 
 
@@ -1528,8 +1543,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Star
 	PlayEffect White 
 
@@ -1540,8 +1555,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Yellow Star
 
 #-------------------------------------------------------------------------------
@@ -1555,8 +1570,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Star
 	PlayEffect White 
 
@@ -1567,8 +1582,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Yellow Star
 
 #-------------------------------------------------------------------------------
@@ -1582,8 +1597,8 @@ Show
 	SetBackgroundColor 255 255 255 255 # White
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Star
 	PlayEffect White 
 
@@ -1594,8 +1609,8 @@ Show
 	SetBackgroundColor 224 144 32 255 # Unique
 	SetBorderColor 64 32 12 255 # Unique - top
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Yellow Star
 
 #-------------------------------------------------------------------------------
@@ -1608,8 +1623,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 175 96 37 255 # Unique
 	SetFontSize 40 # 40
-	PlayAlertSound 6 80 # Unique
 	DisableDropSound
+	PlayAlertSound 6 80 # Unique
 	MinimapIcon 2 Brown Star
 
 #===============================================================================
@@ -1623,8 +1638,8 @@ Show
 	SetBackgroundColor 112 0 0 255 # Currency - Alch
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 3 80 # Alch
 	DisableDropSound
+	PlayAlertSound 3 80 # Alch
 	MinimapIcon 2 Red Circle
 
 Show
@@ -1634,8 +1649,8 @@ Show
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Red Circle
 
 Show
@@ -1645,8 +1660,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Red Circle
 
 Show
@@ -1665,8 +1680,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Green Circle
 	PlayEffect Green 
 
@@ -1685,8 +1700,8 @@ Show
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Green Circle
 
 #===============================================================================
@@ -1705,8 +1720,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 96 240 96 255 # Map - shaped
 	SetFontSize 40 # 40
-	PlayAlertSound 7 80 # Map - T6
 	DisableDropSound
+	PlayAlertSound 7 80 # Map - T6
 	MinimapIcon 1 Yellow Hexagon
 
 Show
@@ -1717,8 +1732,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 96 240 96 255 # Map - shaped
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
+	PlayAlertSound 9 80 # Map - T11
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red 
 
@@ -1730,8 +1745,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 96 240 96 255 # Map - shaped
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
+	PlayAlertSound 9 80 # Map - T11
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
 
@@ -1746,8 +1761,8 @@ Show
 	SetBackgroundColor 96 240 96 255 # Map - top
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
+	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Green Hexagon
 	PlayEffect Green 
 
@@ -1757,15 +1772,15 @@ Show
 
 # maps in Tier 1-5 with AlertSound
 Show # ~Maps | Disable
-	MapTier <= 5
 	AreaLevel <= 75
+	MapTier <= 5
 	Class = "Maps"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 232 232 232 255 # Map - T1
 	SetFontSize 40 # 40
-	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
+	PlayAlertSound 7 80 # Map - T1
 	MinimapIcon 2 White Hexagon
 	#BlockStrictness 9 Disable
 
@@ -1786,15 +1801,15 @@ Show # ~Maps | Hide
 
 # maps Tier 6-10 with AlertSound until
 Show # ~Maps | Disable
-	MapTier <= 10
 	ItemLevel <= 80
+	MapTier <= 10
 	Class = "Maps"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 255 224 0 255 # Map - T6
 	SetFontSize 40 # 40
-	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
+	PlayAlertSound 7 80 # Map - T1
 	MinimapIcon 1 Yellow Hexagon
 	#BlockStrictness 9 Disable
 
@@ -1820,8 +1835,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 255 32 0 255 # Map - T11
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 9 100
 	DisableDropSound
+	PlayAlertSound 9 100
 	MinimapIcon 0 Red Hexagon
 	PlayEffect Red 
 
@@ -1851,8 +1866,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
+	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -1863,8 +1878,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
+	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -1875,8 +1890,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 14 240 # Map - top
 	DisableDropSound
+	PlayAlertSound 14 240 # Map - top
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -1887,8 +1902,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 40 # 40
-	PlayAlertSound 9 80 # Map - T11
 	DisableDropSound
+	PlayAlertSound 9 80 # Map - T11
 	MinimapIcon 1 Blue Hexagon
 	PlayEffect Blue 
 
@@ -1898,8 +1913,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
 	SetFontSize 36 # 36
-	PlayAlertSound 7 80 # Map - T1
 	DisableDropSound
+	PlayAlertSound 7 80 # Map - T1
 	MinimapIcon 2 Blue Hexagon
 
 #===============================================================================
@@ -1926,13 +1941,25 @@ Hide # Divination Cards | Hide
 # New cards
 Show
 	Class = "Divination Card"
+	BaseType = "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 0 168 242 255 # Card
+	SetFontSize 40 # 40
+	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
+	MinimapIcon 2 Blue Diamond
+
+# New cards
+Show
+	Class = "Divination Card"
 	BaseType == "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 2 Blue Diamond
 
 # New cards
@@ -1943,8 +1970,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 2 Blue Diamond
 
 #-------------------------------------------------------------------------------
@@ -1958,8 +1985,8 @@ Show
 	SetBackgroundColor 0 168 242 255 # Card
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 Blue Diamond
 	PlayEffect Blue 
 
@@ -1970,8 +1997,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 1 Blue Diamond
 	PlayEffect Blue 
 
@@ -1982,8 +2009,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 2 Blue Diamond
 
 # common cards that could be worth picking up
@@ -2017,8 +2044,8 @@ Show
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 0 Green Diamond
 
 Show
@@ -2028,8 +2055,8 @@ Show
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 0 Green Diamond
 
 Show
@@ -2039,8 +2066,8 @@ Show
 	SetBackgroundColor 27 162 155 255 # Gem
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 0 Green Diamond
 
 # Corrupted (Vaal) gems
@@ -2061,8 +2088,8 @@ Show # Gems | Disable
 	SetBackgroundColor 96 0 0 255 # Corrupted
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 40 # 40
-	PlayAlertSound 3 80 # Alch
 	DisableDropSound
+	PlayAlertSound 3 80 # Alch
 	MinimapIcon 2 Green Diamond
 	#BlockStrictness 10 Disable
 
@@ -2074,8 +2101,8 @@ Show # Gems | Disable
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 40 # 40
-	PlayAlertSound 3 80 # Alch
 	DisableDropSound
+	PlayAlertSound 3 80 # Alch
 	MinimapIcon 2 Green Diamond
 
 # drop-only gems - Empower, Enlighten
@@ -2206,8 +2233,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 White Circle
 
 Show
@@ -2217,8 +2244,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Yellow Circle
 
 Show
@@ -2228,8 +2255,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Red Circle
 	PlayEffect Red 
 
@@ -2240,8 +2267,8 @@ Show
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 5 80 # Chaos++
 	DisableDropSound
+	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Red Circle
 	PlayEffect Red 
 
@@ -2263,8 +2290,8 @@ Show
 	SetBackgroundColor 255 224 164 255 # Currency - Top
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
@@ -2275,8 +2302,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Blue Circle
 
 Show
@@ -2286,8 +2313,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 White Circle
 	PlayEffect White 
 
@@ -2298,8 +2325,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
-	PlayAlertSound 2 80 # Chaos
 	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 0 Red Circle
 
 Hide # Currency | Hide
@@ -2349,8 +2376,8 @@ Show
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 74 230 58 255 # Quest
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 4 80 # Quest
 	DisableDropSound
+	PlayAlertSound 4 80 # Quest
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green 
 
@@ -2360,8 +2387,8 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 74 230 58 255 # Quest
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 4 80 # Quest
 	DisableDropSound
+	PlayAlertSound 4 80 # Quest
 	MinimapIcon 0 Green Triangle
 	PlayEffect Green 
 
@@ -2374,8 +2401,8 @@ Show
 	SetBackgroundColor 255 0 0 255 # Emergency
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
 	DisableDropSound
+	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 Red Triangle
 	PlayEffect Red 
 
