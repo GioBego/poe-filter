@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.16.0-RC1
+# VERSION:       3.16.0-RC2
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -36,8 +36,8 @@
 
 # extra items you want to see
 #Show
-#	Rarity = Rare
 #	ItemLevel >= 1
+#	Rarity = Rare
 #	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -48,8 +48,8 @@
 
 # extra items you want to see
 #Show
-#	Rarity = Magic
 #	ItemLevel >= 1
+#	Rarity = Magic
 #	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -60,8 +60,8 @@
 
 # extra rarity items you want to see
 #Show
-#	Rarity = Normal
 #	ItemLevel >= 1
+#	Rarity = Normal
 #	BaseType = "Item Quantity Support"
 #	SetBackgroundColor 0 48 32 224 # Base
 #	SetBorderColor 255 255 128 255 # Craft
@@ -187,8 +187,8 @@ Show # Flasks | Disable
 	#BlockStrictness 7 Disable
 
 Show
-	Rarity <= Magic
 	ItemLevel <= 18
+	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Small" "Medium" "Large" "Greater"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -198,8 +198,8 @@ Show
 	#BlockStrictness 7 Disable
 
 Show
-	Rarity <= Magic
 	ItemLevel <= 42
+	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Grand" "Giant" "Colossal" "Sacred"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -209,8 +209,8 @@ Show
 	#BlockStrictness 7 Disable
 
 Show
-	Rarity <= Magic
 	ItemLevel <= 60
+	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Hallowed" "Sanctified"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
@@ -1001,8 +1001,8 @@ Show
 
 # 5-link items
 Show # Craft | Disable
-	LinkedSockets = 5
 	AreaLevel <= 75
+	LinkedSockets = 5
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 40 # 40
@@ -1107,8 +1107,8 @@ Show
 
 # Rings & Amulets
 Show # Rare Items | Hide
-	Rarity = Rare
 	DropLevel > 1
+	Rarity = Rare
 	Class = "Rings" "Amulets"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
@@ -1117,8 +1117,8 @@ Show # Rare Items | Hide
 
 # Belts
 Show # Rare Items | Hide
-	Rarity = Rare
 	DropLevel > 1
+	Rarity = Rare
 	Class = "Belts"
 	SetTextColor 255 196 0 255 # Accessories
 	SetBackgroundColor 0 48 32 224 # Base
@@ -1247,73 +1247,73 @@ Show # Vendor - Chromatic recipe | Disable
 	#BlockStrictness 7 Disable
 
 Show # Leveling - Linked Sockets | Disable
+	ItemLevel <= 60
 	LinkedSockets >= 4
 	Rarity <= Magic
-	ItemLevel <= 60
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 Show # Leveling - Linked Sockets | Disable
+	ItemLevel <= 39
 	LinkedSockets >= 3
 	Rarity <= Magic
-	ItemLevel <= 39
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 Show # Leveling | Disable
-	Rarity = Normal
 	ItemLevel <= 8
+	Rarity = Normal
 	Class = "Rings" "Amulets" "Belts"
 
 Show # Leveling | Disable
-	Rarity = Magic
 	ItemLevel <= 16
+	Rarity = Magic
 	Class = "Rings" "Amulets" "Belts"
 
 # normal items until level 4
 Show # Leveling | Disable
+	ItemLevel <= 4
 	Sockets > "0"
 	Rarity = Normal
-	ItemLevel <= 4
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # normal Quivers until level 4
 Show # Leveling | Disable
-	Rarity = Normal
 	ItemLevel <= 4
+	Rarity = Normal
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # magic items until level 8
 Show # Leveling | Disable
+	ItemLevel <= 8
 	Sockets > "0"
 	Rarity = Magic
-	ItemLevel <= 8
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # magic Quivers until level 8
 Show # Leveling | Disable
-	Rarity = Magic
 	ItemLevel <= 8
+	Rarity = Magic
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 28 # 28
 
 # all rare items until level 67
 Show # Rare Items | Disable
+	ItemLevel <= 67
 	Sockets > "0"
 	Rarity = Rare
-	ItemLevel <= 67
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
 
 # all rare Quivers until level 67
 Show # Rare Items | Disable
-	Rarity = Rare
 	ItemLevel <= 67
+	Rarity = Rare
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
@@ -1772,8 +1772,8 @@ Show
 
 # maps in Tier 1-5 with AlertSound
 Show # ~Maps | Disable
-	MapTier <= 5
 	AreaLevel <= 75
+	MapTier <= 5
 	Class = "Maps"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
@@ -1801,8 +1801,8 @@ Show # ~Maps | Hide
 
 # maps Tier 6-10 with AlertSound until
 Show # ~Maps | Disable
-	MapTier <= 10
 	ItemLevel <= 80
+	MapTier <= 10
 	Class = "Maps"
 	SetTextColor 255 224 0 255 # Map - T6
 	SetBackgroundColor 40 32 28 255 # Map
@@ -2139,7 +2139,7 @@ Show # Gems | Hide
 	SetFontSize 36 # 36
 	#BlockStrictness 10 Hide
 
-# gems with Quality 1-10
+# gems with Quality >= 5
 Show # Gems | Hide
 	Quality >= 5
 	Class = "Gems"
@@ -2149,7 +2149,7 @@ Show # Gems | Hide
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
-# gems with Quality 1-10
+# gems with Quality >= 1
 Show # Gems | Hide
 	Quality >= 1
 	Class = "Gems"
