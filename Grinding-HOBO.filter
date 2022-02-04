@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.16.0-RC2
+# VERSION:       3.17-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -232,6 +232,26 @@ Show
 #===============================================================================
 
 #-------------------------------------------------------------------------------
+# Subsection: 3.17 - Siege of the Atlas
+#-------------------------------------------------------------------------------
+
+Show
+	HasEaterOfWorldsImplicit >= 1
+	SetBackgroundColor 32 0 64 255 # Influence
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 12 80 # Influence
+	MinimapIcon 2 Cyan Square
+
+Show
+	HasSearingExarchImplicit >= 1
+	SetBackgroundColor 32 0 64 255 # Influence
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 12 80 # Influence
+	MinimapIcon 2 Cyan Square
+
+#-------------------------------------------------------------------------------
 # Subsection: 3.16 - Scourge
 #-------------------------------------------------------------------------------
 
@@ -444,41 +464,6 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 36 # 36
-
-#-------------------------------------------------------------------------------
-# Subsection: Harvest
-#-------------------------------------------------------------------------------
-
-#Show
-#	Class = "Harvest Seed"
-#	BaseType = "Wild Thornfruit" "Vivid Scalefruit" "Primal Blisterfruit"
-#	SetTextColor 231 180 120 255 # Currency - High
-#	SetBackgroundColor 0 24 76 255 # League
-#	SetBorderColor 0 255 255 255 # League
-#	SetFontSize 40 # 40
-#	PlayAlertSound 11 80 # League
-#	MinimapIcon 0 Blue Raindrop
-#	PlayEffect Blue 
-
-#Show
-#	Class = "Harvest Infrastructure"
-#	SetTextColor 231 180 120 255 # Currency - High
-#	SetBackgroundColor 0 24 76 255 # League
-#	SetBorderColor 0 255 255 255 # League
-#	SetFontSize 40 # 40
-#	PlayAlertSound 11 80 # League
-#	MinimapIcon 1 Blue UpsideDownHouse
-#	PlayEffect Blue 
-
-#Show
-#	Class = "Harvest Seed"
-#	SetTextColor 231 180 120 255 # Currency - High
-#	SetBackgroundColor 0 24 76 255 # League
-#	SetBorderColor 0 255 255 255 # League
-#	SetFontSize 40 # 40
-#	PlayAlertSound 11 80 # League
-#	MinimapIcon 1 Blue Raindrop
-#	PlayEffect Blue 
 
 #-------------------------------------------------------------------------------
 # Subsection: Delirium
@@ -958,7 +943,7 @@ Show
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	BaseType = "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
-	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBackgroundColor 32 0 64 255 # Influence
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
@@ -968,20 +953,20 @@ Show
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
 	Class = "Rings" "Amulets"
-	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBackgroundColor 32 0 64 255 # Influence
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
-	PlayAlertSound 12 80 # Elder and Shaper
+	PlayAlertSound 12 80 # Influence
 	MinimapIcon 1 Blue Square
 
 Show
 	HasInfluence = "Crusader" "Elder" "Hunter" "Redeemer" "Shaper" "Warlord"
-	SetBackgroundColor 32 0 64 255 # Elder and Shaper
+	SetBackgroundColor 32 0 64 255 # Influence
 	SetBorderColor 0 0 0 255 # Black
 	SetFontSize 40 # 40
 	DisableDropSound
-	PlayAlertSound 12 80 # Elder and Shaper
+	PlayAlertSound 12 80 # Influence
 	MinimapIcon 2 Blue Square
 
 #===============================================================================
@@ -1385,15 +1370,6 @@ Show # Currency | Hide
 Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Orb of Chance"
-	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 170 158 130 255 # Currency - Low
-	SetFontSize 40 # 40
-	#BlockStrictness 9 Hide
-
-Show # Currency | Hide
-	Class = "Currency"
-	BaseType = "Silver Coin"
 	SetTextColor 170 158 130 255 # Currency - Low
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 170 158 130 255 # Currency - Low
@@ -1860,7 +1836,7 @@ Show
 #-------------------------------------------------------------------------------
 
 Show
-	Class = "Atlas Region Upgrade Item" "Misc Map Items"
+	Class = "Misc Map Items" "Atlas Upgrade Item"
 	BaseType = "Ivory Watchstone" "Sacred Blossom" "Vaal Reliquary Key" "Chronicle of Atzoatl" "Inscribed Ultimatum"
 	SetTextColor 232 232 232 255 # Map - T1
 	SetBackgroundColor 40 32 28 255 # Map
@@ -1908,7 +1884,43 @@ Show
 	PlayEffect Blue 
 
 Show
-	Class = "Map Fragments" "Labyrinth" "Misc Map Items"
+	Class = "Map Fragment"
+	BaseType = "Al-Hezmin's Crest" "Baran's Crest" "Drox's Crest" "Veritania's Crest"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 40 # 40
+	DisableDropSound
+	PlayAlertSound 9 80 # Map - T11
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class = "Atlas Upgrade Item"
+	BaseType = "Ceremonial Voidstone" "Decayed Voidstone" "Grasping Voidstone" "Omniscient Voidstone"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 40 # 40
+	DisableDropSound
+	PlayAlertSound 9 80 # Map - T11
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class = "Misc Map Item"
+	BaseType = "Invitation"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 208 32 144 255 # Map - fragment
+	SetFontSize 40 # 40
+	DisableDropSound
+	PlayAlertSound 9 80 # Map - T11
+	MinimapIcon 1 Blue Hexagon
+	PlayEffect Blue 
+
+Show
+	Class = "Map Fragments" "Labyrinth" "Misc Map Items" "Atlas Upgrade Item"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 208 32 144 255 # Map - fragment
@@ -1933,46 +1945,6 @@ Show # Divination Cards | Hide
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
-
-#-------------------------------------------------------------------------------
-# Subsection: New cards (added in leagues)
-#-------------------------------------------------------------------------------
-
-# New cards
-Show
-	Class = "Divination Card"
-	BaseType = "Desperate Crusade" "A Stone Perfected" "Treasures of the Vaal" "The Rabbit's Foot" "Chasing Risk" "The Prince of Darkness" "The Catch" "Eternal Bonds" "Disdain" "The Scout" "Guardian's Challenge" "The Forgotten Treasure" "The Fox in the Brambles" "The Aspirant"
-	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 0 168 242 255 # Card
-	SetFontSize 40 # 40
-	DisableDropSound
-	PlayAlertSound 2 80 # Chaos
-	MinimapIcon 2 Blue Diamond
-
-# New cards
-Show
-	Class = "Divination Card"
-	BaseType == "The Last Supper" "The Emptiness" "A Sea of Blue" "The Offspring" "The Price of Prescience" "The Mind's Eyes" "Terrible Secret of Space" "The Blessing of Moosh" "Costly Curio" "Lachrymal Necrosis" "Dementophobia" "Ambitious Obsession"
-	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 0 168 242 255 # Card
-	SetFontSize 40 # 40
-	DisableDropSound
-	PlayAlertSound 2 80 # Chaos
-	MinimapIcon 2 Blue Diamond
-
-# New cards
-Show
-	Class = "Divination Card"
-	BaseType == "Fateful Meeting" "Acclimatisation" "Haunting Shadows" "The Whiteout" "Society's Remorse" "Dying Light" "The Astromancer" "Keeper's Corruption" "Reckless Ambition" "Love Through Ice" "Draped in Dreams" "The Patient" "The Long Watch" "The Bear Woman" "Brotherhood in Exile" "Winter's Embrace" "Sambodhi's Wisdom" "The Enthusiasts" "Broken Promises" "Brush, Paint and Palette" "Deadly Joy" "The Adventuring Spirit" "The Eternal War" "Prejudice" "The Shortcut" "The Card Sharp" "A Modest Request" "Luminous Trove" "The Hook"
-	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 0 168 242 255 # Card
-	SetFontSize 40 # 40
-	DisableDropSound
-	PlayAlertSound 2 80 # Chaos
-	MinimapIcon 2 Blue Diamond
 
 #-------------------------------------------------------------------------------
 # Subsection: Cards by value - Top to Low
@@ -2024,6 +1996,26 @@ Show # Divination Cards | Hide
 	PlayAlertSound 3 80 # Alch
 	MinimapIcon 1 Blue Diamond
 	#BlockStrictness 9 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 3.17 - New Cards
+#-------------------------------------------------------------------------------
+
+# common cards that could be worth picking up
+Show # Divination Cards | Hide
+	Class = "Divination Card"
+	BaseType == "Judging Voices" "Bijoux" "Silence and Frost" "Misery in Darkness" "The Tireless Extractor" "Justified Ambition" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBorderColor 0 168 242 255 # Card
+	SetFontSize 36 # 36
+	PlayAlertSound 3 80 # Alch
+	MinimapIcon 1 Blue Diamond
+	#BlockStrictness 9 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: All unlisted cards
+#-------------------------------------------------------------------------------
 
 # all other (unfiltered/cheap) cards
 Show # Divination Cards | Hide
@@ -2177,52 +2169,6 @@ Show # Gems | Hide
 	#BlockStrictness 9 Hide
 
 #===============================================================================
-# Section: PROPHECIES
-#===============================================================================
-
-Show
-	Prophecy == "The Queen's Sacrifice" "Fated Connections" "Trash to Treasure"
-	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 224 0 204 255 # Prophecy
-	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 44 # 44 - Top
-	PlayAlertSound 1 80 # Exalt
-	MinimapIcon 0 Purple Diamond
-	PlayEffect Purple 
-
-Show
-	Prophecy = "A Master Seeks Help"
-	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 224 0 204 255 # Prophecy
-	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
-	MinimapIcon 1 Purple Diamond
-
-Show
-	Prophecy == "A Prodigious Hand" "Song of the Sekhema" "The Hollow Pledge" "The Soulless Beast" "Darktongue's Shriek" "The King's Path" "The Great Leader of the North" "The Bowstring's Music" "The Jeweller's Touch" "Fire, Wood and Stone" "A Dishonourable Death" "The King and the Brambles" "Cleanser of Sins" "Fire and Brimstone" "Lost in the Pages" "Monstrous Treasure" "The Silverwood" "Twice Enchanted" "The Misunderstood Queen" "A Vision of Ice and Fire" "Agony at Dusk"
-	SetTextColor 0 0 0 255 # Black
-	SetBackgroundColor 224 0 204 255 # Prophecy
-	SetBorderColor 0 0 0 255 # Black
-	SetFontSize 40 # 40
-	PlayAlertSound 5 80 # Chaos++
-	MinimapIcon 1 Purple Diamond
-
-Show
-	Prophecy = " "
-	SetTextColor 224 0 204 255 # Prophecy
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetBorderColor 224 0 204 255 # Prophecy
-	SetFontSize 36 # 36
-
-Show
-	Class = "Currency"
-	BaseType = "Prophecy"
-	SetTextColor 224 0 204 255 # Prophecy
-	SetBackgroundColor 0 0 0 224 # Black - transparent
-	SetFontSize 32 # 32 - Default
-
-#===============================================================================
 # Section: CURRENCY - 0
 #===============================================================================
 
@@ -2305,6 +2251,17 @@ Show
 	DisableDropSound
 	PlayAlertSound 2 80 # Chaos
 	MinimapIcon 1 Blue Circle
+
+Show
+	Class = "Currency"
+	BaseType = "Compass" "Eldritch Ember" "Eldritch Ichor" "Orb of Conflict" "Orb of Dominance" "Scouting Report" "Oil Extractor"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 40 32 28 255 # Map
+	SetBorderColor 231 180 120 255 # Currency - High
+	SetFontSize 40 # 40
+	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
+	MinimapIcon 1 Pink Circle
 
 Show
 	Class = "Currency"
