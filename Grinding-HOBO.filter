@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.17-RC2
+# VERSION:       3.17-RC3
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -258,7 +258,7 @@ Show # ~League - Delve | Disable
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36 # 36
 	DisableDropSound
-	PlayAlertSound 2 80 # Chaos
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Circle
 
 #-------------------------------------------------------------------------------
@@ -445,7 +445,7 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -455,7 +455,7 @@ Show
 	SetBackgroundColor 40 32 28 255 # Map
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 0 Blue Hexagon
 	PlayEffect Blue 
 
@@ -507,7 +507,7 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 2 Blue Circle
 	PlayEffect Blue 
 
@@ -532,7 +532,7 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
@@ -543,7 +543,7 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
@@ -569,7 +569,7 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
@@ -595,7 +595,7 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Circle
 	PlayEffect Blue 
 
@@ -641,7 +641,7 @@ Show
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 40 # 40
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Square
 
 #-------------------------------------------------------------------------------
@@ -668,7 +668,7 @@ Show
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 36 # 36
 	DisableDropSound
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Triangle
 
 Show
@@ -793,7 +793,7 @@ Show
 	SetBorderColor 0 255 255 255 # League
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 1 Blue Triangle
 	PlayEffect Blue 
 
@@ -853,7 +853,7 @@ Show # ~League - Warband | Disable
 #	SetBorderColor 0 255 255 255 # League
 #	SetFontSize 36 # 36
 #	DisableDropSound
-#	PlayAlertSound 11 80 # League
+#	PlayAlertSound 11 60 # League
 #	MinimapIcon 1 Blue Triangle
 #	PlayEffect Blue 
 
@@ -1097,7 +1097,7 @@ Show
 	SetBackgroundColor 0 48 32 224 # Base
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 2 Yellow Square
 
 # Rings & Amulets
@@ -1136,7 +1136,7 @@ Show
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
-	PlayAlertSound 11 80 # League
+	PlayAlertSound 11 60 # League
 	MinimapIcon 2 Yellow Diamond
 
 Show # Craft | Hide
