@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.17-RC1
+# VERSION:       3.17-RC2
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -251,6 +251,16 @@ Show
 	PlayAlertSound 12 80 # Influence
 	MinimapIcon 2 Cyan Square
 
+Show # ~League - Delve | Disable
+	Class = "Archnemesis"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
+	DisableDropSound
+	PlayAlertSound 2 80 # Chaos
+	MinimapIcon 1 Blue Circle
+
 #-------------------------------------------------------------------------------
 # Subsection: 3.16 - Scourge
 #-------------------------------------------------------------------------------
@@ -298,7 +308,7 @@ Show
 
 Show
 	Class = "Currency"
-	BaseType = "Orb of Unmaking" "Maven's Orb"
+	BaseType = "Orb of Unmaking"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
@@ -319,7 +329,7 @@ Show
 	PlayEffect Cyan 
 
 Show
-	Class = "Atlas Region Upgrade Item"
+	Class = "Atlas Upgrade Item"
 	BaseType = "Watchstone"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 40 32 28 255 # Map
@@ -652,7 +662,7 @@ Show
 
 Show
 	Class = "Map Fragment"
-	BaseType = "Polished Divination Scarab" "Gilded Breach Scarab" "Polished Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Bestiary Scarab" "Rusted Cartography Scarab" "Polished Harbinger Scarab" "Gilded Elder Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Rusted Ambush Scarab" "Rusted Divination Scarab" "Gilded Perandus Scarab" "Gilded Reliquary Scarab" "Rusted Harbinger Scarab" "Rusted Bestiary Scarab" "Gilded Torment Scarab" "Polished Perandus Scarab" "Polished Reliquary Scarab" "Rusted Breach Scarab"
+	BaseType = "Polished Divination Scarab" "Gilded Breach Scarab" "Polished Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Bestiary Scarab" "Rusted Cartography Scarab" "Polished Harbinger Scarab" "Gilded Elder Scarab" "Polished Bestiary Scarab" "Polished Breach Scarab" "Rusted Ambush Scarab" "Rusted Divination Scarab" "Gilded Reliquary Scarab" "Rusted Harbinger Scarab" "Rusted Bestiary Scarab" "Gilded Torment Scarab" "Polished Reliquary Scarab" "Rusted Breach Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -663,7 +673,7 @@ Show
 
 Show
 	Class = "Map Fragment"
-	BaseType = "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab" "Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Perandus Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab"
+	BaseType = "Winged Cartography Scarab" "Winged Reliquary Scarab" "Winged Bestiary Scarab" "Winged Shaper Scarab" "Winged Elder Scarab" "Winged Sulphite Scarab" "Winged Divination Scarab" "Winged Torment Scarab" "Winged Ambush Scarab" "Winged Harbinger Scarab" "Winged Breach Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
@@ -709,7 +719,7 @@ Show # ~League - Delve | Disable
 
 Show # ~League - Delve | Disable
 	Class = "Currency"
-	BaseType == "Glyphic Fossil" "Hollow Fossil" "Corroded Fossil" "Sanctified Fossil" "Bound Fossil" "Shuddering Fossil" "Tangled Fossil" "Perfect Fossil" "Enchanted Fossil"
+	BaseType == "Glyphic Fossil" "Hollow Fossil" "Corroded Fossil" "Sanctified Fossil" "Bound Fossil" "Shuddering Fossil" "Tangled Fossil" "Perfect Fossil"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
