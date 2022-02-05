@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.17-RC3
+# VERSION:       3.17-RC4
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -252,7 +252,7 @@ Show
 	MinimapIcon 2 Cyan Square
 
 Show # ~League - Delve | Disable
-	Class = "Archnemesis"
+	Class = "Archnemesis Mod"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 0 24 76 255 # League
 	SetBorderColor 0 255 255 255 # League
