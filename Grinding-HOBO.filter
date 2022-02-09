@@ -1232,17 +1232,17 @@ Show # Rare Items - Top Bases | Hide
 #===============================================================================
 
 Show
-	DropLevel >= 60
+	DropLevel >= 64
 	Sockets >= "1"
 	SetBackgroundColor 0 0 0 0 # Transparent
-	SetFontSize 28 # 28
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Disable
 
 Show
 	DropLevel >= 60
 	Class = "Ring" "Amulet" "Belt" "Quiver"
 	SetBackgroundColor 0 0 0 0 # Transparent
-	SetFontSize 28 # 28
+	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Disable
 
 #===============================================================================
