@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.17-RC4
+# VERSION:       3.17-RC5-Experimental
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -219,13 +219,12 @@ Show
 	DisableDropSound
 	#BlockStrictness 7 Disable
 
-Show
+Hide
 	Rarity <= Magic
 	Class = "Flasks"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 24 # 24
-	#BlockStrictness 3 Hide
 
 #===============================================================================
 # Section: LEAGUE
@@ -1229,7 +1228,19 @@ Show # Rare Items - Top Bases | Hide
 	#BlockStrictness 7 Hide
 
 #===============================================================================
-# Section: LEVELING & JUNK
+# Section: ALL HIGHER BASES (Experimental)
+#===============================================================================
+
+Show
+	DropLevel >= 60
+	Sockets >= "1"
+
+Show
+	DropLevel >= 60
+	Class = "Ring" "Amulet" "Belt" "Quiver"
+
+#===============================================================================
+# Section: LEVELING
 #===============================================================================
 
 # large RGB items
@@ -1312,6 +1323,10 @@ Show # Rare Items | Disable
 	Class = "Quivers"
 	SetBackgroundColor 0 0 0 224 # Black - transparent
 	SetFontSize 32 # 32 - Default
+
+#===============================================================================
+# Section: JUNK
+#===============================================================================
 
 Hide
 	Sockets > "0"
