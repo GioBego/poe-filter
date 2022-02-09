@@ -120,7 +120,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Armourer's Scrap"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
@@ -128,7 +128,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Blacksmith's Whetstone"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
@@ -136,7 +136,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Orb of Transmutation"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
@@ -144,7 +144,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Orb of Augmentation"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
@@ -152,7 +152,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Orb of Alteration"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
@@ -163,7 +163,7 @@ Show # Currency | Hide
 Show # Flasks | Hide
 	Rarity <= Magic
 	Class = "Utility Flasks"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
@@ -172,7 +172,7 @@ Show # Flasks | Hide
 	Rarity <= Magic
 	Class = "Life Flasks"
 	BaseType = "Divine Life Flask" "Eternal Life Flask"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
@@ -181,7 +181,7 @@ Show # Flasks | Disable
 	Rarity <= Magic
 	Quality >= 1
 	Class = "Flasks"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Disable
@@ -191,7 +191,7 @@ Show
 	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Small" "Medium" "Large" "Greater"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 28 # 28
 	DisableDropSound
@@ -202,7 +202,7 @@ Show
 	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Grand" "Giant" "Colossal" "Sacred"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 28 # 28
 	DisableDropSound
@@ -213,7 +213,7 @@ Show
 	Rarity <= Magic
 	Class = "Flasks"
 	BaseType = "Hallowed" "Sanctified"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 28 # 28
 	DisableDropSound
@@ -222,7 +222,7 @@ Show
 Hide
 	Rarity <= Magic
 	Class = "Flasks"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 24 # 24
 
@@ -912,7 +912,7 @@ Show
 
 Show
 	LinkedSockets = 6
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
@@ -939,7 +939,7 @@ Show
 	AnyEnchantment = True
 	SetBackgroundColor 0 48 32 224 # Base
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44 # 44 - Top
+	SetFontSize 40 # 40
 	PlayAlertSound 5 80 # Chaos++
 	MinimapIcon 0 Yellow Square
 	PlayEffect Yellow 
@@ -954,7 +954,7 @@ Show
 	BaseType = "Opal Ring" "Steel Ring" "Stygian Vise" "Crystal Belt" "Blue Pearl Amulet" "Marble Amulet" "Fingerless Silk Gloves" "Spiked Gloves" "Gripped Gloves" "Bone Helmet"
 	SetBackgroundColor 32 0 64 255 # Influence
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44 # 44 - Top
+	SetFontSize 40 # 40
 	DisableDropSound
 	PlayAlertSound 1 80 # Exalt
 	MinimapIcon 0 Blue Square
@@ -964,7 +964,7 @@ Show
 	Class = "Rings" "Amulets"
 	SetBackgroundColor 32 0 64 255 # Influence
 	SetBorderColor 255 255 128 255 # Craft
-	SetFontSize 44 # 44 - Top
+	SetFontSize 40 # 40
 	DisableDropSound
 	PlayAlertSound 12 80 # Influence
 	MinimapIcon 1 Blue Square
@@ -986,7 +986,7 @@ Show
 Show
 	Sockets = "6"
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
@@ -997,7 +997,7 @@ Show
 Show # Craft | Disable
 	AreaLevel <= 75
 	LinkedSockets = 5
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 40 # 40
 	#BlockStrictness 10 Disable
@@ -1008,7 +1008,7 @@ Show # Leveling | Disable
 	SocketGroup >= "W"
 	Rarity <= Rare
 	Class = "One Hand" "Daggers" "Wands" "Claws" "Sceptres" "Shields"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 255 255 255 255 # White
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 10 Disable
@@ -1025,7 +1025,7 @@ Show # Vendor - Chromatic recipe | Disable
 	Rarity <= Rare
 	Height = 3
 	Width = 1
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 36 # 36
 	#BlockStrictness 7 Disable
@@ -1036,7 +1036,7 @@ Show # Vendor - Chromatic recipe | Disable
 	Rarity <= Rare
 	Height = 2
 	Width = 2
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 36 # 36
 	#BlockStrictness 7 Disable
@@ -1046,7 +1046,7 @@ Show # Craft | Disable
 	Corrupted = False
 	Rarity = Normal
 	BaseType = "Glorious Plate" "Gold Amulet" "Sorcerer Boots"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 175 96 37 255 # Unique
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Disable
@@ -1056,7 +1056,7 @@ Show # Vendor - Chisel recipe | Disable
 	Quality >= 15
 	Class = "One Hand Maces"
 	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Disable
 
@@ -1065,7 +1065,7 @@ Show # Vendor - Chisel recipe | Disable
 	Quality >= 18
 	Class = "One Hand Maces"
 	BaseType = "Stone Hammer" "Rock Breaker" "Gavel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Disable
 
@@ -1124,7 +1124,7 @@ Show # Rare Items | Hide
 	Rarity = Rare
 	Class = "Rings" "Amulets" "Belts"
 	SetTextColor 255 196 0 255 # Accessories
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
 
@@ -1140,7 +1140,7 @@ Show
 
 Show # Craft | Hide
 	Class = "Abyss Jewel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 255 255 128 255 # Craft
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 9 Hide
@@ -1232,17 +1232,19 @@ Show # Rare Items - Top Bases | Hide
 #===============================================================================
 
 Show
+	AreaLevel <= 72
 	DropLevel >= 64
 	Sockets >= "1"
-	SetBackgroundColor 0 0 0 0 # Transparent
-	SetFontSize 32 # 32 - Default
+	SetBackgroundColor 0 0 0 192 # Black - Transparent
+	SetFontSize 24 # 24
 	#BlockStrictness 7 Disable
 
 Show
+	AreaLevel <= 72
 	DropLevel >= 60
 	Class = "Ring" "Amulet" "Belt" "Quiver"
-	SetBackgroundColor 0 0 0 0 # Transparent
-	SetFontSize 32 # 32 - Default
+	SetBackgroundColor 0 0 0 192 # Black - Transparent
+	SetFontSize 28 # 28
 	#BlockStrictness 7 Disable
 
 #===============================================================================
@@ -1253,7 +1255,7 @@ Show
 Show # Vendor - Chromatic recipe | Disable
 	SocketGroup >= "RGB"
 	Rarity <= Rare
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 48 232 96 255 # RGB
 	SetFontSize 28 # 28
 	#BlockStrictness 7 Disable
@@ -1262,14 +1264,14 @@ Show # Leveling - Linked Sockets | Disable
 	ItemLevel <= 60
 	LinkedSockets >= 4
 	Rarity <= Magic
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 
 Show # Leveling - Linked Sockets | Disable
 	ItemLevel <= 39
 	LinkedSockets >= 3
 	Rarity <= Magic
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 
 Show # Leveling | Disable
@@ -1287,7 +1289,7 @@ Show # Leveling | Disable
 	ItemLevel <= 4
 	Sockets > "0"
 	Rarity = Normal
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 
 # normal Quivers until level 4
@@ -1295,7 +1297,7 @@ Show # Leveling | Disable
 	ItemLevel <= 4
 	Rarity = Normal
 	Class = "Quivers"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 
 # magic items until level 8
@@ -1303,7 +1305,7 @@ Show # Leveling | Disable
 	ItemLevel <= 8
 	Sockets > "0"
 	Rarity = Magic
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 
 # magic Quivers until level 8
@@ -1311,7 +1313,7 @@ Show # Leveling | Disable
 	ItemLevel <= 8
 	Rarity = Magic
 	Class = "Quivers"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 
 # all rare items until level 67
@@ -1319,7 +1321,7 @@ Show # Rare Items | Disable
 	ItemLevel <= 67
 	Sockets > "0"
 	Rarity = Rare
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 
 # all rare Quivers until level 67
@@ -1327,7 +1329,7 @@ Show # Rare Items | Disable
 	ItemLevel <= 67
 	Rarity = Rare
 	Class = "Quivers"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 
 #===============================================================================
@@ -1351,28 +1353,28 @@ Hide
 Hide
 	Sockets > "0"
 	Rarity = Rare
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 	DisableDropSound
 
 Hide
 	Rarity = Rare
 	Class = "Quivers"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 	DisableDropSound
 
 Hide
 	Rarity <= Magic
 	Class = "Rings" "Amulets" "Belts"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 24 # 24
 	DisableDropSound
 
 Hide
 	Rarity <= Magic
 	Class = "Jewel"
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 24 # 24
 	DisableDropSound
@@ -1381,7 +1383,7 @@ Hide
 	Rarity = Rare
 	Class = "Rings" "Amulets" "Belts"
 	SetTextColor 255 196 0 255 # Accessories
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	DisableDropSound
 
@@ -1393,7 +1395,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Jeweller's Orb"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
@@ -1402,7 +1404,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Orb of Chance"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
@@ -1411,7 +1413,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Chromatic Orb"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
@@ -1420,7 +1422,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Glassblower's Bauble"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 40 # 40
 	#BlockStrictness 9 Hide
@@ -1462,7 +1464,7 @@ Show
 	Rarity = Unique
 	Class = "Flasks"
 	SetTextColor 175 96 37 255 # Unique
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 176 32 24 255 # Flask
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -1490,7 +1492,7 @@ Show
 	Rarity = Unique
 	Class = "Jewel"
 	SetTextColor 175 96 37 255 # Unique
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 64 255 255 # Jewel
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -1627,7 +1629,7 @@ Show
 Show
 	Rarity = Unique
 	SetTextColor 175 96 37 255 # Unique
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 175 96 37 255 # Unique
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -1664,7 +1666,7 @@ Show
 	Class = "Currency"
 	BaseType = "Splinter of Chayula"
 	SetTextColor 208 32 144 255 # Splinter
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -1675,7 +1677,7 @@ Show
 	Class = "Currency"
 	BaseType = "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
 	SetTextColor 208 32 144 255 # Splinter
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 36 # 36
 	MinimapIcon 2 Red Circle
@@ -1684,7 +1686,7 @@ Show
 	Class = "Currency"
 	BaseType = "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
 	SetTextColor 50 230 100 255 # Essence
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
@@ -1696,7 +1698,7 @@ Show
 	Class = "Currency"
 	BaseType = "Essence"
 	SetTextColor 50 230 100 255 # Essence
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 36 # 36
 
@@ -1973,7 +1975,7 @@ Show # Divination Cards | Hide
 	Class = "Divination Card"
 	BaseType == "The Carrion Crow" "The Flora's Gift" "The King's Blade" "Thunderous Skies" "The Twins" "The Spoiled Prince" "The Rabid Rhoa" "The Inoculated" "Struck by Lightning" "The Web" "The Sigil" "The Surgeon"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
 
@@ -1997,7 +1999,7 @@ Show
 	Class = "Divination Card"
 	BaseType == "Abandoned Wealth" "The Progeny of Lunaris" "The Iron Bard" "Pride of the First Ones" "Seven Years Bad Luck" "The Greatest Intentions" "Azyran's Reward" "The Long Con" "The White Knight" "The Dragon's Heart" "The Price of Loyalty" "Wealth and Power" "The Sustenance" "The Hive of Knowledge" "The World Eater" "The Escape" "The Saint's Treasure" "The Damned" "The Primordial" "Hunter's Reward" "The Enlightened" "The Eye of Terror" "The Gulf" "The Soul" "Dark Dreams" "Peaceful Moments" "The Bitter Blossom" "The Spark and the Flame" "Void of the Elements"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
@@ -2009,7 +2011,7 @@ Show
 	Class = "Divination Card"
 	BaseType == "Council of Cats" "The Mayor" "Squandered Prosperity" "The Artist" "The Bargain" "The Offering" "Etched in Blood" "The Betrayal" "The Hoarder" "The Queen" "The Strategist" "A Familiar Call" "Blessing of God" "Chaotic Disposition" "The Celestial Justicar" "The Eldritch Decay" "A Note in the Wind" "Burning Blood" "Pride Before the Fall" "Remembrance" "The Academic" "The Brittle Emperor" "The Ethereal" "The Life Thief" "The Pact" "The Polymath" "The Sephirot" "The Wolven King's Bite" "Rebirth" "The Awakened" "The Breach" "The Cartographer" "The Celestial Stone" "The Cursed King" "The King's Heart" "The Landing" "The Sacrifice" "The Undaunted" "The Valkyrie" "Triskaidekaphobia" "Unchained" "Boon of the First Ones" "Bowyer's Dream" "Buried Treasure" "Mawr Blaidd" "Perfection" "Prometheus' Armoury" "Sambodhi's Vow" "The Dapper Prodigy" "The Hale Heart" "The Heroic Shot" "The Innocent" "The Jeweller's Boon" "The Last One Standing" "The Mad King" "The Old Man" "The Porcupine" "The Professor" "The Realm" "The Risk" "The Rite of Elements" "The Tinkerer's Table" "The Undisputed" "The Vast" "The Void" "The Wolf" "Time-Lost Relic" "Underground Forest" "Earth Drinker" "The Hunger" "Divine Justice"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -2021,7 +2023,7 @@ Show # Divination Cards | Hide
 	Class = "Divination Card"
 	BaseType == "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 36 # 36
 	PlayAlertSound 3 80 # Alch
@@ -2037,7 +2039,7 @@ Show # Divination Cards | Hide
 	Class = "Divination Card"
 	BaseType == "Judging Voices" "Bijoux" "Silence and Frost" "Misery in Darkness" "The Tireless Extractor" "Justified Ambition" "Parasitic Passengers" "Duality" "The One That Got Away" "The Transformation" "Magnum Opus" "Imperfect Memories" "The Magma Crab"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 168 242 255 # Card
 	SetFontSize 36 # 36
 	PlayAlertSound 3 80 # Alch
@@ -2052,7 +2054,7 @@ Show # Divination Cards | Hide
 Show # Divination Cards | Hide
 	Class = "Divination Card"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
 
@@ -2121,7 +2123,7 @@ Show # Gems | Disable
 	Quality >= 10
 	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -2167,7 +2169,7 @@ Show # Gems | Hide
 	Quality >= 5
 	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 36 # 36
 	#BlockStrictness 9 Hide
@@ -2177,7 +2179,7 @@ Show # Gems | Hide
 	Quality >= 1
 	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 36 # 36
 	#BlockStrictness 7 Hide
@@ -2187,7 +2189,7 @@ Show # Gems | Hide
 	GemLevel > 1
 	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 27 162 155 255 # Gem
 	SetFontSize 32 # 32 - Default
 
@@ -2195,7 +2197,7 @@ Show # Gems | Hide
 Show # Gems | Hide
 	Class = "Gems"
 	SetTextColor 27 162 155 255 # Gem
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 28 # 28
 	#BlockStrictness 9 Hide
 
@@ -2276,7 +2278,7 @@ Show
 	Class = "Currency"
 	BaseType = "Stacked Deck"
 	SetTextColor 0 168 242 255 # Card
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -2298,7 +2300,7 @@ Show
 	Class = "Currency"
 	BaseType = "Blessing of Chayula"
 	SetTextColor 208 32 144 255 # Splinter
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
@@ -2310,7 +2312,7 @@ Show
 	Class = "Currency"
 	BaseType = "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph"
 	SetTextColor 208 32 144 255 # Splinter
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 231 180 120 255 # Currency - High
 	SetFontSize 40 # 40
 	DisableDropSound
@@ -2322,7 +2324,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 5 Hide
 
@@ -2331,7 +2333,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Binding Shard" "Engineer's Shard" "Horizon Shard"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetFontSize 32 # 32 - Default
 	#BlockStrictness 7 Hide
 
@@ -2340,7 +2342,7 @@ Show # Currency | Hide
 	Class = "Currency"
 	BaseType = "Perandus Coin"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36 # 36
 	#BlockStrictness 10 Hide
@@ -2350,7 +2352,7 @@ Hide # Currency | Hide
 	Class = "Currency"
 	BaseType = "Perandus Coin" "Binding Shard" "Engineer's Shard" "Horizon Shard" "Alchemy Shard" "Alteration Shard" "Chaos Shard" "Regal Shard" "Transmutation Shard"
 	SetTextColor 170 158 130 255 # Currency - Low
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 170 158 130 255 # Currency - Low
 	SetFontSize 36 # 36
 
@@ -2361,7 +2363,7 @@ Hide # Currency | Hide
 Show
 	Class = "Quest Items" "Pantheon Soul"
 	SetTextColor 74 230 58 255 # Quest
-	SetBackgroundColor 0 0 0 224 # Black - transparent
+	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 74 230 58 255 # Quest
 	SetFontSize 44 # 44 - Top
 	DisableDropSound
