@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.17-RC5-Experimental
+# VERSION:       3.18-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -229,6 +229,29 @@ Hide
 #===============================================================================
 # Section: LEAGUE
 #===============================================================================
+
+#-------------------------------------------------------------------------------
+# Subsection: 3.18 - Sentinel
+#-------------------------------------------------------------------------------
+
+Show
+	Class = "Sentinel Drone"
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 36 # 36
+	DisableDropSound
+	PlayAlertSound 11 60 # League
+	MinimapIcon 1 Blue Circle
+
+Show
+	Class = "Stackable Currency"
+	BaseType = "Power Core" "Recombinator"
+	SetTextColor 231 180 120 255 # Currency - High
+	SetBackgroundColor 0 24 76 255 # League
+	SetBorderColor 0 255 255 255 # League
+	SetFontSize 40 # 40
+	PlayAlertSound 10 100 # League++
+	MinimapIcon 0 Cyan Circle
 
 #-------------------------------------------------------------------------------
 # Subsection: 3.17 - Siege of the Atlas
