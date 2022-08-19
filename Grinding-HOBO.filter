@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.18-RC1
+# VERSION:       3.19-RC1
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -234,24 +234,24 @@ Hide
 # Subsection: 3.18 - Sentinel
 #-------------------------------------------------------------------------------
 
-Show
-	Class = "Sentinel Drone"
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 36 # 36
-	DisableDropSound
-	PlayAlertSound 11 60 # League
-	MinimapIcon 1 Blue Circle
+#Show
+#	Class = "Sentinel Drone"
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 36 # 36
+#	DisableDropSound
+#	PlayAlertSound 11 60 # League
+#	MinimapIcon 1 Blue Circle
 
-Show
-	Class = "Stackable Currency"
-	BaseType = "Power Core" "Recombinator"
-	SetTextColor 231 180 120 255 # Currency - High
-	SetBackgroundColor 0 24 76 255 # League
-	SetBorderColor 0 255 255 255 # League
-	SetFontSize 40 # 40
-	PlayAlertSound 10 100 # League++
-	MinimapIcon 0 Cyan Circle
+#Show
+#	Class = "Stackable Currency"
+#	BaseType = "Power Core" "Recombinator"
+#	SetTextColor 231 180 120 255 # Currency - High
+#	SetBackgroundColor 0 24 76 255 # League
+#	SetBorderColor 0 255 255 255 # League
+#	SetFontSize 40 # 40
+#	PlayAlertSound 10 100 # League++
+#	MinimapIcon 0 Cyan Circle
 
 #-------------------------------------------------------------------------------
 # Subsection: 3.17 - Siege of the Atlas
@@ -2045,6 +2045,22 @@ Show
 Show # Divination Cards | Hide
 	Class = "Divination Card"
 	BaseType == "Emperor's Luck" "Humility" "Demigod's Wager" "The Primordial" "Vanity" "The Side Quest" "Divine Justice" "Friendship"
+	SetTextColor 0 168 242 255 # Card
+	SetBackgroundColor 0 0 0 224 # Black - Default
+	SetBorderColor 0 168 242 255 # Card
+	SetFontSize 36 # 36
+	PlayAlertSound 3 80 # Alch
+	MinimapIcon 1 Blue Diamond
+	#BlockStrictness 9 Hide
+
+#-------------------------------------------------------------------------------
+# Subsection: 3.19 - New Cards
+#-------------------------------------------------------------------------------
+
+# common cards that could be worth picking up
+Show # Divination Cards | Hide
+	Class = "Divination Card"
+	BaseType == "Broken Truce" "Doryani's Epiphany" "Endless Night" "The Shieldbearer" "Choking Guilt" "The Enforcer" "The Shepherd's Sandals" "Azure Rage" "The Leviathan" "The Price of Devotion" "Astral Protection" "Gemcutter's Mercy" "Checkmate" "Lethean Temptation" "Something Dark"
 	SetTextColor 0 168 242 255 # Card
 	SetBackgroundColor 0 0 0 224 # Black - Default
 	SetBorderColor 0 168 242 255 # Card
