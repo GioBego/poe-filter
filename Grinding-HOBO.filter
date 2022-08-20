@@ -3,7 +3,7 @@
 #===============================================================================
 #
 # NAME:          Grinding-HOBO
-# VERSION:       3.19-RC1
+# VERSION:       3.19-RC2
 # AUTHOR:        Bego
 # CONTACT:       giobego@gmail.com
 # LINK:          https://grinding.zone
@@ -2280,7 +2280,7 @@ Show
 
 Show
 	Class = "Currency"
-	BaseType = "Divine Orb" "Ancient Orb" "Harbinger's Orb" "Orb of Annulment"
+	BaseType = "Ancient Orb" "Harbinger's Orb" "Orb of Annulment" "Exalted Orb"
 	SetTextColor 231 180 120 255 # Currency - High
 	SetBackgroundColor 156 0 0 255 # Currency - Chaos
 	SetBorderColor 231 180 120 255 # Currency - High
@@ -2303,7 +2303,7 @@ Show
 
 Show
 	Class = "Currency"
-	BaseType = "Exalted Orb" "Mirror of Kalandra" "Mirror Shard" "Albino Rhoa Feather" "Eternal Orb"
+	BaseType = "Mirror of Kalandra" "Mirror Shard" "Albino Rhoa Feather" "Eternal Orb" "Divine Orb"
 	SetTextColor 0 0 0 255 # Black
 	SetBackgroundColor 255 224 164 255 # Currency - Top
 	SetBorderColor 0 0 0 255 # Black
